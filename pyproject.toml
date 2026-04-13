@@ -19,8 +19,17 @@ dependencies = [
     "recurring-ical-events>=2.0.0",
 ]
 
+[project.optional-dependencies]
+test = [
+    "pytest>=8.0.0",
+]
+
 [project.scripts]
 sapa = "sapa.app:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
 
 [build-system]
 requires = ["hatchling"]
