@@ -1,0 +1,32 @@
+
+        <div id="homestead" class="panel">
+            <div class="hs-feed-header">
+                <h2>Homestead <span class="hs-count" id="hsSessionCount">0</span></h2>
+                <div class="hs-tab-bar">
+                    <button class="hs-tab active" onclick="switchHsTab('feed')">Feed</button>
+                    <button class="hs-tab" onclick="switchHsTab('gaps')">Gaps</button>
+                </div>
+            </div>
+
+            <div id="hsTabFeed" class="hs-tab-content active">
+                <div class="hs-search-bar">
+                    <input type="text" placeholder="Search sessions..." oninput="searchHomesteadFeed(this.value)">
+                </div>
+                <div id="hsListView">
+                    <div id="hsFeedList"></div>
+                </div>
+                <div id="hsDetailView" class="hs-detail"></div>
+            </div>
+
+            <div id="hsTabGaps" class="hs-tab-content">
+                <div class="gap-summary" id="hsGapsSummaryStandalone"></div>
+                <div class="card">
+                    <div class="section-title">Priority Gaps</div>
+                    <div id="hsTopGapsStandalone"></div>
+                </div>
+                <div class="card">
+                    <div class="section-title">Coverage by Category</div>
+                    <div id="hsGapsCategoriesStandalone"></div>
+                </div>
+            </div>
+        </div>

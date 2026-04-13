@@ -1,0 +1,296 @@
+
+        /* Homestead Feed */
+        .hs-feed-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .hs-feed-header h2 {
+            font-size: 1.5rem;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .hs-feed-header .hs-count {
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            background: var(--bg-secondary);
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .hs-search-bar {
+            display: flex;
+            gap: 0.5rem;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .hs-search-bar input {
+            flex: 1;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0.5rem 0.75rem;
+            color: var(--text);
+            font-size: 0.85rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .hs-search-bar input:focus {
+            border-color: var(--accent);
+        }
+
+        .hs-search-bar input::placeholder {
+            color: var(--text-dim);
+        }
+
+        .hs-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin-bottom: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .hs-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-1px);
+        }
+
+        .hs-card-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 0.4rem;
+        }
+
+        .hs-card-meta {
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .hs-card-preview {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .hs-card-type {
+            display: inline-block;
+            font-size: 0.7rem;
+            padding: 0.15rem 0.5rem;
+            border-radius: 6px;
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--accent);
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+
+        .hs-empty {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--text-dim);
+        }
+
+        .hs-empty-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Homestead Detail View */
+        .hs-detail {
+            display: none;
+        }
+
+        .hs-detail.active {
+            display: block;
+        }
+
+        .hs-detail-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: transparent;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0.5rem 0.75rem;
+            color: var(--text-dim);
+            cursor: pointer;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            transition: all 0.2s;
+        }
+
+        .hs-detail-back:hover {
+            color: var(--text);
+            border-color: var(--accent);
+        }
+
+        .hs-detail-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .hs-detail-header h3 {
+            font-size: 1.4rem;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+
+        .hs-detail-header .hs-card-meta {
+            margin-bottom: 0;
+        }
+
+        .hs-detail-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            line-height: 1.7;
+            font-size: 0.9rem;
+        }
+
+        .hs-detail-content h1,
+        .hs-detail-content h2,
+        .hs-detail-content h3 {
+            color: var(--accent);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .hs-detail-content h1:first-child,
+        .hs-detail-content h2:first-child,
+        .hs-detail-content h3:first-child {
+            margin-top: 0;
+        }
+
+        .hs-detail-content ul, .hs-detail-content ol {
+            padding-left: 1.5rem;
+            margin: 0.75rem 0;
+        }
+
+        .hs-detail-content li {
+            margin-bottom: 0.35rem;
+        }
+
+        .hs-detail-content code {
+            background: var(--bg-secondary);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+
+        .hs-detail-content pre {
+            background: var(--bg-secondary);
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        .hs-detail-content pre code {
+            background: none;
+            padding: 0;
+        }
+
+        .hs-detail-content p {
+            margin-bottom: 0.75rem;
+        }
+
+        .hs-detail-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .hs-btn-delete {
+            background: transparent;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #ef4444;
+            border-radius: 8px;
+            padding: 0.4rem 0.75rem;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: all 0.2s;
+        }
+
+        .hs-btn-delete:hover {
+            background: rgba(239, 68, 68, 0.1);
+            border-color: #ef4444;
+        }
+
+        /* Homestead Tab Bar */
+        .hs-tab-bar {
+            display: flex;
+            gap: 0.25rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0.2rem;
+        }
+
+        .hs-tab {
+            padding: 0.4rem 1rem;
+            background: transparent;
+            border: none;
+            border-radius: 6px;
+            color: var(--text-dim);
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .hs-tab:hover {
+            color: var(--text);
+        }
+
+        .hs-tab.active {
+            background: var(--bg-card);
+            color: var(--accent);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .hs-tab-content {
+            display: none;
+        }
+
+        .hs-tab-content.active {
+            display: block;
+        }
+
+        /* Back link in feed header */
+        .hs-back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            color: var(--text-dim);
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+            background: none;
+            border: none;
+        }
+
+        .hs-back-home:hover {
+            color: var(--accent);
+        }
+
