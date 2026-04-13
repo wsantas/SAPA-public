@@ -1,0 +1,16 @@
+{
+  "email": {
+    "smtp_host": "127.0.0.1",
+    "smtp_port": 25,
+    "smtp_user": "",
+    "smtp_password": "",
+    "smtp_tls": false,
+    "from_address": "you@example.com",
+    "recipients": {
+      "1": "john@example.com",
+      "2": "jane@example.com"
+    },
+    "homestead_recipients": ["john@example.com", "jane@example.com"]
+  },
+  "base_url": "http://localhost:8001"
+}
