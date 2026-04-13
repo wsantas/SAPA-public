@@ -1,0 +1,14 @@
+
+    <div class="gap-modal" id="gapPromptModal" onclick="if(event.target===this)closeGapModal()">
+        <div class="gap-modal-content">
+            <div class="gap-modal-header">
+                <span id="gapModalTitle">Gap Prompt</span>
+                <button class="gap-modal-close" onclick="closeGapModal()" aria-label="Close">&times;</button>
+            </div>
+            <div class="gap-modal-body">
+                <div id="gapModalCategory" style="margin-bottom: 1rem;"></div>
+                <div class="gap-prompt-box" id="gapModalPrompt" onclick="copyGapPrompt()"></div>
+                <div class="gap-prompt-hint" id="gapModalHint">Click to copy prompt</div>
+            </div>
+        </div>
+    </div>

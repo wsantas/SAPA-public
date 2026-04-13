@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="80" fill="#1a1f2e"/>
+  <path d="M256 80 L310 150 L370 150 L335 210 L355 300 L256 250 L157 300 L177 210 L142 150 L202 150 Z" fill="#10b981" opacity="0.9"/>
+  <text x="256" y="420" text-anchor="middle" font-family="system-ui" font-weight="800" font-size="96" fill="#f0f4f8">SAPA</text>
+</svg>
