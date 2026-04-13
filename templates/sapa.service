@@ -1,0 +1,14 @@
+[Unit]
+Description=SAPA - Set Apart Personal Assistant
+After=network.target
+
+[Service]
+# Change to your username
+User=%i
+WorkingDirectory=/home/%i/sapa
+Environment=PYTHONPATH=.
+ExecStart=/home/%i/sapa/.venv/bin/python -m sapa.app --host 0.0.0.0 --port 8001
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
