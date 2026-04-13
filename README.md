@@ -253,7 +253,13 @@ This project started as a personal tool and grew into something worth sharing. C
 
 ## Screenshots
 
-*Coming soon — contributions welcome.*
+| Dashboard | Recipes |
+|---|---|
+| ![Dashboard](docs/screenshots/dashboard.png) | ![Recipes](docs/screenshots/recipes.png) |
+
+| Gap Analysis | Body Map |
+|---|---|
+| ![Gap Analysis](docs/screenshots/gaps.png) | ![Body Map](docs/screenshots/bodymap.png) |
 
 ---
 
