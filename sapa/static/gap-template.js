@@ -4,10 +4,14 @@
         const $PLUGIN_VAR$GapPrompts = $PROMPTS_JSON$;
         const $PLUGIN_VAR$GapDefaultPrompt = $DEFAULT_PROMPT_JSON$;
 
+        let _$PLUGIN_VAR$Categories = [];
+        let _$PLUGIN_VAR$CatSort = 'default';
+
         function render$PLUGIN_ID$Gaps(data) {
             render$PLUGIN_ID$GapsSummary(data.summary || {});
             render$PLUGIN_ID$TopGaps(data.top_gaps || []);
-            render$PLUGIN_ID$GapsCategories(data.categories || []);
+            _$PLUGIN_VAR$Categories = data.categories || [];
+            render$PLUGIN_ID$GapsCategories();
         }
 
         function render$PLUGIN_ID$GapsSummary(summary) {
@@ -47,14 +51,47 @@
             `).join('');
         }
 
-        function render$PLUGIN_ID$GapsCategories(categories) {
+        function set$PLUGIN_ID$CategorySort(mode) {
+            _$PLUGIN_VAR$CatSort = mode;
+            render$PLUGIN_ID$GapsCategories();
+        }
+
+        function render$PLUGIN_ID$GapsCategories() {
             const container = document.getElementById('$CATEGORIES_EL$');
             if (!container) return;
-            if (categories.length === 0) {
+            if (_$PLUGIN_VAR$Categories.length === 0) {
                 container.innerHTML = '<p style="color: var(--text-dim);">No categories defined</p>';
                 return;
             }
-            container.innerHTML = categories.map(cat => `
+
+            const categories = [..._$PLUGIN_VAR$Categories];
+            const sortMode = _$PLUGIN_VAR$CatSort;
+
+            if (sortMode === 'coverage-asc') {
+                categories.sort((a, b) => a.coverage - b.coverage);
+            } else if (sortMode === 'coverage-desc') {
+                categories.sort((a, b) => b.coverage - a.coverage);
+            } else if (sortMode === 'name') {
+                categories.sort((a, b) => a.name.localeCompare(b.name));
+            }
+            // 'default' leaves the server-provided order (priority then coverage)
+
+            const sortOptions = [
+                ['default', 'Priority (default)'],
+                ['coverage-asc', 'Coverage: lowest first'],
+                ['coverage-desc', 'Coverage: highest first'],
+                ['name', 'Name (A–Z)'],
+            ];
+            const sortControl = `
+                <div class="gap-sort-control" style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem; font-size:0.85rem; color:var(--text-dim);">
+                    <label for="$CATEGORIES_EL$-sort">Sort by:</label>
+                    <select id="$CATEGORIES_EL$-sort" onchange="set$PLUGIN_ID$CategorySort(this.value)" style="background:var(--card); color:var(--text); border:1px solid var(--border); border-radius:6px; padding:0.3rem 0.5rem; font-size:0.85rem;">
+                        ${sortOptions.map(([v, l]) => `<option value="${v}"${sortMode === v ? ' selected' : ''}>${l}</option>`).join('')}
+                    </select>
+                </div>
+            `;
+
+            const catsHtml = categories.map(cat => `
                 <div class="gap-category">
                     <div class="gap-category-header">
                         <div class="gap-category-name">
@@ -72,6 +109,8 @@
                     </div>
                 </div>
             `).join('');
+
+            container.innerHTML = sortControl + catsHtml;
         }
 
         function show$PLUGIN_ID$GapPrompt(topic, category) {
