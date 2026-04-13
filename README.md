@@ -1,5 +1,9 @@
 # SAPA — Set Apart Personal Assistant
 
+[![CI](https://github.com/wsantas/SAPA-public/actions/workflows/ci.yml/badge.svg)](https://github.com/wsantas/SAPA-public/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+
 **A self-hosted family dashboard for people who take health, land, and learning seriously.**
 
 SAPA is a plugin-based personal assistant that runs on a Raspberry Pi (or any machine with Python). No cloud. No subscriptions. No one mining your health data. Just a single-page app that watches your filesystem, extracts knowledge, tracks your gaps, plans your meals, and keeps your family's health and homestead goals organized — all from one screen.
