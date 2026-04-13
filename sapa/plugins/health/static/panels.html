@@ -1,0 +1,1404 @@
+
+        <!-- Dashboard Panel (tabbed: Feed / Gaps / Analytics) -->
+        <div id="dashboard" class="panel active">
+            <div class="dash-tab-bar">
+                <button class="dash-tab active" onclick="switchDashTab('feed')">Feed</button>
+                <button class="dash-tab" onclick="switchDashTab('family')">Family</button>
+                <button class="dash-tab" onclick="switchDashTab('gaps')">Gaps</button>
+                <button class="dash-tab" onclick="switchDashTab('analytics')">Analytics</button>
+            </div>
+
+            <div id="dashTabFeed" class="dash-tab-content" style="display:block;">
+                <!-- Reminder Banner -->
+                <div id="reminderBanner" style="display:none;"></div>
+
+                <!-- Today's Schedule -->
+                <div class="card today-schedule" id="todaySchedule">
+                    <div class="today-schedule-header">
+                        <div class="today-schedule-title">
+                            <svg class="today-schedule-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+                            <span id="todayScheduleDate">Today</span>
+                        </div>
+                        <button class="today-schedule-expand" onclick="switchPanel('calendar')" title="Full calendar">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </button>
+                    </div>
+                    <div id="todayScheduleEvents" class="today-schedule-events">
+                        <div class="today-schedule-empty">Loading...</div>
+                    </div>
+                </div>
+
+                <!-- Protocol Tracker Widget -->
+                <div class="card protocol-widget" id="protocolWidget" style="display:none;">
+                    <div class="section-title" style="margin-bottom: 0.75rem;">Active Protocols</div>
+                    <div id="protocolList"></div>
+                </div>
+
+                <!-- Protein Tracker Widget -->
+                <div class="card protein-widget" id="proteinWidget" style="display:none;">
+                    <div class="protein-widget-header" onclick="toggleProteinMeals()">
+                        <div class="protein-widget-ring">
+                            <svg viewBox="0 0 36 36">
+                                <circle class="protein-ring-bg" cx="18" cy="18" r="15.9"/>
+                                <circle class="protein-ring-fill" cx="18" cy="18" r="15.9" id="dashProteinRing"
+                                    stroke-dasharray="100" stroke-dashoffset="100"/>
+                            </svg>
+                            <div class="protein-ring-label" id="dashProteinPct">0%</div>
+                        </div>
+                        <div class="protein-widget-info">
+                            <div class="protein-widget-title">Protein</div>
+                            <div class="protein-widget-nums" id="dashProteinNums">0 / 100g</div>
+                            <div class="protein-widget-remaining" id="dashProteinRemaining">100g remaining</div>
+                        </div>
+                        <div class="protein-widget-streak" id="dashProteinStreak" style="display:none;">
+                            <span class="protein-streak-num" id="dashProteinStreakNum">0</span>
+                            <span class="protein-streak-label">day streak</span>
+                        </div>
+                    </div>
+                    <div class="protein-quick-btns">
+                        <button class="protein-btn" onclick="event.stopPropagation(); quickAddProtein('Chicken breast', 35)">Chicken 35g</button>
+                        <button class="protein-btn" onclick="event.stopPropagation(); quickAddProtein('Protein shake', 30)">Shake 30g</button>
+                        <button class="protein-btn" onclick="event.stopPropagation(); quickAddProtein('Eggs x3', 18)">Eggs 18g</button>
+                        <button class="protein-btn" onclick="event.stopPropagation(); quickAddProtein('Greek yogurt', 15)">Yogurt 15g</button>
+                        <button class="protein-btn protein-btn-custom" onclick="event.stopPropagation(); showCustomProteinInput()">+</button>
+                    </div>
+                    <div class="protein-custom-input" id="proteinCustomInput" style="display:none;">
+                        <input type="text" id="dashCustomProteinName" placeholder="Food name" />
+                        <input type="number" id="dashCustomProteinAmt" placeholder="g" />
+                        <button class="protein-btn" onclick="dashAddCustomProtein()">Add</button>
+                    </div>
+                    <div class="protein-meals-list" id="dashProteinMeals" style="display:none;"></div>
+                </div>
+
+                <!-- Smart Gap Suggestions -->
+                <div class="card suggestions-widget" id="suggestionsWidget" style="display:none;">
+                    <div class="section-title" style="margin-bottom: 0.5rem;">Learn Next</div>
+                    <div id="gapSuggestions"></div>
+                </div>
+
+                <div class="card" style="padding: 1rem; overflow: visible;">
+                    <div class="filter-bar">
+                        <select id="sessionCategoryFilter" onchange="filterUnifiedSessions()">
+                            <option value="">All</option>
+                            <option value="health">Health</option>
+                            <option value="homestead">Homestead</option>
+                        </select>
+                        <input type="text" id="sessionSearch" placeholder="Search sessions..." oninput="debouncedFilterUnifiedSessions()">
+                        <select id="sessionTypeFilter" onchange="filterUnifiedSessions()">
+                            <option value="">All Types</option>
+                        </select>
+                        <div class="combo-box" id="topicComboBox">
+                            <input type="text" id="sessionTopicInput" placeholder="All Topics" autocomplete="off"
+                                onfocus="openTopicDropdown()" oninput="filterTopicDropdown()">
+                            <button class="combo-clear" id="topicComboClear" onclick="clearTopicFilter()" style="display:none;">&times;</button>
+                            <div class="combo-dropdown" id="topicDropdown"></div>
+                        </div>
+                        <select id="sessionSortFilter" onchange="filterUnifiedSessions()">
+                            <option value="newest">Newest</option>
+                            <option value="oldest">Oldest</option>
+                            <option value="az">A-Z</option>
+                            <option value="za">Z-A</option>
+                        </select>
+                    </div>
+                    <div id="sessionResultCount" class="filter-result-count"></div>
+                </div>
+                <div id="allSessions"></div>
+            </div>
+
+            <div id="dashTabFamily" class="dash-tab-content" style="display:none;">
+                <div class="card" style="padding: 1rem;">
+                    <div class="section-title" style="margin-bottom: 0.75rem;">Family Activity</div>
+                    <div id="familyFeedList">
+                        <div style="color: var(--text-dim); font-size: 0.85rem;">Loading...</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dashTabGaps" class="dash-tab-content" style="display:none;">
+                <div class="gap-tab-bar">
+                    <button class="gap-tab active" onclick="switchGapTab('health')">Health</button>
+                    <button class="gap-tab" onclick="switchGapTab('homestead')">Homestead</button>
+                </div>
+                <div id="gapTabHealth" class="gap-tab-content active">
+                    <div class="card">
+                        <div class="section-title">Overall Progress</div>
+                        <div id="gapsSummary" class="gap-summary"></div>
+                    </div>
+                    <div class="card">
+                        <div class="section-title">Priority Gaps</div>
+                        <div id="topGaps"></div>
+                    </div>
+                    <div class="card">
+                        <div class="section-title">Coverage by Category</div>
+                        <div id="gapsCategories"></div>
+                    </div>
+                </div>
+                <div id="gapTabHomestead" class="gap-tab-content" style="display:none;">
+                    <div class="gap-summary" id="hsGapsSummary"></div>
+                    <div class="card">
+                        <div class="section-title">Priority Gaps</div>
+                        <div id="hsTopGaps"></div>
+                    </div>
+                    <div class="card">
+                        <div class="section-title">Coverage by Category</div>
+                        <div id="hsGapsCategories"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dashTabAnalytics" class="dash-tab-content" style="display:none;">
+                <!-- Overview Stats -->
+                <div class="analytics-stats">
+                    <div class="stat-card">
+                        <div class="stat-value" id="statTotalTopics">0</div>
+                        <div class="stat-label">Topics Learned</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="statTotalSessions">0</div>
+                        <div class="stat-label">Sessions</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="statThisWeek">0</div>
+                        <div class="stat-label">New This Week</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="statCurrentStreak">0</div>
+                        <div class="stat-label">Day Streak</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="statDueReviews">0</div>
+                        <div class="stat-label">Due Reviews</div>
+                    </div>
+                </div>
+
+                <!-- 12-Week Trend -->
+                <div class="card">
+                    <div class="section-title">12-Week Trend</div>
+                    <div class="trend-chart" id="weeklyTrend"></div>
+                </div>
+
+                <!-- 90-Day Heatmap -->
+                <div class="card">
+                    <div class="section-title">90-Day Activity</div>
+                    <div class="heatmap-months" id="heatmapMonths"></div>
+                    <div class="heatmap-grid" id="activityHeatmap"></div>
+                    <div class="heatmap-legend">
+                        <span style="color: var(--text-dim); font-size: 0.75rem;">Less</span>
+                        <div class="heatmap-cell" style="background: var(--bg);"></div>
+                        <div class="heatmap-cell" style="background: rgba(16, 185, 129, 0.25);"></div>
+                        <div class="heatmap-cell" style="background: rgba(16, 185, 129, 0.5);"></div>
+                        <div class="heatmap-cell" style="background: rgba(16, 185, 129, 0.75);"></div>
+                        <div class="heatmap-cell" style="background: var(--accent);"></div>
+                        <span style="color: var(--text-dim); font-size: 0.75rem;">More</span>
+                    </div>
+                </div>
+
+                <!-- Activity Calendar (month view) -->
+                <div class="card">
+                    <div class="section-title">
+                        <span id="calendarMonthLabel">January 2026</span>
+                        <div class="calendar-nav">
+                            <button onclick="changeMonth(-1)" aria-label="Previous month">&lt;</button>
+                            <button onclick="changeMonth(1)" aria-label="Next month">&gt;</button>
+                        </div>
+                    </div>
+                    <div class="calendar-header">
+                        <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                    </div>
+                    <div class="calendar-grid" id="activityCalendar"></div>
+                </div>
+
+                <!-- Confidence + Session Types side by side -->
+                <div class="analytics-row">
+                    <div class="card" style="flex:1;">
+                        <div class="section-title">Knowledge Confidence</div>
+                        <div id="confidenceDistribution"></div>
+                    </div>
+                    <div class="card" style="flex:1;">
+                        <div class="section-title">Session Types</div>
+                        <div id="sessionTypes"></div>
+                    </div>
+                </div>
+
+                <!-- New vs Review + Most Studied side by side -->
+                <div class="analytics-row">
+                    <div class="card" style="flex:1;">
+                        <div class="section-title">New vs Review (4 weeks)</div>
+                        <div id="newVsReview"></div>
+                    </div>
+                    <div class="card" style="flex:1;">
+                        <div class="section-title">Most Studied Topics</div>
+                        <div id="topicFrequency"></div>
+                    </div>
+                </div>
+
+                <!-- Streak -->
+                <div class="card">
+                    <div class="section-title">28-Day Streak</div>
+                    <div class="streak-grid" id="streakCalendar"></div>
+                </div>
+
+                <!-- Upcoming Reviews -->
+                <div class="card">
+                    <div class="section-title">Review Schedule</div>
+                    <div id="reviewTimeline"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Body Map Panel -->
+        <div id="bodymap" class="panel">
+            <div class="card">
+                <div class="section-title" style="flex-direction: column; align-items: stretch; gap: 0.75rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <select id="bodyMapIssue" onchange="switchBodyMapIssue(this.value)" style="background: var(--card); color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 0.4rem 0.6rem; font-size: 0.85rem;">
+                        </select>
+                        <div class="view-toggle">
+                            <button class="view-btn active" id="btnPosterior" onclick="showBodyView('posterior')">Back</button>
+                            <button class="view-btn" id="btnAnterior" onclick="showBodyView('anterior')">Front</button>
+                        </div>
+                    </div>
+                    <span id="bodyMapTitle" style="font-size: 0.9rem; color: var(--text-dim);">Posterior View</span>
+                </div>
+                <p style="color: var(--text-dim); font-size: 0.85rem; margin-bottom: 1rem;">Click any muscle to see details and exercises</p>
+                <!-- Generic Demo Body Map (default view) -->
+                <div id="demoBodyMap" class="body-map-container">
+                    <!-- Anterior (Front) View -->
+                    <svg viewBox="0 0 300 500" class="body-svg" id="demoSvgAnterior">
+                        <!-- Body silhouette -->
+                        <path class="body-outline" d="M150,30 C170,30 185,45 185,70 L185,85 C195,90 205,100 205,115 L220,115 C235,115 245,125 245,140 L245,180 C245,195 235,205 220,205 L205,205 L205,280 C205,320 195,360 185,400 L185,470 C185,485 175,495 160,495 L155,495 L155,470 L145,470 L145,495 L140,495 C125,495 115,485 115,470 L115,400 C105,360 95,320 95,280 L95,205 L80,205 C65,205 55,195 55,180 L55,140 C55,125 65,115 80,115 L95,115 C95,100 105,90 115,85 L115,70 C115,45 130,30 150,30 Z" fill="rgba(255,255,255,0.05)" stroke="var(--border)" stroke-width="1"/>
+
+                        <!-- Pectoralis Major - LEFT (right side of screen in anterior) -->
+                        <path class="muscle clickable" id="demo-pec-left" d="M150,115 Q175,125 195,115 Q195,145 175,160 Q150,145 150,115"
+                            data-status="normal" data-name="Left Pectoralis Major"
+                            data-info="Large fan-shaped chest muscle responsible for horizontal adduction, flexion, and internal rotation of the humerus."
+                            data-exercises="Bench press, Push-ups, Cable flyes"/>
+                        <!-- Pectoralis Major - RIGHT -->
+                        <path class="muscle clickable" id="demo-pec-right" d="M150,115 Q125,125 105,115 Q105,145 125,160 Q150,145 150,115"
+                            data-status="normal" data-name="Right Pectoralis Major"
+                            data-info="Large fan-shaped chest muscle responsible for horizontal adduction, flexion, and internal rotation of the humerus."
+                            data-exercises="Bench press, Push-ups, Cable flyes"/>
+
+                        <!-- Anterior Deltoid - LEFT -->
+                        <ellipse class="muscle clickable" id="demo-ant-delt-left" cx="200" cy="125" rx="12" ry="18"
+                            data-status="normal" data-name="Left Anterior Deltoid"
+                            data-info="Front portion of the shoulder; flexes and internally rotates the arm."
+                            data-exercises="Front raises, Overhead press, Incline bench"/>
+                        <!-- Anterior Deltoid - RIGHT -->
+                        <ellipse class="muscle clickable" id="demo-ant-delt-right" cx="100" cy="125" rx="12" ry="18"
+                            data-status="normal" data-name="Right Anterior Deltoid"
+                            data-info="Front portion of the shoulder; flexes and internally rotates the arm."
+                            data-exercises="Front raises, Overhead press, Incline bench"/>
+
+                        <!-- Biceps - LEFT -->
+                        <ellipse class="muscle clickable" id="demo-biceps-left" cx="210" cy="175" rx="10" ry="25"
+                            data-status="normal" data-name="Left Biceps Brachii"
+                            data-info="Two-headed muscle of the upper arm; flexes the elbow and supinates the forearm."
+                            data-exercises="Barbell curls, Hammer curls, Chin-ups"/>
+                        <!-- Biceps - RIGHT -->
+                        <ellipse class="muscle clickable" id="demo-biceps-right" cx="90" cy="175" rx="10" ry="25"
+                            data-status="normal" data-name="Right Biceps Brachii"
+                            data-info="Two-headed muscle of the upper arm; flexes the elbow and supinates the forearm."
+                            data-exercises="Barbell curls, Hammer curls, Chin-ups"/>
+
+                        <!-- Forearms - LEFT -->
+                        <ellipse class="muscle clickable" id="demo-forearm-left" cx="215" cy="225" rx="9" ry="22"
+                            data-status="normal" data-name="Left Forearm Flexors"
+                            data-info="Muscles that flex the wrist and fingers and control grip strength."
+                            data-exercises="Wrist curls, Farmer carries, Dead hangs"/>
+                        <!-- Forearms - RIGHT -->
+                        <ellipse class="muscle clickable" id="demo-forearm-right" cx="85" cy="225" rx="9" ry="22"
+                            data-status="normal" data-name="Right Forearm Flexors"
+                            data-info="Muscles that flex the wrist and fingers and control grip strength."
+                            data-exercises="Wrist curls, Farmer carries, Dead hangs"/>
+
+                        <!-- Rectus Abdominis -->
+                        <rect class="muscle clickable" id="demo-rectus" x="135" y="195" width="30" height="65" rx="4"
+                            data-status="normal" data-name="Rectus Abdominis"
+                            data-info="The 'six-pack' muscle; flexes the trunk and stabilizes the pelvis during movement."
+                            data-exercises="Crunches, Hanging leg raises, Dead bugs"/>
+
+                        <!-- Obliques - LEFT -->
+                        <path class="muscle clickable" id="demo-obl-left" d="M170,200 Q185,220 180,260 Q170,250 165,215 Z"
+                            data-status="normal" data-name="Left Obliques"
+                            data-info="Side abdominal muscles that rotate and laterally flex the trunk."
+                            data-exercises="Russian twists, Side planks, Woodchoppers"/>
+                        <!-- Obliques - RIGHT -->
+                        <path class="muscle clickable" id="demo-obl-right" d="M130,200 Q115,220 120,260 Q130,250 135,215 Z"
+                            data-status="normal" data-name="Right Obliques"
+                            data-info="Side abdominal muscles that rotate and laterally flex the trunk."
+                            data-exercises="Russian twists, Side planks, Woodchoppers"/>
+
+                        <!-- Quadriceps - LEFT -->
+                        <ellipse class="muscle clickable" id="demo-quad-left" cx="170" cy="335" rx="18" ry="40"
+                            data-status="normal" data-name="Left Quadriceps"
+                            data-info="Four-muscle group on the front of the thigh; extends the knee and flexes the hip."
+                            data-exercises="Back squats, Lunges, Leg extensions"/>
+                        <!-- Quadriceps - RIGHT -->
+                        <ellipse class="muscle clickable" id="demo-quad-right" cx="130" cy="335" rx="18" ry="40"
+                            data-status="normal" data-name="Right Quadriceps"
+                            data-info="Four-muscle group on the front of the thigh; extends the knee and flexes the hip."
+                            data-exercises="Back squats, Lunges, Leg extensions"/>
+
+                        <!-- Adductors - LEFT -->
+                        <ellipse class="muscle clickable" id="demo-add-left" cx="158" cy="330" rx="6" ry="35"
+                            data-status="normal" data-name="Left Adductors"
+                            data-info="Inner thigh muscles that bring the leg toward the midline of the body."
+                            data-exercises="Copenhagen plank, Sumo squats, Cable adduction"/>
+                        <!-- Adductors - RIGHT -->
+                        <ellipse class="muscle clickable" id="demo-add-right" cx="142" cy="330" rx="6" ry="35"
+                            data-status="normal" data-name="Right Adductors"
+                            data-info="Inner thigh muscles that bring the leg toward the midline of the body."
+                            data-exercises="Copenhagen plank, Sumo squats, Cable adduction"/>
+
+                        <!-- Tibialis Anterior - LEFT -->
+                        <ellipse class="muscle clickable" id="demo-tib-left" cx="172" cy="430" rx="7" ry="25"
+                            data-status="normal" data-name="Left Tibialis Anterior"
+                            data-info="Shin muscle that dorsiflexes and inverts the foot; key for walking and running."
+                            data-exercises="Tibialis raises, Heel walks, Resisted dorsiflexion"/>
+                        <!-- Tibialis Anterior - RIGHT -->
+                        <ellipse class="muscle clickable" id="demo-tib-right" cx="128" cy="430" rx="7" ry="25"
+                            data-status="normal" data-name="Right Tibialis Anterior"
+                            data-info="Shin muscle that dorsiflexes and inverts the foot; key for walking and running."
+                            data-exercises="Tibialis raises, Heel walks, Resisted dorsiflexion"/>
+
+                        <!-- Labels -->
+                        <text x="150" y="20" class="muscle-label" style="font-size:9px" text-anchor="middle">Anterior View</text>
+                    </svg>
+
+                    <!-- Posterior (Back) View -->
+                    <svg viewBox="0 0 300 500" class="body-svg" id="demoSvgPosterior" style="display:none;">
+                        <!-- Body silhouette -->
+                        <path class="body-outline" d="M150,30 C170,30 185,45 185,70 L185,85 C195,90 205,100 205,115 L220,115 C235,115 245,125 245,140 L245,180 C245,195 235,205 220,205 L205,205 L205,280 C205,320 195,360 185,400 L185,470 C185,485 175,495 160,495 L155,495 L155,470 L145,470 L145,495 L140,495 C125,495 115,485 115,470 L115,400 C105,360 95,320 95,280 L95,205 L80,205 C65,205 55,195 55,180 L55,140 C55,125 65,115 80,115 L95,115 C95,100 105,90 115,85 L115,70 C115,45 130,30 150,30 Z" fill="rgba(255,255,255,0.05)" stroke="var(--border)" stroke-width="1"/>
+
+                        <!-- Upper Trapezius -->
+                        <path class="muscle clickable" id="demo-upper-trap" d="M115,85 Q150,75 185,85 Q170,110 150,110 Q130,110 115,85 Z"
+                            data-status="normal" data-name="Upper Trapezius"
+                            data-info="Elevates the scapula and extends the neck; commonly tight from desk posture."
+                            data-exercises="Shrugs, Neck stretches, Upright rows"/>
+
+                        <!-- Middle/Lower Trapezius -->
+                        <path class="muscle clickable" id="demo-mid-trap" d="M120,115 L180,115 L175,175 L125,175 Z"
+                            data-status="normal" data-name="Middle/Lower Trapezius"
+                            data-info="Retracts and depresses the scapula; critical for healthy shoulder posture."
+                            data-exercises="Prone Y raises, Face pulls, Scapular rows"/>
+
+                        <!-- Rhomboids -->
+                        <path class="muscle clickable" id="demo-rhomboid" d="M135,125 L165,125 L165,170 L135,170 Z"
+                            data-status="normal" data-name="Rhomboids"
+                            data-info="Deep back muscles between the scapulae; retract and downwardly rotate the shoulder blades."
+                            data-exercises="Seated rows, Band pull-aparts, Reverse flyes"/>
+
+                        <!-- Posterior Deltoid - LEFT -->
+                        <ellipse class="muscle clickable" id="demo-post-delt-left" cx="115" cy="130" rx="13" ry="18"
+                            data-status="normal" data-name="Left Posterior Deltoid"
+                            data-info="Rear shoulder head; extends and externally rotates the arm."
+                            data-exercises="Reverse flyes, Face pulls, Prone rear raises"/>
+                        <!-- Posterior Deltoid - RIGHT -->
+                        <ellipse class="muscle clickable" id="demo-post-delt-right" cx="185" cy="130" rx="13" ry="18"
+                            data-status="normal" data-name="Right Posterior Deltoid"
+                            data-info="Rear shoulder head; extends and externally rotates the arm."
+                            data-exercises="Reverse flyes, Face pulls, Prone rear raises"/>
+
+                        <!-- Triceps - LEFT -->
+                        <ellipse class="muscle clickable" id="demo-tri-left" cx="92" cy="180" rx="10" ry="28"
+                            data-status="normal" data-name="Left Triceps Brachii"
+                            data-info="Three-headed muscle on the back of the upper arm; extends the elbow."
+                            data-exercises="Close-grip bench, Dips, Overhead extensions"/>
+                        <!-- Triceps - RIGHT -->
+                        <ellipse class="muscle clickable" id="demo-tri-right" cx="208" cy="180" rx="10" ry="28"
+                            data-status="normal" data-name="Right Triceps Brachii"
+                            data-info="Three-headed muscle on the back of the upper arm; extends the elbow."
+                            data-exercises="Close-grip bench, Dips, Overhead extensions"/>
+
+                        <!-- Latissimus Dorsi - LEFT -->
+                        <path class="muscle clickable" id="demo-lat-left" d="M100,170 Q95,210 105,245 Q130,235 135,190 Q118,172 100,170"
+                            data-status="normal" data-name="Left Latissimus Dorsi"
+                            data-info="Largest back muscle; adducts, extends, and internally rotates the arm."
+                            data-exercises="Pull-ups, Lat pulldowns, Barbell rows"/>
+                        <!-- Latissimus Dorsi - RIGHT -->
+                        <path class="muscle clickable" id="demo-lat-right" d="M200,170 Q205,210 195,245 Q170,235 165,190 Q182,172 200,170"
+                            data-status="normal" data-name="Right Latissimus Dorsi"
+                            data-info="Largest back muscle; adducts, extends, and internally rotates the arm."
+                            data-exercises="Pull-ups, Lat pulldowns, Barbell rows"/>
+
+                        <!-- Erector Spinae -->
+                        <rect class="muscle clickable" id="demo-erector" x="140" y="180" width="20" height="90" rx="3"
+                            data-status="normal" data-name="Erector Spinae"
+                            data-info="Deep paraspinal muscles that extend the spine and maintain upright posture."
+                            data-exercises="Deadlifts, Back extensions, Good mornings"/>
+
+                        <!-- Gluteus Maximus - LEFT -->
+                        <ellipse class="muscle clickable" id="demo-glute-max-left" cx="130" cy="290" rx="22" ry="22"
+                            data-status="normal" data-name="Left Gluteus Maximus"
+                            data-info="Largest gluteal muscle; extends and externally rotates the hip."
+                            data-exercises="Hip thrusts, Romanian deadlifts, Bulgarian split squats"/>
+                        <!-- Gluteus Maximus - RIGHT -->
+                        <ellipse class="muscle clickable" id="demo-glute-max-right" cx="170" cy="290" rx="22" ry="22"
+                            data-status="normal" data-name="Right Gluteus Maximus"
+                            data-info="Largest gluteal muscle; extends and externally rotates the hip."
+                            data-exercises="Hip thrusts, Romanian deadlifts, Bulgarian split squats"/>
+
+                        <!-- Gluteus Medius - LEFT -->
+                        <ellipse class="muscle clickable" id="demo-glute-med-left" cx="115" cy="275" rx="10" ry="12"
+                            data-status="normal" data-name="Left Gluteus Medius"
+                            data-info="Upper-outer hip muscle; abducts and stabilizes the pelvis during single-leg stance."
+                            data-exercises="Side-lying leg raises, Banded walks, Single-leg bridges"/>
+                        <!-- Gluteus Medius - RIGHT -->
+                        <ellipse class="muscle clickable" id="demo-glute-med-right" cx="185" cy="275" rx="10" ry="12"
+                            data-status="normal" data-name="Right Gluteus Medius"
+                            data-info="Upper-outer hip muscle; abducts and stabilizes the pelvis during single-leg stance."
+                            data-exercises="Side-lying leg raises, Banded walks, Single-leg bridges"/>
+
+                        <!-- Hamstrings - LEFT -->
+                        <ellipse class="muscle clickable" id="demo-ham-left" cx="130" cy="345" rx="16" ry="38"
+                            data-status="normal" data-name="Left Hamstrings"
+                            data-info="Three-muscle group on the back of the thigh; flexes the knee and extends the hip."
+                            data-exercises="Romanian deadlifts, Nordic curls, Glute-ham raises"/>
+                        <!-- Hamstrings - RIGHT -->
+                        <ellipse class="muscle clickable" id="demo-ham-right" cx="170" cy="345" rx="16" ry="38"
+                            data-status="normal" data-name="Right Hamstrings"
+                            data-info="Three-muscle group on the back of the thigh; flexes the knee and extends the hip."
+                            data-exercises="Romanian deadlifts, Nordic curls, Glute-ham raises"/>
+
+                        <!-- Gastrocnemius - LEFT -->
+                        <ellipse class="muscle clickable" id="demo-calf-left" cx="130" cy="430" rx="12" ry="28"
+                            data-status="normal" data-name="Left Gastrocnemius"
+                            data-info="Superficial calf muscle with two heads; plantarflexes the foot and assists knee flexion."
+                            data-exercises="Standing calf raises, Jump rope, Sprint intervals"/>
+                        <!-- Gastrocnemius - RIGHT -->
+                        <ellipse class="muscle clickable" id="demo-calf-right" cx="170" cy="430" rx="12" ry="28"
+                            data-status="normal" data-name="Right Gastrocnemius"
+                            data-info="Superficial calf muscle with two heads; plantarflexes the foot and assists knee flexion."
+                            data-exercises="Standing calf raises, Jump rope, Sprint intervals"/>
+
+                        <!-- Labels -->
+                        <text x="150" y="20" class="muscle-label" style="font-size:9px" text-anchor="middle">Posterior View</text>
+                    </svg>
+
+                    <!-- Legend -->
+                    <div class="body-map-legend">
+                        <div class="legend-item"><span class="legend-dot normal"></span> Healthy / Normal</div>
+                        <div class="legend-item" style="color: var(--text-dim); font-size: 0.8rem;">Click any muscle for function and exercise examples</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- Muscle Info Panel -->
+            <div class="card" id="muscleInfoCard" style="display:none;">
+                <div class="section-title" id="muscleInfoName">Select a muscle</div>
+                <div id="muscleInfoStatus" class="muscle-status-badge"></div>
+                <p id="muscleInfoText" style="margin: 1rem 0; color: var(--text-dim);"></p>
+                <div class="section-title" style="font-size: 0.7rem; margin-top: 1rem;">Exercises</div>
+                <div id="muscleInfoExercises"></div>
+                <button id="muscleInfoLink" class="view-btn" style="display:none; margin-top: 1rem; width: 100%;" onclick="goToMuscleLink()">View Full Correction Plan</button>
+            </div>
+
+
+
+        </div>
+
+        <div id="topics" class="panel">
+            <div class="section-title">All Topics Learned</div>
+            <div class="card" style="padding: 1rem;">
+                <div class="filter-bar">
+                    <input type="text" id="topicSearch" placeholder="Search topics..." oninput="filterTopics()">
+                    <select id="topicMasteryFilter" onchange="filterTopics()">
+                        <option value="">All Levels</option>
+                        <option value="new">New (0-25%)</option>
+                        <option value="learning">Learning (26-74%)</option>
+                        <option value="mastered">Mastered (75%+)</option>
+                    </select>
+                    <select id="topicSortFilter" onchange="filterTopics()">
+                        <option value="recent">Most Recent</option>
+                        <option value="most-reviewed">Most Reviewed</option>
+                        <option value="least-reviewed">Least Reviewed</option>
+                        <option value="highest">Highest Mastery</option>
+                        <option value="lowest">Lowest Mastery</option>
+                        <option value="az">A-Z</option>
+                    </select>
+                </div>
+                <div id="topicResultCount" class="filter-result-count"></div>
+            </div>
+            <div id="allTopics"></div>
+        </div>
+
+        <!-- Gaps panel moved to shell -->
+
+        <!-- Training Panel -->
+        <div id="training" class="panel">
+            <div class="card">
+                <div class="section-title">Log Workout</div>
+                <div class="workout-type-selector" id="workoutTypeSelector">
+                    <button class="workout-type-btn active" data-type="strength-a" onclick="selectWorkoutType(this)">Strength A</button>
+                    <button class="workout-type-btn" data-type="strength-b" onclick="selectWorkoutType(this)">Strength B</button>
+                    <button class="workout-type-btn" data-type="conditioning" onclick="selectWorkoutType(this)">Conditioning</button>
+                    <button class="workout-type-btn" data-type="mma" onclick="selectWorkoutType(this)">MMA</button>
+                    <button class="workout-type-btn" data-type="bjj" onclick="selectWorkoutType(this)">BJJ</button>
+                    <button class="workout-type-btn" data-type="recovery" onclick="selectWorkoutType(this)">Recovery</button>
+                </div>
+
+                <div class="exercise-form">
+                    <input type="text" id="exerciseName" class="name-input" placeholder="Exercise name">
+                    <input type="number" id="exerciseSets" class="small-input" placeholder="Sets">
+                    <input type="text" id="exerciseReps" class="small-input" placeholder="Reps">
+                    <input type="text" id="exerciseWeight" class="small-input" placeholder="Weight">
+                    <input type="number" id="exerciseRpe" class="small-input" placeholder="RPE" min="1" max="10">
+                    <button class="add-btn" onclick="addExercise()">+ Add</button>
+                </div>
+
+                <div class="exercise-list" id="currentExerciseList"></div>
+
+                <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                    <input type="number" id="workoutRpe" placeholder="Overall RPE" style="flex:1; padding: 0.5rem; background: var(--bg); border: 1px solid var(--border); border-radius: 0.5rem; color: var(--text);">
+                    <input type="text" id="workoutNotes" placeholder="Notes" style="flex:2; padding: 0.5rem; background: var(--bg); border: 1px solid var(--border); border-radius: 0.5rem; color: var(--text);">
+                    <button class="add-btn" onclick="saveWorkout()">Save Workout</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="section-title">Rest Timer</div>
+                <div class="rest-timer">
+                    <div class="time" id="restTimerDisplay">0:00</div>
+                    <div class="controls">
+                        <button onclick="setRestTimer(60)">1:00</button>
+                        <button onclick="setRestTimer(90)">1:30</button>
+                        <button onclick="setRestTimer(120)">2:00</button>
+                        <button onclick="setRestTimer(180)">3:00</button>
+                        <button onclick="stopRestTimer()">Stop</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="section-title">Recent Workouts</div>
+                <div id="recentWorkouts"></div>
+            </div>
+        </div>
+
+        <!-- Recovery Panel -->
+        <div id="recovery" class="panel">
+            <div class="card">
+                <div class="section-title">Readiness Score</div>
+                <div class="readiness-score" id="readinessDisplay">
+                    <div class="score">--</div>
+                    <div class="status">Log recovery to see readiness</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="section-title">Daily Check-In</div>
+                <div class="recovery-grid">
+                    <div class="recovery-item">
+                        <label>Sleep Hours</label>
+                        <input type="number" id="recoverySleepHours" min="0" max="24" step="0.5" style="padding: 0.5rem; background: var(--bg); border: 1px solid var(--border); border-radius: 0.5rem; color: var(--text);">
+                    </div>
+                    <div class="recovery-item">
+                        <label>Sleep Quality (1-10)</label>
+                        <input type="range" id="recoverySleepQuality" min="1" max="10" value="5">
+                        <div class="value-display" id="sleepQualityVal">5</div>
+                    </div>
+                    <div class="recovery-item">
+                        <label>Soreness (1-10)</label>
+                        <input type="range" id="recoverySoreness" min="1" max="10" value="5">
+                        <div class="value-display" id="sorenessVal">5</div>
+                    </div>
+                    <div class="recovery-item">
+                        <label>Energy (1-10)</label>
+                        <input type="range" id="recoveryEnergy" min="1" max="10" value="5">
+                        <div class="value-display" id="energyVal">5</div>
+                    </div>
+                    <div class="recovery-item">
+                        <label>Stress (1-10)</label>
+                        <input type="range" id="recoveryStress" min="1" max="10" value="5">
+                        <div class="value-display" id="stressVal">5</div>
+                    </div>
+                    <div class="recovery-item">
+                        <label>Motivation (1-10)</label>
+                        <input type="range" id="recoveryMotivation" min="1" max="10" value="5">
+                        <div class="value-display" id="motivationVal">5</div>
+                    </div>
+                </div>
+                <input type="text" id="recoveryNotes" placeholder="Notes (optional)" style="width: 100%; padding: 0.5rem; background: var(--bg); border: 1px solid var(--border); border-radius: 0.5rem; color: var(--text); margin-bottom: 1rem;">
+                <button class="add-btn" style="width: 100%;" onclick="saveRecovery()">Log Recovery</button>
+            </div>
+
+            <div class="card">
+                <div class="section-title">7-Day History</div>
+                <div id="recoveryHistory"></div>
+            </div>
+        </div>
+
+        <!-- Nutrition Panel -->
+        <div id="nutrition" class="panel">
+            <div class="card">
+                <div class="section-title">Today's Macros</div>
+                <div class="macro-rings" id="macroRings">
+                    <div class="macro-ring calories">
+                        <svg viewBox="0 0 36 36">
+                            <circle class="bg-ring" cx="18" cy="18" r="15.9"/>
+                            <circle class="progress-ring" cx="18" cy="18" r="15.9" stroke-dasharray="100" stroke-dashoffset="100" id="caloriesRing"/>
+                        </svg>
+                        <div class="value" id="caloriesValue">0</div>
+                        <div class="label">Calories</div>
+                    </div>
+                    <div class="macro-ring protein">
+                        <svg viewBox="0 0 36 36">
+                            <circle class="bg-ring" cx="18" cy="18" r="15.9"/>
+                            <circle class="progress-ring" cx="18" cy="18" r="15.9" stroke-dasharray="100" stroke-dashoffset="100" id="proteinRing"/>
+                        </svg>
+                        <div class="value" id="proteinValue">0g</div>
+                        <div class="label">Protein</div>
+                    </div>
+                    <div class="macro-ring carbs">
+                        <svg viewBox="0 0 36 36">
+                            <circle class="bg-ring" cx="18" cy="18" r="15.9"/>
+                            <circle class="progress-ring" cx="18" cy="18" r="15.9" stroke-dasharray="100" stroke-dashoffset="100" id="carbsRing"/>
+                        </svg>
+                        <div class="value" id="carbsValue">0g</div>
+                        <div class="label">Carbs</div>
+                    </div>
+                    <div class="macro-ring fat">
+                        <svg viewBox="0 0 36 36">
+                            <circle class="bg-ring" cx="18" cy="18" r="15.9"/>
+                            <circle class="progress-ring" cx="18" cy="18" r="15.9" stroke-dasharray="100" stroke-dashoffset="100" id="fatRing"/>
+                        </svg>
+                        <div class="value" id="fatValue">0g</div>
+                        <div class="label">Fat</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="section-title">Log Meal</div>
+                <div class="meal-form">
+                    <div class="field">
+                        <label>Meal Name</label>
+                        <input type="text" id="mealName" placeholder="e.g. Breakfast">
+                    </div>
+                    <div class="field">
+                        <label>Calories</label>
+                        <input type="number" id="mealCalories" placeholder="kcal">
+                    </div>
+                    <div class="field">
+                        <label>Protein</label>
+                        <input type="number" id="mealProtein" placeholder="g">
+                    </div>
+                    <div class="field">
+                        <label>Carbs</label>
+                        <input type="number" id="mealCarbs" placeholder="g">
+                    </div>
+                    <div class="field">
+                        <label>Fat</label>
+                        <input type="number" id="mealFat" placeholder="g">
+                    </div>
+                    <button class="add-btn" onclick="logMeal()">+ Add</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="section-title">Today's Meals</div>
+                <div class="meal-list" id="todayMeals"></div>
+            </div>
+        </div>
+
+        <!-- Recipes Panel -->
+        <div id="recipes" class="panel">
+            <div class="card">
+                <div class="section-title">SetApart Recipes</div>
+                <p style="color: var(--text-dim); font-size: 0.85rem; margin-bottom: 1rem;">Biblically clean whole-food recipes (Leviticus 11 compliant)</p>
+
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem; align-items: center;">
+                    <div id="recipeFilterBox" class="rf-box" onclick="document.getElementById('recipeSearch').focus()">
+                        <div id="recipeFilterTags" class="rf-tags"></div>
+                        <input type="text" id="recipeSearch" class="rf-input" placeholder="Search or filter..." autocomplete="off">
+                        <div id="recipeFilterDropdown" class="rf-dropdown"></div>
+                    </div>
+                    <select id="recipeSort" onchange="filterRecipes()" style="padding: 0.5rem; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; color: var(--text);">
+                        <option value="az">A-Z</option>
+                        <option value="za">Z-A</option>
+                        <option value="time">Cook Time</option>
+                        <option value="calories">Calories</option>
+                        <option value="protein">Protein</option>
+                        <option value="recent">Recently Cooked</option>
+                        <option value="most">Most Cooked</option>
+                    </select>
+                </div>
+                <div class="recipe-quick-filters">
+                    <button id="recipeFilterAll" class="active" onclick="setRecipeQuickFilter('all')">All</button>
+                    <button id="recipeFilterFavs" onclick="setRecipeQuickFilter('favorites')">Favorites</button>
+                    <button id="recipeFilterRecent" onclick="setRecipeQuickFilter('recent')">Recently Cooked</button>
+                    <button id="recipeFilterNever" onclick="setRecipeQuickFilter('never')">Never Cooked</button>
+                    <span id="recipeAutoFilterBadge" class="recipe-auto-filter-badge" style="display:none;">
+                        <span id="recipeAutoFilterLabel"></span>
+                        <button onclick="clearAutoFilter()" title="Clear auto-filter">&times;</button>
+                    </span>
+                </div>
+                <div id="recipeCount" style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 0.5rem;"></div>
+            </div>
+
+            <div id="recipeGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem;"></div>
+        </div>
+
+        <!-- Recipe Detail Modal -->
+        <div class="modal" id="recipeModal" role="dialog" aria-modal="true" onclick="if(event.target===this)closeRecipeModal()">
+            <div class="modal-content" style="max-width: 700px;">
+                <div class="modal-header">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <button class="fav-heart" id="recipeModalFavHeart" onclick="toggleRecipeFavorite()" title="Toggle favorite">&#9825;</button>
+                        <span id="recipeModalTitle">Recipe</span>
+                    </div>
+                    <button class="close-btn" onclick="closeRecipeModal()" aria-label="Close">&times;</button>
+                </div>
+                <div id="recipeModalContent" style="padding: 1rem;"></div>
+                <div id="recipeLogSection" style="padding: 1rem; border-top: 1px solid var(--border);">
+                    <div style="display: flex; gap: 0.5rem; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <label style="font-size: 0.85rem; color: var(--text-dim);">Servings:</label>
+                            <input type="number" id="logServings" value="1" min="0.5" step="0.5" style="width: 60px; padding: 0.4rem; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; color: var(--text); text-align: center;">
+                        </div>
+                        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <button onclick="logRecipeAsMeal()" style="padding: 0.5rem 1rem; background: var(--accent); color: white; border: none; border-radius: 6px; cursor: pointer; display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem;">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+                                I Ate This
+                            </button>
+                            <button onclick="addRecipeToGrocery()" style="padding: 0.5rem 1rem; background: #8b5cf6; color: white; border: none; border-radius: 6px; cursor: pointer; display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem;" title="Add ingredients to grocery list">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                                Grocery
+                            </button>
+                            <button onclick="startCookingMode()" style="padding: 0.5rem 1rem; background: #f59e0b; color: #1e293b; border: none; border-radius: 6px; cursor: pointer; display: flex; align-items: center; gap: 0.5rem; font-weight: 600; font-size: 0.85rem;">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/></svg>
+                                Start Cooking
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="recipeRequestSection" style="display: none; padding: 1rem; border-top: 1px solid var(--border);">
+                    <div style="display: flex; gap: 0.5rem; align-items: center;">
+                        <input type="text" id="requestNotes" placeholder="Add a note (optional)..." style="flex: 1; padding: 0.5rem; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; color: var(--text);">
+                        <input type="date" id="requestDate" style="padding: 0.5rem; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; color: var(--text);">
+                        <button onclick="requestRecipe()" style="padding: 0.5rem 1rem; background: var(--accent); color: white; border: none; border-radius: 6px; cursor: pointer; white-space: nowrap;">Request This</button>
+                    </div>
+                </div>
+                <!-- Add to Plan section -->
+                <div id="recipePlanSection" style="display: none; padding: 1rem; border-top: 1px solid var(--border);">
+                    <div style="font-weight: 500; margin-bottom: 0.5rem; color: var(--text);">Add to Meal Plan</div>
+                    <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+                        <input type="date" id="recipePlanDate" style="padding: 0.5rem; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; color: var(--text);">
+                        <select id="recipePlanMealType" style="padding: 0.5rem; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; color: var(--text);">
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="dinner" selected>Dinner</option>
+                            <option value="snack">Snack</option>
+                        </select>
+                        <button onclick="addRecipeToPlan()" style="padding: 0.5rem 1rem; background: #ec4899; color: white; border: none; border-radius: 6px; cursor: pointer; white-space: nowrap;">Add to Plan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cooking Mode Overlay -->
+        <div id="cookingMode" class="cooking-mode" style="display: none;">
+            <div class="cooking-header">
+                <h2 id="cookingTitle">Recipe</h2>
+                <div class="cooking-header-meta">
+                    <span id="cookingTimers"></span>
+                    <div class="cooking-servings">
+                        <label>Servings:</label>
+                        <input type="number" id="cookingServings" value="1" min="0.5" step="0.5" onchange="scaleCookingIngredients()">
+                    </div>
+                </div>
+                <div class="cooking-header-actions">
+                    <button onclick="printRecipe()">Print</button>
+                    <button onclick="exitCookingMode()">Exit</button>
+                </div>
+            </div>
+            <div class="cooking-body">
+                <div class="cooking-ingredients">
+                    <h3>Ingredients</h3>
+                    <div id="cookingIngredients"></div>
+                </div>
+                <div class="cooking-steps" id="cookingSteps"></div>
+            </div>
+            <div class="cooking-nav">
+                <button class="cooking-nav-prev" id="cookingPrevBtn" onclick="cookingPrevStep()">Previous</button>
+                <span class="cooking-step-counter" id="cookingStepCounter"></span>
+                <button class="cooking-nav-next" id="cookingNextBtn" onclick="cookingNextStep()">Next</button>
+            </div>
+        </div>
+
+        <!-- Workout Detail Modal -->
+        <div class="modal" id="workoutModal" role="dialog" aria-modal="true" onclick="if(event.target===this)closeWorkoutModal()">
+            <div class="modal-content" style="max-width: 600px;">
+                <div class="modal-header">
+                    <span id="workoutModalTitle">Workout Details</span>
+                    <button class="close-btn" onclick="closeWorkoutModal()" aria-label="Close">&times;</button>
+                </div>
+                <div id="workoutModalContent" style="padding: 1rem;"></div>
+            </div>
+        </div>
+
+        <!-- Weekly Training Detail Modal -->
+        <div class="modal" id="weeklyTrainingModal" role="dialog" aria-modal="true" onclick="if(event.target===this)closeWeeklyTrainingModal()">
+            <div class="modal-content" style="max-width: 800px; max-height: 90vh; overflow-y: auto;">
+                <div class="modal-header">
+                    <span>Weekly Training Schedule</span>
+                    <button class="close-btn" onclick="closeWeeklyTrainingModal()" aria-label="Close">&times;</button>
+                </div>
+                <div style="padding: 1rem;">
+                    <!-- Monday -->
+                    <div style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(59, 130, 246, 0.1); border-radius: 12px; border-left: 4px solid #3b82f6;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                            <h3 style="margin: 0; color: #3b82f6;">Monday - Strength A (Push/Pull)</h3>
+                            <span style="color: var(--text-dim);">45 min</span>
+                        </div>
+                        <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 0.5rem;">Upper body focus - build strength for striking and grappling</p>
+                        <div style="display: grid; gap: 0.5rem; font-size: 0.9rem;">
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px; display: flex; justify-content: space-between;"><span><strong>Pullups</strong></span><span style="color: var(--text-dim);">4 x max</span></div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px; display: flex; justify-content: space-between;"><span><strong>Ring Dips</strong></span><span style="color: var(--text-dim);">4 x 8-12</span></div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px; display: flex; justify-content: space-between;"><span><strong>Rows</strong> (ring or barbell)</span><span style="color: var(--text-dim);">4 x 8</span></div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px; display: flex; justify-content: space-between;"><span><strong>OHP or Push Press</strong></span><span style="color: var(--text-dim);">4 x 6</span></div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px; display: flex; justify-content: space-between;"><span><strong>Face Pulls</strong></span><span style="color: var(--text-dim);">3 x 15</span></div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px; display: flex; justify-content: space-between;"><span><strong>Farmers Carry</strong></span><span style="color: var(--text-dim);">3 x 40m</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Tuesday -->
+                    <div style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(239, 68, 68, 0.1); border-radius: 12px; border-left: 4px solid #ef4444;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                            <h3 style="margin: 0; color: #ef4444;">Tuesday - MMA Class</h3>
+                            <span style="color: var(--text-dim);">60-90 min (PM)</span>
+                        </div>
+                        <div style="padding: 0.75rem; background: rgba(234, 179, 8, 0.15); border-radius: 8px; margin-bottom: 0.75rem; border: 1px solid rgba(234, 179, 8, 0.3);">
+                            <strong style="color: var(--yellow);">Optional AM Session (WFH advantage)</strong>
+                            <div style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">
+                                20-30 min strength primer OR fasted cardio. Leaves 8+ hours recovery before class.
+                            </div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 0.5rem; font-size: 0.85rem;">
+                                <div style="padding: 0.4rem; background: rgba(0,0,0,0.2); border-radius: 4px;"><strong>Option A:</strong> Upper body pump (3x10 pushups, pullups, dips)</div>
+                                <div style="padding: 0.4rem; background: rgba(0,0,0,0.2); border-radius: 4px;"><strong>Option B:</strong> 20 min fasted shadow + mobility</div>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>PM:</strong> Class with the kids - striking, grappling, conditioning</p>
+                        <div style="display: grid; gap: 0.5rem; font-size: 0.9rem;">
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">• Follow class curriculum</div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">• Push intensity during sparring rounds</div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">• Work technique with the boys when possible</div>
+                        </div>
+                    </div>
+
+                    <!-- Wednesday -->
+                    <div style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(168, 85, 247, 0.1); border-radius: 12px; border-left: 4px solid #a855f7;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                            <h3 style="margin: 0; color: #a855f7;">Wednesday - Strength B (Legs/Core)</h3>
+                            <span style="color: var(--text-dim);">45 min</span>
+                        </div>
+                        <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 0.5rem;">Lower body power - explosiveness for takedowns and kicks. Mid-week between MMA sessions.</p>
+                        <div style="display: grid; gap: 0.5rem; font-size: 0.9rem;">
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px; display: flex; justify-content: space-between;"><span><strong>Goblet or Front Squat</strong></span><span style="color: var(--text-dim);">4 x 8</span></div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px; display: flex; justify-content: space-between;"><span><strong>Romanian Deadlift</strong></span><span style="color: var(--text-dim);">4 x 8</span></div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px; display: flex; justify-content: space-between;"><span><strong>Bulgarian Split Squat</strong></span><span style="color: var(--text-dim);">3 x 10/leg</span></div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px; display: flex; justify-content: space-between;"><span><strong>Hip Thrust</strong></span><span style="color: var(--text-dim);">3 x 12</span></div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px; display: flex; justify-content: space-between;"><span><strong>Hanging Leg Raise</strong></span><span style="color: var(--text-dim);">3 x 10</span></div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px; display: flex; justify-content: space-between;"><span><strong>Pallof Press</strong></span><span style="color: var(--text-dim);">3 x 10/side</span></div>
+                        </div>
+                        <div style="margin-top: 0.75rem; padding: 0.5rem; background: rgba(34, 197, 94, 0.15); border-radius: 6px; font-size: 0.85rem; color: var(--text-dim);">
+                            <strong style="color: #22c55e;">Finish with:</strong> 10-15 min mobility (hips, shoulders, thoracic) + foam rolling
+                        </div>
+                    </div>
+
+                    <!-- Thursday -->
+                    <div style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(239, 68, 68, 0.1); border-radius: 12px; border-left: 4px solid #ef4444;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                            <h3 style="margin: 0; color: #ef4444;">Thursday - MMA Class</h3>
+                            <span style="color: var(--text-dim);">60-90 min (PM)</span>
+                        </div>
+                        <div style="padding: 0.75rem; background: rgba(234, 179, 8, 0.15); border-radius: 8px; margin-bottom: 0.75rem; border: 1px solid rgba(234, 179, 8, 0.3);">
+                            <strong style="color: var(--yellow);">Optional AM Session</strong>
+                            <div style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">
+                                Best day for 2-a-day since you're recovered from Tuesday.
+                            </div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 0.5rem; font-size: 0.85rem;">
+                                <div style="padding: 0.4rem; background: rgba(0,0,0,0.2); border-radius: 4px;"><strong>Option A:</strong> 20-30 min conditioning (intervals, shadow rounds)</div>
+                                <div style="padding: 0.4rem; background: rgba(0,0,0,0.2); border-radius: 4px;"><strong>Option B:</strong> Lower body primer (goblet squats, lunges, hip work)</div>
+                            </div>
+                        </div>
+                        <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 0.5rem;"><strong>PM:</strong> Second class of the week - push hard</p>
+                        <div style="display: grid; gap: 0.5rem; font-size: 0.9rem;">
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">• Focus on cardio - don't hold back in conditioning</div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">• Apply techniques learned Tuesday</div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">• This is your main cardio session for the week</div>
+                        </div>
+                    </div>
+
+                    <!-- Friday -->
+                    <div style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(34, 197, 94, 0.1); border-radius: 12px; border-left: 4px solid #22c55e;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                            <h3 style="margin: 0; color: #22c55e;">Friday - Rest / Recovery</h3>
+                            <span style="color: var(--text-dim);">Recovery</span>
+                        </div>
+                        <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 0.5rem;">Full rest after Thursday MMA. Let the nervous system reset before Saturday class.</p>
+                        <div style="display: grid; gap: 0.5rem; font-size: 0.9rem;">
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">• Light walking, stretching, foam rolling only</div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">• Mobility work if feeling stiff (hips, shoulders, thoracic)</div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">• Prioritize sleep - early to bed, prep for Saturday AM</div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">• Nutrition: quality fuel, hydration, don't skimp on protein</div>
+                        </div>
+                    </div>
+
+                    <!-- Saturday -->
+                    <div style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(239, 68, 68, 0.1); border-radius: 12px; border-left: 4px solid #ef4444;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                            <h3 style="margin: 0; color: #ef4444;">Saturday - MMA Class (AM) + Rest</h3>
+                            <span style="color: var(--text-dim);">60-90 min (AM)</span>
+                        </div>
+                        <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 0.5rem;">Third MMA session of the week. Class in the morning, then shut it down.</p>
+                        <div style="display: grid; gap: 0.5rem; font-size: 0.9rem;">
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">• Follow class curriculum - striking, grappling, conditioning</div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">• Push intensity - this is your third session, body is primed</div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">• Work with the boys when possible</div>
+                        </div>
+                        <div style="margin-top: 0.75rem; padding: 0.75rem; background: rgba(34, 197, 94, 0.15); border-radius: 8px; border: 1px solid rgba(34, 197, 94, 0.3);">
+                            <strong style="color: #22c55e;">After class: Full recovery mode</strong>
+                            <div style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">
+                                Rest of Saturday is off. Good meal, hydrate, family time. No training. Let the week's work settle.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sunday -->
+                    <div style="padding: 1rem; background: rgba(234, 179, 8, 0.1); border-radius: 12px; border-left: 4px solid #eab308;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                            <h3 style="margin: 0; color: #eab308;">Sunday - Conditioning / Skill Work</h3>
+                            <span style="color: var(--text-dim);">45-60 min</span>
+                        </div>
+                        <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 0.75rem;">Saturday afternoon recovery in the bank. Choose based on what the body needs.</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; font-size: 0.9rem;">
+                            <div>
+                                <div style="padding: 0.5rem; background: rgba(239, 68, 68, 0.2); border-radius: 6px; margin-bottom: 0.5rem;"><strong>Option A: Conditioning</strong></div>
+                                <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px; margin-bottom: 0.25rem;">&#8226; 5-round MMA circuit</div>
+                                <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px; margin-bottom: 0.25rem;">&#8226; Shadow + rings + sprawls</div>
+                                <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">&#8226; Push cardio ceiling</div>
+                            </div>
+                            <div>
+                                <div style="padding: 0.5rem; background: rgba(168, 85, 247, 0.2); border-radius: 6px; margin-bottom: 0.5rem;"><strong>Option B: Skill Work</strong></div>
+                                <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px; margin-bottom: 0.25rem;">&#8226; Technical shadowboxing</div>
+                                <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px; margin-bottom: 0.25rem;">&#8226; BJJ solo drills</div>
+                                <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">&#8226; Movement flow + mobility</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deload note -->
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(234, 179, 8, 0.1); border-radius: 8px; border: 1px solid rgba(234, 179, 8, 0.3);">
+                        <strong style="color: var(--yellow);">Every 4th Week - Deload</strong>
+                        <p style="color: var(--text-dim); font-size: 0.9rem; margin: 0.5rem 0 0 0;">Cut volume by 50%. Same exercises, fewer sets. Focus on technique and recovery. This is when your body actually adapts and gets stronger.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Breathing Protocol Detail Modal -->
+        <div class="modal" id="breathingProtocolModal" role="dialog" aria-modal="true" onclick="if(event.target===this)closeBreathingProtocolModal()">
+            <div class="modal-content" style="max-width: 800px; max-height: 90vh; overflow-y: auto;">
+                <div class="modal-header">
+                    <span>Breathing Protocol Details</span>
+                    <button class="close-btn" onclick="closeBreathingProtocolModal()" aria-label="Close">&times;</button>
+                </div>
+                <div style="padding: 1rem;">
+
+                    <!-- Morning Boot Sequence -->
+                    <div style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(234, 179, 8, 0.1); border-radius: 12px; border-left: 4px solid #eab308;">
+                        <h3 style="margin: 0 0 0.75rem 0; color: var(--yellow);">Morning Boot Sequence (6-7 AM)</h3>
+                        <div style="display: grid; gap: 0.5rem; font-size: 0.9rem;">
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                                <strong>1. Cyclic Sighing</strong> - 5 min
+                                <div style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">Double inhale through nose (fill lungs, then top off), long slow exhale through mouth. Activates parasympathetic dominance. Proven to lower cortisol more effectively than box breathing or meditation (Huberman/Stanford 2023).</div>
+                            </div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                                <strong>2. Resonance Breathing</strong> - 5 min
+                                <div style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">5.5 sec inhale, 5.5 sec exhale through nose. ~5.5 breaths/min. Maximizes HRV by syncing respiratory and cardiac cycles. This is your daily vagal tone calibration.</div>
+                            </div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                                <strong>3. Cold Face Splash</strong>
+                                <div style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">Cold water on face activates the diving reflex - instant vagal brake. Pairs with breathing to lock in parasympathetic tone.</div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 0.75rem; padding: 0.5rem; background: rgba(234, 179, 8, 0.15); border-radius: 6px; font-size: 0.85rem; color: var(--text-dim);">
+                        </div>
+                    </div>
+
+                    <!-- Desk Protocol -->
+                    <div style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(59, 130, 246, 0.1); border-radius: 12px; border-left: 4px solid #3b82f6;">
+                        <h3 style="margin: 0 0 0.75rem 0; color: #3b82f6;">Desk Protocol (Work Hours)</h3>
+                        <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 0.75rem;">Default mode during coding. Nasal breathing is non-negotiable.</p>
+                        <div style="display: grid; gap: 0.5rem; font-size: 0.9rem;">
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                                <strong>Default: Nasal Only</strong>
+                                <div style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">Mouth closed, tongue on palate. Produces nitric oxide (vasodilator), filters air, maintains CO2 tolerance. If you catch yourself mouth breathing, you're either too stressed or the room is too warm.</div>
+                            </div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                                <strong>Pre-Focus Block: 2 min Resonance</strong>
+                                <div style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">Before starting a deep work block, 10-12 breaths at 5.5/5.5. Shifts brain into alpha-dominant state. Better than caffeine for sustained attention.</div>
+                            </div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                                <strong>Ultradian Break (every 90 min): 10 Resonance Breaths + Movement Snack</strong>
+                                <div style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">90-min ultradian rhythm is real. Performance drops after 90 min regardless of caffeine. 10 breaths + standing reset = full cognitive refresh.</div>
+                            </div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                                <strong>Frustration/Stuck: Mouth Breathing Check</strong>
+                                <div style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">When stuck on a bug, first check: are you mouth breathing? If yes, close mouth, take 10 slow nasal breaths at 4/7 cadence. Right-shifts the dissociation curve, increases brain O2 delivery. Insight usually arrives at minute 2-3.</div>
+                            </div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                                <strong>Energy Dip: Extended Exhale 3 min</strong>
+                                <div style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">4 sec inhale, 8 sec exhale nasal. Parasympathetic reset without drowsiness. Better than a second coffee at 2 PM.</div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 0.75rem; padding: 0.5rem; background: rgba(59, 130, 246, 0.15); border-radius: 6px; font-size: 0.85rem; color: var(--text-dim);">
+                            <strong style="color: #3b82f6;">Bohr Effect in practice:</strong> Higher CO2 tolerance from nasal breathing → hemoglobin releases O2 more efficiently to tissues → your brain gets more oxygen during coding sessions. Mouth breathing dumps CO2 and paradoxically reduces brain oxygenation.
+                        </div>
+                    </div>
+
+                    <!-- Post-Training Protocol -->
+                    <div style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(239, 68, 68, 0.1); border-radius: 12px; border-left: 4px solid #ef4444;">
+                        <h3 style="margin: 0 0 0.75rem 0; color: #ef4444;">Post-Training Protocol</h3>
+                        <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 0.75rem;">Shift from fight-or-flight back to recovery as fast as possible. The faster you downregulate, the faster you recover.</p>
+                        <div style="display: grid; gap: 0.5rem; font-size: 0.9rem;">
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                                <strong>Immediately post-training: Cyclic Sighing 3-5 min</strong>
+                                <div style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">Double inhale + long exhale. Fastest known method to shift from sympathetic to parasympathetic. Do this before you even leave the gym.</div>
+                            </div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                                <strong>Drive home: Nasal only</strong>
+                                <div style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">Resist the urge to mouth breathe after hard training. Keeps CO2 levels elevated, continues recovery signaling.</div>
+                            </div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                                <strong>At home: Extended Exhale 5 min</strong>
+                                <div style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">4 sec in, 8 sec out. Deep parasympathetic lock. Pair with light stretching or foam rolling.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pre-Sleep Protocol -->
+                    <div style="padding: 1rem; background: rgba(34, 197, 94, 0.1); border-radius: 12px; border-left: 4px solid #22c55e;">
+                        <h3 style="margin: 0 0 0.75rem 0; color: #22c55e;">Pre-Sleep Protocol</h3>
+                        <p style="color: var(--text-dim); font-size: 0.9rem; margin-bottom: 0.75rem;">Bridge from waking to sleep. Goal: arrive at bed already parasympathetic-dominant.</p>
+                        <div style="display: grid; gap: 0.5rem; font-size: 0.9rem;">
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                                <strong>8:30 PM: Extended Exhale 5 min</strong>
+                                <div style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">4 sec in, 8 sec out nasal. This is your shutdown signal. Same time every night - the consistency matters as much as the breathing itself.</div>
+                            </div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                                <strong>Bed: Mouth tape</strong>
+                                <div style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">Forces nasal breathing during sleep. Maintains CO2, produces NO, prevents dry mouth/snoring. </div>
+                            </div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                                <strong>Position: Left side preferred</strong>
+                                <div style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">Stomach anatomy positions the gastric inlet above gastric acid when lying on the left. Combined with mouth tape = best overnight </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Protocol Quick Reference -->
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(234, 179, 8, 0.1); border-radius: 8px; border: 1px solid rgba(234, 179, 8, 0.3);">
+                        <strong style="color: var(--yellow);">Quick Reference - Breathing Cadences</strong>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 0.75rem; font-size: 0.85rem;">
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                                <strong style="color: #3b82f6;">Resonance:</strong> <span style="color: var(--text-dim);">5.5 in / 5.5 out (nasal)</span>
+                            </div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                                <strong style="color: #ef4444;">Cyclic Sighing:</strong> <span style="color: var(--text-dim);">double inhale / long exhale (mouth)</span>
+                            </div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                                <strong style="color: #22c55e;">Extended Exhale:</strong> <span style="color: var(--text-dim);">4 in / 8 out (nasal)</span>
+                            </div>
+                            <div style="padding: 0.5rem; background: rgba(0,0,0,0.2); border-radius: 6px;">
+                                <strong style="color: #a855f7;">Stuck/Focus:</strong> <span style="color: var(--text-dim);">4 in / 7 out (nasal)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Meal Planner Panel -->
+        <div id="mealplanner" class="panel">
+            <div class="card">
+                <div class="section-title">Family Meal Planner</div>
+                <p style="color: var(--text-dim); font-size: 0.85rem; margin-bottom: 1rem;">Plan meals and manage family recipe requests</p>
+
+                <!-- Pending Requests ( only) -->
+                <div id="pendingRequestsSection" style="margin-bottom: 1.5rem;">
+                    <h4 style="color: var(--text); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <span style="background: var(--accent); color: white; padding: 0.2rem 0.5rem; border-radius: 10px; font-size: 0.75rem;" id="pendingCount">0</span>
+                        Pending Requests
+                    </h4>
+                    <div id="pendingRequests" style="display: flex; flex-direction: column; gap: 0.5rem;"></div>
+                </div>
+
+                <!-- View Toggle -->
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
+                    <h4 style="color: var(--text); margin: 0;">Meal Plan</h4>
+                    <div class="mp-view-toggle">
+                        <button class="mp-view-btn active" onclick="switchMealPlanView('week')">Week</button>
+                        <button class="mp-view-btn" onclick="switchMealPlanView('month')">Month</button>
+                    </div>
+                </div>
+
+                <!-- Week View -->
+                <div id="weekPlanView">
+                    <div id="weekPlanGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.75rem; margin-bottom: 1rem;"></div>
+                </div>
+
+                <!-- Month View -->
+                <div id="monthPlanView" style="display: none; margin-bottom: 1rem;">
+                    <div class="mp-cal-nav">
+                        <button onclick="navMealPlanMonth(-1)">&larr;</button>
+                        <span class="mp-cal-label" id="mpMonthLabel"></span>
+                        <button onclick="navMealPlanMonth(1)">&rarr;</button>
+                    </div>
+                    <div class="mp-cal-grid" id="mpDayHeaders"></div>
+                    <div class="mp-cal-grid" id="monthPlanGrid"></div>
+                </div>
+
+                <!-- Add Meal Plan ( only) -->
+                <div id="addMealPlanSection" style="background: var(--bg); padding: 1rem; border-radius: 8px; margin-top: 1rem;">
+                    <h4 style="color: var(--text); margin-bottom: 0.75rem;">Add to Plan</h4>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                        <input type="date" id="planDate" style="padding: 0.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 6px; color: var(--text);">
+                        <select id="planMealType" style="padding: 0.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 6px; color: var(--text);">
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="dinner" selected>Dinner</option>
+                            <option value="snack">Snack</option>
+                        </select>
+                        <input type="text" id="planRecipeName" placeholder="Recipe name..." style="flex: 1; min-width: 150px; padding: 0.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 6px; color: var(--text);">
+                        <button onclick="addMealPlan()" style="padding: 0.5rem 1rem; background: var(--accent); color: white; border: none; border-radius: 6px; cursor: pointer;">Add</button>
+                    </div>
+                </div>
+
+                <!-- Pre-made Meal Plans ( only) -->
+                <div id="premadePlansSection" style="margin-top: 1.5rem;">
+                    <h4 style="color: var(--text); margin-bottom: 0.75rem;">Quick-Add Meal Plans</h4>
+                    <div style="display: grid; gap: 1rem;">
+                        <!-- High Protein Week -->
+                        <div style="padding: 1rem; background: rgba(59, 130, 246, 0.1); border-radius: 8px; border: 1px solid rgba(59, 130, 246, 0.2);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                                <div>
+                                    <strong style="color: #3b82f6;">High Protein Week</strong>
+                                    <div style="font-size: 0.8rem; color: var(--text-dim);">Focus on muscle-building meals</div>
+                                </div>
+                                <button onclick="applyMealPlan('high-protein')" style="padding: 0.4rem 0.75rem; background: #3b82f6; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">Apply Week</button>
+                            </div>
+                            <div style="font-size: 0.8rem; color: var(--text-dim); display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.25rem;">
+                                <span>Mon: Chicken Thigh Feast</span>
+                                <span>Tue: Beef Stir-Fry</span>
+                                <span>Wed: Garlic Butter Salmon</span>
+                                <span>Thu: Turkey Meatballs</span>
+                                <span>Fri: Steak Chimichurri</span>
+                                <span>Sat: Chicken Shawarma</span>
+                                <span>Sun: Beef Short Ribs</span>
+                            </div>
+                        </div>
+
+                        <!-- Easy Weeknight -->
+                        <div style="padding: 1rem; background: rgba(34, 197, 94, 0.1); border-radius: 8px; border: 1px solid rgba(34, 197, 94, 0.2);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                                <div>
+                                    <strong style="color: #22c55e;">Easy Weeknight</strong>
+                                    <div style="font-size: 0.8rem; color: var(--text-dim);">Quick one-pot meals</div>
+                                </div>
+                                <button onclick="applyMealPlan('easy-weeknight')" style="padding: 0.4rem 0.75rem; background: #22c55e; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">Apply Week</button>
+                            </div>
+                            <div style="font-size: 0.8rem; color: var(--text-dim); display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.25rem;">
+                                <span>Mon: Lemon Chicken Rice</span>
+                                <span>Tue: Teriyaki Beef</span>
+                                <span>Wed: Zoodle Bolognese</span>
+                                <span>Thu: Thai Basil Chicken</span>
+                                <span>Fri: Cajun Chicken Rice</span>
+                                <span>Sat: Bison Burgers</span>
+                                <span>Sun: Chicken Soup</span>
+                            </div>
+                        </div>
+
+                        <!-- Homestead Harvest -->
+                        <div style="padding: 1rem; background: rgba(234, 179, 8, 0.1); border-radius: 8px; border: 1px solid rgba(234, 179, 8, 0.2);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                                <div>
+                                    <strong style="color: #eab308;">Homestead Harvest</strong>
+                                    <div style="font-size: 0.8rem; color: var(--text-dim);">Hearty from-scratch meals</div>
+                                </div>
+                                <button onclick="applyMealPlan('homestead')" style="padding: 0.4rem 0.75rem; background: #eab308; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">Apply Week</button>
+                            </div>
+                            <div style="font-size: 0.8rem; color: var(--text-dim); display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.25rem;">
+                                <span>Mon: Roasted Chicken</span>
+                                <span>Tue: Turkey Chili</span>
+                                <span>Wed: Whole Chicken</span>
+                                <span>Thu: Shepherd's Pie</span>
+                                <span>Fri: Baked Cod</span>
+                                <span>Sat: Braised Lamb</span>
+                                <span>Sun: Lamb Leg Roast</span>
+                            </div>
+                        </div>
+
+                        <!-- Kid-Friendly -->
+                        <div style="padding: 1rem; background: rgba(168, 85, 247, 0.1); border-radius: 8px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                                <div>
+                                    <strong style="color: #a855f7;">Kid-Approved</strong>
+                                    <div style="font-size: 0.8rem; color: var(--text-dim);">Meals the whole family loves</div>
+                                </div>
+                                <button onclick="applyMealPlan('kid-friendly')" style="padding: 0.4rem 0.75rem; background: #a855f7; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">Apply Week</button>
+                            </div>
+                            <div style="font-size: 0.8rem; color: var(--text-dim); display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.25rem;">
+                                <span>Mon: Chicken Rice Bowl</span>
+                                <span>Tue: Orange Chicken</span>
+                                <span>Wed: Turkey Meatballs</span>
+                                <span>Thu: Tomato Soup</span>
+                                <span>Fri: Stuffed Peppers</span>
+                                <span>Sat: Hawaiian Chicken</span>
+                                <span>Sun: Banana Pancakes</span>
+                            </div>
+                        </div>
+
+                        <!-- Meal Prep Week -->
+                        <div style="padding: 1rem; background: rgba(236, 72, 153, 0.1); border-radius: 8px; border: 1px solid rgba(236, 72, 153, 0.2);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+                                <div>
+                                    <strong style="color: #ec4899;">Meal Prep Power</strong>
+                                    <div style="font-size: 0.8rem; color: var(--text-dim);">Batch-friendly recipes</div>
+                                </div>
+                                <button onclick="applyMealPlan('meal-prep')" style="padding: 0.4rem 0.75rem; background: #ec4899; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 0.85rem;">Apply Week</button>
+                            </div>
+                            <div style="font-size: 0.8rem; color: var(--text-dim); display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.25rem;">
+                                <span>Mon: Chicken Rice Bowl</span>
+                                <span>Tue: Chicken Salad</span>
+                                <span>Wed: Lamb Kofta Wraps</span>
+                                <span>Thu: Ginger Beef Rice</span>
+                                <span>Fri: Beef Stir-Fry</span>
+                                <span>Sat: Double Chicken</span>
+                                <span>Sun: Coconut Curry</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grocery List -->
+            <div class="card">
+                <div class="section-title" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+                    <span>🛒 Grocery List</span>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <button onclick="generateGroceryList()" style="font-size: 0.75rem; padding: 0.3rem 0.6rem; background: var(--accent); border: none; border-radius: 6px; color: white; cursor: pointer;">Generate from Meal Plan</button>
+                        <button onclick="clearCheckedGroceries()" style="font-size: 0.75rem; padding: 0.3rem 0.6rem; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; color: var(--text-dim); cursor: pointer;">Clear Checked</button>
+                        <button onclick="clearAllGroceries()" style="font-size: 0.75rem; padding: 0.3rem 0.6rem; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; color: var(--red, #ef4444); cursor: pointer;">Clear All</button>
+                    </div>
+                </div>
+
+                <!-- Grocery List Items -->
+                <div id="groceryListItems" style="display: grid; gap: 0.5rem;"></div>
+
+                <!-- Empty State -->
+                <div id="groceryEmptyState" style="text-align: center; padding: 2rem; color: var(--text-dim);">
+                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🛒</div>
+                    <div>Grocery list is empty</div>
+                    <div style="font-size: 0.85rem; margin-bottom: 1rem;">Click "Generate from Meal Plan" to auto-build your list</div>
+                </div>
+
+                <!-- Manual Add (collapsed by default) -->
+                <details style="margin-top: 1rem;">
+                    <summary style="cursor: pointer; color: var(--text-dim); font-size: 0.85rem;">+ Add item manually</summary>
+                    <div style="display: flex; gap: 0.5rem; margin-top: 0.75rem; flex-wrap: wrap;">
+                        <input type="text" id="groceryItem" placeholder="Item name..." style="flex: 2; min-width: 120px; padding: 0.5rem; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; color: var(--text);">
+                        <input type="text" id="groceryQty" placeholder="Qty" style="width: 60px; padding: 0.5rem; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; color: var(--text);">
+                        <select id="groceryCategory" style="padding: 0.5rem; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; color: var(--text);">
+                            <option value="produce">🥬 Produce</option>
+                            <option value="meat">🥩 Meat</option>
+                            <option value="dairy">🧈 Dairy</option>
+                            <option value="pantry">🥫 Pantry</option>
+                            <option value="frozen">🧊 Frozen</option>
+                            <option value="bakery">🍞 Bakery</option>
+                            <option value="other" selected>📦 Other</option>
+                        </select>
+                        <button onclick="addGroceryItem()" style="padding: 0.5rem 1rem; background: var(--accent); color: white; border: none; border-radius: 6px; cursor: pointer;">Add</button>
+                    </div>
+                </details>
+            </div>
+
+            <!-- My Requests (for non-) / Request History (for ) -->
+            <div class="card">
+                <div class="section-title" id="requestHistoryTitle">Request History</div>
+                <div id="requestHistory" style="display: flex; flex-direction: column; gap: 0.5rem;"></div>
+            </div>
+        </div>
+
+        <!-- Meal Suggestion Sidebar -->
+        <div id="mealSidebarBackdrop" class="meal-sidebar-backdrop" onclick="closeMealSidebar()"></div>
+        <div id="mealSidebar" class="meal-sidebar">
+            <div class="meal-sidebar-header">
+                <div>
+                    <div class="sidebar-title" id="mealSidebarTitle">Add Meal</div>
+                    <div class="sidebar-date" id="mealSidebarDate"></div>
+                </div>
+                <button class="sidebar-close" onclick="closeMealSidebar()">&times;</button>
+            </div>
+            <div class="meal-sidebar-filters" id="mealSidebarFilters">
+                <button class="meal-type-btn active" onclick="filterSidebarMealType('all')">All</button>
+                <button class="meal-type-btn" onclick="filterSidebarMealType('breakfast')">Breakfast</button>
+                <button class="meal-type-btn" onclick="filterSidebarMealType('lunch')">Lunch</button>
+                <button class="meal-type-btn" onclick="filterSidebarMealType('dinner')">Dinner</button>
+                <button class="meal-type-btn" onclick="filterSidebarMealType('snack')">Snack</button>
+            </div>
+            <div class="meal-sidebar-body" id="mealSidebarBody"></div>
+        </div>
+
+        <!-- Progress Panel -->
+        <div id="progress" class="panel">
+            <div class="card">
+                <div class="section-title">Streaks</div>
+                <div class="streaks-row">
+                    <div class="streak-item">
+                        <div class="value" id="workoutStreak">0</div>
+                        <div class="label">Workout Days</div>
+                    </div>
+                    <div class="streak-item">
+                        <div class="value" id="recoveryStreak">0</div>
+                        <div class="label">Recovery Logs</div>
+                    </div>
+                    <div class="streak-item">
+                        <div class="value" id="nutritionStreak">0</div>
+                        <div class="label">Nutrition Days</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="section-title">Volume Load (30 Days)</div>
+                <div class="mini-chart" id="volumeChart"></div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-dim); margin-top: 0.5rem;">
+                    <span>Total Sets: <span id="totalSetsValue">0</span></span>
+                    <span>Avg/Week: <span id="avgSetsValue">0</span></span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="section-title">Personal Records</div>
+                <div id="prList"></div>
+            </div>
+
+            <div class="card">
+                <div class="section-title">Goals</div>
+                <div id="goalsList"></div>
+                <button class="add-btn" style="width: 100%; margin-top: 1rem;" onclick="showAddGoalForm()">+ Add Goal</button>
+            </div>
+
+            <div class="card">
+                <div class="section-title">Body Weight Trend</div>
+                <div class="mini-chart" id="weightChart"></div>
+            </div>
+        </div>
+
+        <!-- Schedule Panel ( & ) -->

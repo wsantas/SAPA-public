@@ -1,0 +1,292 @@
+[
+  {
+    "id": "eggs-benedict-paleo",
+    "slug": "eggs-benedict-paleo",
+    "title": "Classic Eggs Benedict",
+    "description": "A paleo twist on the breakfast classic with creamy hollandaise over perfectly poached eggs and savory beef patties instead of English muffins.",
+    "frameworks": ["paleo", "keto", "primal"],
+    "category": "breakfast",
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "medium",
+    "ingredients": [
+      { "name": "eggs", "amount": 8, "unit": "large", "category": "other" },
+      { "name": "ground beef", "amount": 1, "unit": "lb", "category": "meat" },
+      { "name": "egg yolks", "amount": 3, "unit": "large", "category": "other" },
+      { "name": "ghee", "amount": 0.5, "unit": "cup", "notes": "melted", "category": "oils" },
+      { "name": "lemon juice", "amount": 1, "unit": "tbsp", "category": "produce" },
+      { "name": "white vinegar", "amount": 2, "unit": "tbsp", "category": "pantry" },
+      { "name": "salt", "amount": 0.5, "unit": "tsp", "category": "spices" },
+      { "name": "cayenne pepper", "amount": 0.25, "unit": "tsp", "category": "spices" },
+      { "name": "fresh chives", "amount": 2, "unit": "tbsp", "notes": "chopped", "category": "produce" }
+    ],
+    "instructions": [
+      "Form ground beef into 4 thin patties, season with salt and pepper, and cook in a skillet over medium-high heat until done, about 3-4 minutes per side. Keep warm.",
+      "For the hollandaise, blend egg yolks and lemon juice in a blender for 30 seconds. With blender running on low, slowly drizzle in the melted ghee until sauce thickens. Add salt and cayenne.",
+      "Fill a large pot with water, add vinegar, and bring to a gentle simmer. Create a gentle whirlpool and carefully drop in eggs one at a time. Poach for 3-4 minutes until whites are set but yolks are still runny.",
+      "Place beef patties on plates, top each with 2 poached eggs, and drizzle generously with hollandaise sauce.",
+      "Garnish with fresh chives and serve immediately."
+    ],
+    "nutrition": {
+      "calories": 485,
+      "protein": 32,
+      "carbs": 2,
+      "fat": 38,
+      "fiber": 0,
+      "sugar": 1
+    },
+    "tags": ["high-protein", "low-carb", "brunch", "classic"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "sweet-potato-hash",
+    "slug": "sweet-potato-hash",
+    "title": "Sweet Potato Hash with Ground Beef",
+    "description": "A hearty breakfast hash featuring crispy sweet potatoes, seasoned ground beef, and colorful bell peppers. Perfect for meal prep.",
+    "frameworks": ["paleo", "whole30"],
+    "category": "breakfast",
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "name": "sweet potatoes", "amount": 2, "unit": "large", "notes": "diced into 1/2 inch cubes", "category": "produce" },
+      { "name": "ground beef", "amount": 1, "unit": "lb", "category": "meat" },
+      { "name": "bell peppers", "amount": 2, "unit": "medium", "notes": "diced", "category": "produce" },
+      { "name": "yellow onion", "amount": 1, "unit": "medium", "notes": "diced", "category": "produce" },
+      { "name": "garlic", "amount": 3, "unit": "cloves", "notes": "minced", "category": "produce" },
+      { "name": "avocado oil", "amount": 3, "unit": "tbsp", "category": "oils" },
+      { "name": "smoked paprika", "amount": 1, "unit": "tsp", "category": "spices" },
+      { "name": "garlic powder", "amount": 0.5, "unit": "tsp", "category": "spices" },
+      { "name": "salt", "amount": 1, "unit": "tsp", "category": "spices" },
+      { "name": "black pepper", "amount": 0.5, "unit": "tsp", "category": "spices" },
+      { "name": "fresh parsley", "amount": 2, "unit": "tbsp", "notes": "chopped", "category": "produce" }
+    ],
+    "instructions": [
+      "Heat 2 tablespoons of avocado oil in a large cast iron skillet over medium-high heat.",
+      "Add diced sweet potatoes in a single layer. Cook for 10-12 minutes, stirring occasionally, until golden and crispy on the edges.",
+      "Push sweet potatoes to one side, add remaining oil, then add ground beef. Break it up and cook until browned, about 5-6 minutes.",
+      "Add bell peppers, onion, and garlic. Season with paprika, garlic powder, salt, and pepper. Cook for 5-7 minutes until vegetables are tender.",
+      "Mix everything together, taste and adjust seasonings. Garnish with fresh parsley.",
+      "Serve hot, optionally topped with fried eggs."
+    ],
+    "nutrition": {
+      "calories": 395,
+      "protein": 24,
+      "carbs": 28,
+      "fat": 22,
+      "fiber": 5,
+      "sugar": 8
+    },
+    "tags": ["meal-prep", "one-pan", "hearty", "family-friendly"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "banana-pancakes",
+    "slug": "banana-pancakes",
+    "title": "3-Ingredient Banana Pancakes",
+    "description": "Simple, fluffy pancakes made with just bananas, eggs, and almond butter. Naturally sweet and incredibly satisfying.",
+    "frameworks": ["paleo", "whole30"],
+    "category": "breakfast",
+    "prepTime": 5,
+    "cookTime": 10,
+    "servings": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      { "name": "ripe bananas", "amount": 2, "unit": "medium", "category": "produce" },
+      { "name": "eggs", "amount": 2, "unit": "large", "category": "other" },
+      { "name": "almond butter", "amount": 2, "unit": "tbsp", "category": "pantry" },
+      { "name": "coconut oil", "amount": 1, "unit": "tbsp", "notes": "for cooking", "category": "oils" },
+      { "name": "cinnamon", "amount": 0.5, "unit": "tsp", "notes": "optional", "category": "spices" },
+      { "name": "fresh berries", "amount": 0.5, "unit": "cup", "notes": "for topping", "category": "produce" }
+    ],
+    "instructions": [
+      "Mash the bananas in a bowl until smooth. Add eggs and almond butter, whisk until well combined. Stir in cinnamon if using.",
+      "Heat coconut oil in a non-stick skillet over medium-low heat.",
+      "Pour about 2 tablespoons of batter per pancake. Cook for 2-3 minutes until bubbles form on the surface and edges look set.",
+      "Carefully flip and cook for another 1-2 minutes until golden brown.",
+      "Serve warm topped with fresh berries and a drizzle of almond butter."
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 12,
+      "carbs": 32,
+      "fat": 14,
+      "fiber": 4,
+      "sugar": 17
+    },
+    "tags": ["quick", "kid-friendly", "naturally-sweet", "simple"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "veggie-frittata",
+    "slug": "veggie-frittata",
+    "title": "Veggie-Packed Frittata",
+    "description": "A protein-rich frittata loaded with colorful vegetables. Perfect for breakfast, brunch, or even dinner.",
+    "frameworks": ["paleo", "whole30", "keto"],
+    "category": "breakfast",
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 6,
+    "difficulty": "easy",
+    "ingredients": [
+      { "name": "eggs", "amount": 10, "unit": "large", "category": "other" },
+      { "name": "zucchini", "amount": 1, "unit": "medium", "notes": "diced", "category": "produce" },
+      { "name": "bell pepper", "amount": 1, "unit": "medium", "notes": "diced", "category": "produce" },
+      { "name": "cherry tomatoes", "amount": 1, "unit": "cup", "notes": "halved", "category": "produce" },
+      { "name": "spinach", "amount": 2, "unit": "cups", "notes": "packed", "category": "produce" },
+      { "name": "yellow onion", "amount": 0.5, "unit": "medium", "notes": "diced", "category": "produce" },
+      { "name": "garlic", "amount": 2, "unit": "cloves", "notes": "minced", "category": "produce" },
+      { "name": "olive oil", "amount": 2, "unit": "tbsp", "category": "oils" },
+      { "name": "fresh basil", "amount": 0.25, "unit": "cup", "notes": "chopped", "category": "produce" },
+      { "name": "salt", "amount": 1, "unit": "tsp", "category": "spices" },
+      { "name": "black pepper", "amount": 0.5, "unit": "tsp", "category": "spices" },
+      { "name": "Italian seasoning", "amount": 1, "unit": "tsp", "category": "spices" }
+    ],
+    "instructions": [
+      "Preheat oven to 375°F (190°C).",
+      "Whisk eggs with salt, pepper, and Italian seasoning in a large bowl. Set aside.",
+      "Heat olive oil in a 10-inch oven-safe skillet over medium heat. Add onion and cook for 3 minutes until softened.",
+      "Add zucchini, bell pepper, and garlic. Cook for 4-5 minutes until vegetables begin to soften.",
+      "Add spinach and stir until wilted, about 1 minute. Scatter cherry tomatoes over the vegetables.",
+      "Pour egg mixture evenly over the vegetables. Cook without stirring for 2-3 minutes until edges begin to set.",
+      "Transfer skillet to oven and bake for 15-18 minutes until eggs are set and top is lightly golden.",
+      "Let cool for 5 minutes, garnish with fresh basil, slice and serve."
+    ],
+    "nutrition": {
+      "calories": 195,
+      "protein": 13,
+      "carbs": 6,
+      "fat": 13,
+      "fiber": 2,
+      "sugar": 3
+    },
+    "tags": ["meal-prep", "vegetarian", "one-pan", "protein-rich"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "coconut-chia-pudding",
+    "slug": "coconut-chia-pudding",
+    "title": "Coconut Chia Pudding",
+    "description": "Creamy, make-ahead chia pudding with coconut milk and a hint of vanilla. Top with your favorite fruits and nuts.",
+    "frameworks": ["paleo", "whole30", "keto"],
+    "category": "breakfast",
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "name": "chia seeds", "amount": 0.5, "unit": "cup", "category": "pantry" },
+      { "name": "full-fat coconut milk", "amount": 2, "unit": "cups", "category": "pantry" },
+      { "name": "vanilla extract", "amount": 1, "unit": "tsp", "category": "pantry" },
+      { "name": "raw honey", "amount": 2, "unit": "tbsp", "notes": "or maple syrup for Whole30-skip", "category": "pantry" },
+      { "name": "cinnamon", "amount": 0.5, "unit": "tsp", "category": "spices" },
+      { "name": "fresh berries", "amount": 1, "unit": "cup", "notes": "for topping", "category": "produce" },
+      { "name": "sliced almonds", "amount": 0.25, "unit": "cup", "notes": "for topping", "category": "pantry" },
+      { "name": "unsweetened coconut flakes", "amount": 2, "unit": "tbsp", "notes": "for topping", "category": "pantry" }
+    ],
+    "instructions": [
+      "In a large bowl or jar, combine chia seeds, coconut milk, vanilla extract, honey, and cinnamon. Whisk well to combine.",
+      "Let sit for 5 minutes, then whisk again to prevent clumping.",
+      "Cover and refrigerate for at least 4 hours or overnight until thick and pudding-like.",
+      "Stir before serving. Divide into bowls or jars.",
+      "Top with fresh berries, sliced almonds, and coconut flakes.",
+      "Store in refrigerator for up to 5 days."
+    ],
+    "nutrition": {
+      "calories": 295,
+      "protein": 6,
+      "carbs": 18,
+      "fat": 24,
+      "fiber": 8,
+      "sugar": 8
+    },
+    "tags": ["make-ahead", "no-cook", "meal-prep", "grab-and-go"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "sausage-egg-muffins",
+    "slug": "sausage-egg-muffins",
+    "title": "Sausage & Egg Breakfast Muffins",
+    "description": "Portable protein-packed egg cups with ground sausage and vegetables. Make a batch Sunday, reheat all week.",
+    "frameworks": ["paleo", "whole30", "keto"],
+    "category": "breakfast",
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 12,
+    "difficulty": "easy",
+    "ingredients": [
+      { "name": "eggs", "amount": 10, "unit": "large", "category": "other" },
+      { "name": "ground beef sausage", "amount": 1, "unit": "lb", "notes": "sugar-free", "category": "meat" },
+      { "name": "spinach", "amount": 2, "unit": "cups", "notes": "chopped", "category": "produce" },
+      { "name": "red bell pepper", "amount": 1, "unit": "medium", "notes": "diced", "category": "produce" },
+      { "name": "green onions", "amount": 4, "unit": "stalks", "notes": "sliced", "category": "produce" },
+      { "name": "garlic powder", "amount": 0.5, "unit": "tsp", "category": "spices" },
+      { "name": "salt", "amount": 0.75, "unit": "tsp", "category": "spices" },
+      { "name": "black pepper", "amount": 0.25, "unit": "tsp", "category": "spices" },
+      { "name": "avocado oil", "amount": 1, "unit": "tbsp", "notes": "for greasing", "category": "oils" }
+    ],
+    "instructions": [
+      "Preheat oven to 375°F (190°C). Grease a 12-cup muffin tin with avocado oil.",
+      "Cook ground sausage in a skillet over medium-high heat, breaking it up, until browned through, about 6-7 minutes. Drain any excess fat.",
+      "Add spinach to the skillet and stir until wilted, about 1 minute. Remove from heat.",
+      "Whisk eggs with garlic powder, salt, and pepper in a large bowl.",
+      "Divide sausage mixture, diced bell pepper, and green onions evenly among the muffin cups.",
+      "Pour egg mixture over the fillings, filling each cup about three-quarters full.",
+      "Bake for 20-22 minutes until eggs are set and tops are lightly golden.",
+      "Let cool in the tin for 5 minutes before removing. Store in the fridge up to 5 days or freeze for up to 2 months."
+    ],
+    "nutrition": {
+      "calories": 145,
+      "protein": 12,
+      "carbs": 2,
+      "fat": 10,
+      "fiber": 0,
+      "sugar": 1
+    },
+    "tags": ["meal-prep", "portable", "freezer-friendly", "high-protein"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "turkey-breakfast-skillet",
+    "slug": "turkey-breakfast-skillet",
+    "title": "Turkey Apple Breakfast Skillet",
+    "description": "Savory ground turkey with diced apples, sage, and sweet potatoes. A hearty one-pan breakfast with the perfect sweet-savory balance.",
+    "frameworks": ["paleo", "whole30"],
+    "category": "breakfast",
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "name": "ground turkey", "amount": 1, "unit": "lb", "category": "meat" },
+      { "name": "sweet potato", "amount": 1, "unit": "large", "notes": "peeled, diced small", "category": "produce" },
+      { "name": "Granny Smith apple", "amount": 1, "unit": "large", "notes": "cored, diced", "category": "produce" },
+      { "name": "yellow onion", "amount": 0.5, "unit": "medium", "notes": "diced", "category": "produce" },
+      { "name": "fresh sage", "amount": 1, "unit": "tbsp", "notes": "minced", "category": "produce" },
+      { "name": "cinnamon", "amount": 0.5, "unit": "tsp", "category": "spices" },
+      { "name": "nutmeg", "amount": 0.25, "unit": "tsp", "category": "spices" },
+      { "name": "salt", "amount": 1, "unit": "tsp", "category": "spices" },
+      { "name": "black pepper", "amount": 0.5, "unit": "tsp", "category": "spices" },
+      { "name": "avocado oil", "amount": 2, "unit": "tbsp", "category": "oils" }
+    ],
+    "instructions": [
+      "Heat avocado oil in a large cast iron skillet over medium heat. Add diced sweet potato and cook for 8-10 minutes, stirring occasionally, until tender and starting to crisp.",
+      "Push sweet potatoes to the edges and add ground turkey to the center. Break up and cook until no longer pink, about 5 minutes.",
+      "Add onion, apple, sage, cinnamon, nutmeg, salt, and pepper. Stir everything together.",
+      "Cook for 4-5 minutes until apples are just tender and onion is translucent.",
+      "Taste and adjust seasonings. Serve hot, optionally topped with fried eggs."
+    ],
+    "nutrition": {
+      "calories": 320,
+      "protein": 24,
+      "carbs": 22,
+      "fat": 16,
+      "fiber": 3,
+      "sugar": 10
+    },
+    "tags": ["one-pan", "fall-flavors", "hearty", "family-friendly"],
+    "biblicallyClean": true
+  }
+]

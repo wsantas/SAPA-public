@@ -1,0 +1,22 @@
+
+    <!-- Session Detail Modal -->
+    <div class="modal" id="sessionModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" onclick="if(event.target===this)closeModal()">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span id="modalTitle">Session Details</span>
+                <div style="display: flex; gap: 0.5rem; align-items: center;">
+                    <div style="position: relative; display: inline-block;" id="shareDropdownWrap">
+                        <button class="close-btn" onclick="toggleShareDropdown(event)" aria-label="Share with" title="Share with" style="font-size: 1.1rem;">&#x2197;</button>
+                        <div id="shareDropdown" style="display:none; position:absolute; right:0; top:110%; background:var(--bg-card); border:1px solid var(--border); border-radius:8px; min-width:140px; z-index:1001; box-shadow:0 4px 12px rgba(0,0,0,0.3);"></div>
+                    </div>
+                    <button class="close-btn" onclick="downloadSessionHTML()" aria-label="Download HTML" title="Download HTML" style="font-size: 1.2rem;">&darr;</button>
+                    <button class="close-btn" onclick="deleteSession()" aria-label="Delete session" title="Delete session" style="font-size: 1.1rem; color: #ef4444;">&#x1F5D1;</button>
+                    <button class="close-btn" onclick="closeModal()" aria-label="Close dialog">&times;</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="session-topics" id="modalTopics" style="margin-bottom: 1rem;"></div>
+                <div id="modalContentMd" class="md-content"></div>
+            </div>
+        </div>
+    </div>

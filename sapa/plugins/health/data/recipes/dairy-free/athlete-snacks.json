@@ -1,0 +1,609 @@
+[
+  {
+    "id": "garlic-dill-pickles",
+    "slug": "garlic-dill-pickles",
+    "title": "Garlic Dill Refrigerator Pickles",
+    "description": "Quick refrigerator pickles with garlic and dill. The brine doubles as a natural electrolyte drink after hard training sessions.",
+    "frameworks": ["paleo", "whole30", "dairy-free", "gluten-free"],
+    "category": "snack",
+    "prepTime": 15,
+    "cookTime": 0,
+    "servings": 8,
+    "difficulty": "easy",
+    "ingredients": [
+      {"name": "pickling cucumbers", "amount": 5, "unit": "small", "notes": "speared", "category": "produce"},
+      {"name": "white vinegar", "amount": 1, "unit": "cup", "category": "pantry"},
+      {"name": "water", "amount": 1, "unit": "cup", "category": "other"},
+      {"name": "sea salt", "amount": 1, "unit": "tbsp", "category": "spices"},
+      {"name": "garlic", "amount": 4, "unit": "cloves", "notes": "smashed", "category": "produce"},
+      {"name": "fresh dill", "amount": 2, "unit": "heads", "category": "produce"},
+      {"name": "black peppercorns", "amount": 1, "unit": "tsp", "category": "spices"},
+      {"name": "red pepper flakes", "amount": 0.5, "unit": "tsp", "category": "spices"}
+    ],
+    "instructions": [
+      "Pack cucumber spears tightly into a clean quart jar with garlic, dill, peppercorns, and red pepper flakes.",
+      "Bring vinegar, water, and salt to a boil. Stir until salt dissolves.",
+      "Pour hot brine over cucumbers, leaving ½ inch headspace. Tap out air bubbles.",
+      "Seal and refrigerate at least 24 hours before eating. Best after 3 days."
+    ],
+    "nutrition": {"calories": 5, "protein": 0, "carbs": 1, "fat": 0, "fiber": 0, "sugar": 0},
+    "tags": ["electrolytes", "gut-health", "fermented", "athlete"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "no-bake-energy-balls",
+    "slug": "no-bake-energy-balls",
+    "title": "No-Bake Energy Balls",
+    "description": "Quick energy balls with oats, sunflower seed butter, and dark chocolate. Perfect pre-workout fuel without dairy-related gut distress.",
+    "frameworks": ["dairy-free", "gluten-free"],
+    "category": "snack",
+    "prepTime": 15,
+    "cookTime": 0,
+    "servings": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      {"name": "old-fashioned oats", "amount": 1, "unit": "cup", "category": "pantry"},
+      {"name": "sunflower seed butter", "amount": 0.5, "unit": "cup", "category": "pantry"},
+      {"name": "raw honey", "amount": 0.33, "unit": "cup", "category": "pantry"},
+      {"name": "dark chocolate chips", "amount": 0.5, "unit": "cup", "notes": "dairy-free", "category": "pantry"},
+      {"name": "ground flaxseed", "amount": 2, "unit": "tbsp", "category": "pantry"},
+      {"name": "vanilla extract", "amount": 1, "unit": "tsp", "category": "pantry"},
+      {"name": "sea salt", "amount": 1, "unit": "pinch", "category": "spices"}
+    ],
+    "instructions": [
+      "Combine all ingredients in a large bowl and mix thoroughly.",
+      "Refrigerate mixture 30 minutes until firm enough to handle.",
+      "Roll into 1-inch balls with damp hands.",
+      "Store in an airtight container in the fridge for up to 10 days."
+    ],
+    "nutrition": {"calories": 95, "protein": 3, "carbs": 12, "fat": 5, "fiber": 1, "sugar": 6},
+    "tags": ["pre-workout", "portable", "energy", "athlete"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "beef-jerky-oven",
+    "slug": "beef-jerky-oven",
+    "title": "Beef Jerky (Oven Method)",
+    "description": "Homemade beef jerky using coconut aminos instead of soy sauce. Lower sodium, no gluten, great for post-training recovery.",
+    "frameworks": ["paleo", "whole30", "dairy-free", "gluten-free", "keto"],
+    "category": "snack",
+    "prepTime": 20,
+    "cookTime": 270,
+    "servings": 6,
+    "difficulty": "medium",
+    "ingredients": [
+      {"name": "flank steak", "amount": 1, "unit": "lb", "notes": "trimmed", "category": "meat"},
+      {"name": "coconut aminos", "amount": 3, "unit": "tbsp", "category": "pantry"},
+      {"name": "maple syrup", "amount": 1, "unit": "tbsp", "category": "pantry"},
+      {"name": "smoked paprika", "amount": 1, "unit": "tsp", "category": "spices"},
+      {"name": "garlic powder", "amount": 1, "unit": "tsp", "category": "spices"},
+      {"name": "onion powder", "amount": 1, "unit": "tsp", "category": "spices"},
+      {"name": "black pepper", "amount": 0.5, "unit": "tsp", "category": "spices"},
+      {"name": "cayenne", "amount": 0.25, "unit": "tsp", "category": "spices"}
+    ],
+    "instructions": [
+      "Freeze steak 1-2 hours until firm. Slice against the grain into ⅛-inch strips.",
+      "Whisk coconut aminos, maple syrup, and all spices. Marinate strips at least 4 hours or overnight.",
+      "Preheat oven to 175°F. Lay strips on wire racks over sheet pans.",
+      "Dry 4-5 hours, flipping once, until strips bend and crack but don't break.",
+      "Cool completely. Store in airtight bags for up to 2 weeks."
+    ],
+    "nutrition": {"calories": 120, "protein": 20, "carbs": 3, "fat": 3, "fiber": 0, "sugar": 2},
+    "tags": ["high-protein", "recovery", "portable", "athlete"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "roasted-chickpeas",
+    "slug": "roasted-chickpeas",
+    "title": "Roasted Chickpeas (3 Ways)",
+    "description": "Crunchy roasted chickpeas in Ranch, BBQ, or Sweet flavors. High protein and fiber, perfect portable snack.",
+    "frameworks": ["dairy-free", "gluten-free"],
+    "category": "snack",
+    "prepTime": 5,
+    "cookTime": 35,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      {"name": "chickpeas", "amount": 2, "unit": "cans", "notes": "15 oz each, drained and dried", "category": "pantry"},
+      {"name": "avocado oil", "amount": 2, "unit": "tbsp", "category": "oils"},
+      {"name": "garlic powder", "amount": 1, "unit": "tsp", "category": "spices"},
+      {"name": "onion powder", "amount": 1, "unit": "tsp", "category": "spices"},
+      {"name": "smoked paprika", "amount": 1, "unit": "tsp", "category": "spices"},
+      {"name": "sea salt", "amount": 0.5, "unit": "tsp", "category": "spices"}
+    ],
+    "instructions": [
+      "Preheat oven to 400°F. Pat chickpeas completely dry with paper towels.",
+      "Toss with avocado oil and your chosen seasoning blend.",
+      "Spread in a single layer on a parchment-lined sheet pan.",
+      "Bake 30-35 minutes, shaking pan halfway, until golden and crunchy.",
+      "Cool completely on the pan. They continue to crisp as they cool."
+    ],
+    "nutrition": {"calories": 140, "protein": 6, "carbs": 18, "fat": 5, "fiber": 5, "sugar": 3},
+    "tags": ["protein", "fiber", "portable", "athlete"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "sweet-potato-protein-bites",
+    "slug": "sweet-potato-protein-bites",
+    "title": "Sweet Potato Protein Bites",
+    "description": "Nutrient-dense bites with sweet potato, almond butter, and hemp seeds. Perfect post-workout complex carbs.",
+    "frameworks": ["dairy-free", "gluten-free"],
+    "category": "snack",
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 16,
+    "difficulty": "easy",
+    "ingredients": [
+      {"name": "sweet potato", "amount": 1, "unit": "large", "notes": "baked and mashed, about 1 cup", "category": "produce"},
+      {"name": "almond butter", "amount": 0.5, "unit": "cup", "category": "pantry"},
+      {"name": "maple syrup", "amount": 0.25, "unit": "cup", "category": "pantry"},
+      {"name": "oat flour", "amount": 1, "unit": "cup", "category": "pantry"},
+      {"name": "hemp seeds", "amount": 2, "unit": "tbsp", "category": "pantry"},
+      {"name": "dark chocolate chips", "amount": 0.25, "unit": "cup", "notes": "dairy-free", "category": "pantry"},
+      {"name": "cinnamon", "amount": 0.5, "unit": "tsp", "category": "spices"},
+      {"name": "sea salt", "amount": 1, "unit": "pinch", "category": "spices"}
+    ],
+    "instructions": [
+      "Preheat oven to 350°F. Line a sheet pan with parchment.",
+      "Combine mashed sweet potato, almond butter, and maple syrup until smooth.",
+      "Fold in oat flour, hemp seeds, chocolate chips, cinnamon, and salt.",
+      "Scoop tablespoon-sized balls onto the pan. Flatten slightly.",
+      "Bake 18-20 minutes until set. Cool before handling."
+    ],
+    "nutrition": {"calories": 75, "protein": 2, "carbs": 10, "fat": 3, "fiber": 1, "sugar": 4},
+    "tags": ["post-workout", "complex-carbs", "athlete"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "homemade-trail-mix",
+    "slug": "homemade-trail-mix",
+    "title": "Homemade Trail Mix",
+    "description": "Custom trail mix with nuts, seeds, dried fruit, and dark chocolate. Pre-portioned for the right fat-to-carb ratio.",
+    "frameworks": ["paleo", "dairy-free", "gluten-free"],
+    "category": "snack",
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 8,
+    "difficulty": "easy",
+    "ingredients": [
+      {"name": "raw almonds", "amount": 1, "unit": "cup", "category": "pantry"},
+      {"name": "raw cashews", "amount": 0.5, "unit": "cup", "category": "pantry"},
+      {"name": "walnut halves", "amount": 0.5, "unit": "cup", "category": "pantry"},
+      {"name": "pumpkin seeds", "amount": 0.5, "unit": "cup", "category": "pantry"},
+      {"name": "dried cranberries", "amount": 0.5, "unit": "cup", "notes": "reduced sugar", "category": "pantry"},
+      {"name": "dark chocolate chips", "amount": 0.25, "unit": "cup", "notes": "dairy-free", "category": "pantry"},
+      {"name": "unsweetened coconut flakes", "amount": 0.25, "unit": "cup", "category": "pantry"}
+    ],
+    "instructions": [
+      "Combine all ingredients in a large bowl.",
+      "Toss until evenly distributed.",
+      "Divide into 8 portions using small bags or containers.",
+      "Store at room temperature up to 3 weeks."
+    ],
+    "nutrition": {"calories": 210, "protein": 6, "carbs": 14, "fat": 16, "fiber": 3, "sugar": 7},
+    "tags": ["healthy-fats", "endurance", "portable", "athlete"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "banana-oat-bars",
+    "slug": "banana-oat-bars",
+    "title": "Banana Oat Bars",
+    "description": "Simple whole grain bars naturally sweetened with ripe bananas. Perfect pre-workout fuel.",
+    "frameworks": ["dairy-free"],
+    "category": "snack",
+    "prepTime": 10,
+    "cookTime": 25,
+    "servings": 12,
+    "difficulty": "easy",
+    "ingredients": [
+      {"name": "ripe bananas", "amount": 3, "unit": "medium", "notes": "mashed", "category": "produce"},
+      {"name": "old-fashioned oats", "amount": 2, "unit": "cups", "category": "pantry"},
+      {"name": "coconut oil", "amount": 0.25, "unit": "cup", "notes": "melted", "category": "oils"},
+      {"name": "raw honey", "amount": 2, "unit": "tbsp", "category": "pantry"},
+      {"name": "cinnamon", "amount": 0.5, "unit": "tsp", "category": "spices"},
+      {"name": "sea salt", "amount": 0.25, "unit": "tsp", "category": "spices"},
+      {"name": "sunflower seeds", "amount": 0.25, "unit": "cup", "category": "pantry"},
+      {"name": "dark chocolate chips", "amount": 0.25, "unit": "cup", "notes": "dairy-free, optional", "category": "pantry"}
+    ],
+    "instructions": [
+      "Preheat oven to 350°F. Line an 8x8 pan with parchment.",
+      "Mix mashed bananas, melted coconut oil, honey, cinnamon, and salt.",
+      "Stir in oats, sunflower seeds, and chocolate chips until combined.",
+      "Press firmly into the pan in an even layer.",
+      "Bake 22-25 minutes until golden. Cool completely before cutting into 12 bars."
+    ],
+    "nutrition": {"calories": 130, "protein": 3, "carbs": 18, "fat": 6, "fiber": 2, "sugar": 6},
+    "tags": ["pre-workout", "whole-grain", "athlete"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "turkey-avocado-wraps",
+    "slug": "turkey-avocado-wraps",
+    "title": "Turkey & Avocado Lettuce Wraps",
+    "description": "High protein, low carb wraps with turkey, avocado, and fresh veggies in butter lettuce.",
+    "frameworks": ["paleo", "whole30", "dairy-free", "gluten-free", "keto"],
+    "category": "snack",
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      {"name": "deli turkey", "amount": 8, "unit": "oz", "notes": "nitrate-free", "category": "meat"},
+      {"name": "avocado", "amount": 1, "unit": "medium", "notes": "sliced", "category": "produce"},
+      {"name": "butter lettuce leaves", "amount": 4, "unit": "large", "category": "produce"},
+      {"name": "shredded carrots", "amount": 0.25, "unit": "cup", "category": "produce"},
+      {"name": "cucumber", "amount": 0.25, "unit": "cup", "notes": "sliced", "category": "produce"},
+      {"name": "Dijon mustard", "amount": 1, "unit": "tbsp", "category": "pantry"},
+      {"name": "lemon juice", "amount": 1, "unit": "squeeze", "category": "produce"},
+      {"name": "sea salt", "amount": 1, "unit": "to taste", "category": "spices"}
+    ],
+    "instructions": [
+      "Lay lettuce leaves flat. Spread a thin line of Dijon down the center of each.",
+      "Layer turkey slices, avocado, carrots, and cucumber evenly.",
+      "Squeeze lemon over tops. Season with salt and pepper.",
+      "Roll tightly or fold and secure with a toothpick."
+    ],
+    "nutrition": {"calories": 180, "protein": 18, "carbs": 6, "fat": 10, "fiber": 3, "sugar": 2},
+    "tags": ["high-protein", "low-carb", "quick", "athlete"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "turmeric-hummus",
+    "slug": "turmeric-hummus",
+    "title": "Turmeric Hummus",
+    "description": "Anti-inflammatory hummus with turmeric and tahini. Add black pepper for 2000% better turmeric absorption.",
+    "frameworks": ["dairy-free", "gluten-free"],
+    "category": "snack",
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 8,
+    "difficulty": "easy",
+    "ingredients": [
+      {"name": "chickpeas", "amount": 1, "unit": "can", "notes": "15 oz, drained, reserve liquid", "category": "pantry"},
+      {"name": "tahini", "amount": 3, "unit": "tbsp", "category": "pantry"},
+      {"name": "lemon juice", "amount": 2, "unit": "tbsp", "category": "produce"},
+      {"name": "garlic", "amount": 1, "unit": "clove", "category": "produce"},
+      {"name": "turmeric", "amount": 1, "unit": "tsp", "category": "spices"},
+      {"name": "cumin", "amount": 0.5, "unit": "tsp", "category": "spices"},
+      {"name": "olive oil", "amount": 2, "unit": "tbsp", "category": "oils"},
+      {"name": "aquafaba", "amount": 3, "unit": "tbsp", "notes": "reserved chickpea liquid", "category": "other"},
+      {"name": "sea salt", "amount": 1, "unit": "to taste", "category": "spices"}
+    ],
+    "instructions": [
+      "Add chickpeas, tahini, lemon juice, garlic, turmeric, cumin, and salt to a food processor.",
+      "Blend on high, streaming in olive oil.",
+      "Add aquafaba one tablespoon at a time until silky smooth.",
+      "Taste and adjust salt and lemon. Serve with vegetables or rice cakes."
+    ],
+    "nutrition": {"calories": 90, "protein": 3, "carbs": 8, "fat": 5, "fiber": 2, "sugar": 1},
+    "tags": ["anti-inflammatory", "recovery", "athlete"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "coconut-date-bars",
+    "slug": "coconut-date-bars",
+    "title": "Coconut Date Energy Bars",
+    "description": "Natural energy bars with dates, coconut, and cacao. Dates deliver potassium and quick-digesting natural sugar for long training days.",
+    "frameworks": ["paleo", "dairy-free", "gluten-free"],
+    "category": "snack",
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      {"name": "Medjool dates", "amount": 1.5, "unit": "cups", "notes": "pitted", "category": "produce"},
+      {"name": "unsweetened shredded coconut", "amount": 1, "unit": "cup", "category": "pantry"},
+      {"name": "raw cashews", "amount": 0.5, "unit": "cup", "category": "pantry"},
+      {"name": "coconut oil", "amount": 0.25, "unit": "cup", "notes": "melted", "category": "oils"},
+      {"name": "cacao powder", "amount": 2, "unit": "tbsp", "category": "pantry"},
+      {"name": "chia seeds", "amount": 1, "unit": "tbsp", "category": "pantry"},
+      {"name": "sea salt", "amount": 1, "unit": "pinch", "category": "spices"}
+    ],
+    "instructions": [
+      "Pulse dates, cashews, and coconut in a food processor until a sticky dough forms.",
+      "Add melted coconut oil, cacao powder, chia seeds, and salt. Pulse until combined.",
+      "Press firmly into a parchment-lined loaf pan.",
+      "Refrigerate at least 1 hour. Slice into 10 bars.",
+      "Store in fridge up to 2 weeks or freeze up to 2 months."
+    ],
+    "nutrition": {"calories": 160, "protein": 2, "carbs": 20, "fat": 9, "fiber": 3, "sugar": 15},
+    "tags": ["natural-sugar", "endurance", "athlete"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "pickled-red-onions",
+    "slug": "pickled-red-onions",
+    "title": "Pickled Red Onions",
+    "description": "Quick-pickled red onions that add probiotic-friendly acid to every meal. Put on jerky, wraps, rice bowls.",
+    "frameworks": ["paleo", "whole30", "dairy-free", "gluten-free", "keto"],
+    "category": "snack",
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 16,
+    "difficulty": "easy",
+    "ingredients": [
+      {"name": "red onion", "amount": 1, "unit": "large", "notes": "thinly sliced into rings", "category": "produce"},
+      {"name": "apple cider vinegar", "amount": 1, "unit": "cup", "category": "pantry"},
+      {"name": "warm water", "amount": 0.5, "unit": "cup", "category": "other"},
+      {"name": "raw honey", "amount": 1, "unit": "tbsp", "category": "pantry"},
+      {"name": "sea salt", "amount": 1.5, "unit": "tsp", "category": "spices"},
+      {"name": "black peppercorns", "amount": 0.5, "unit": "tsp", "category": "spices"},
+      {"name": "bay leaf", "amount": 1, "unit": "leaf", "notes": "optional", "category": "spices"}
+    ],
+    "instructions": [
+      "Pack sliced onions tightly into a clean pint jar.",
+      "Whisk vinegar, warm water, honey, and salt until dissolved.",
+      "Pour brine over onions. Add peppercorns and bay leaf.",
+      "Seal and let sit at room temperature 1 hour, then refrigerate.",
+      "Ready to eat in 1 hour. Best flavor after 24 hours. Keeps 3 weeks."
+    ],
+    "nutrition": {"calories": 10, "protein": 0, "carbs": 2, "fat": 0, "fiber": 0, "sugar": 1},
+    "tags": ["condiment", "gut-health", "athlete"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "plantain-chips",
+    "slug": "plantain-chips",
+    "title": "Oven-Baked Plantain Chips",
+    "description": "Crispy homemade plantain chips. Use green (unripe) plantains for best crunch. Great pre-workout complex carbs.",
+    "frameworks": ["paleo", "whole30", "dairy-free", "gluten-free"],
+    "category": "snack",
+    "prepTime": 5,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      {"name": "green plantains", "amount": 2, "unit": "medium", "category": "produce"},
+      {"name": "avocado oil", "amount": 2, "unit": "tbsp", "category": "oils"},
+      {"name": "sea salt", "amount": 1, "unit": "tsp", "category": "spices"},
+      {"name": "garlic powder", "amount": 0.5, "unit": "tsp", "category": "spices"},
+      {"name": "chili powder", "amount": 0.25, "unit": "tsp", "notes": "optional", "category": "spices"}
+    ],
+    "instructions": [
+      "Preheat oven to 375°F. Line two sheet pans with parchment.",
+      "Peel plantains and slice into thin rounds (⅛ inch or thinner).",
+      "Toss slices with avocado oil, salt, garlic powder, and chili powder.",
+      "Arrange in a single layer with no overlapping.",
+      "Bake 15-20 minutes, flipping once, until golden and crisp at edges.",
+      "Cool on pans — they crisp further as they cool."
+    ],
+    "nutrition": {"calories": 110, "protein": 1, "carbs": 22, "fat": 3, "fiber": 2, "sugar": 8},
+    "tags": ["complex-carbs", "pre-workout", "athlete"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "stuffed-dates",
+    "slug": "stuffed-dates",
+    "title": "Sunflower Butter Stuffed Dates",
+    "description": "Quick energy with stuffed dates. Sunflower seed butter is nut-free and packs vitamin E and magnesium for muscle recovery.",
+    "frameworks": ["paleo", "dairy-free", "gluten-free"],
+    "category": "snack",
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 10,
+    "difficulty": "easy",
+    "ingredients": [
+      {"name": "Medjool dates", "amount": 10, "unit": "medium", "notes": "pitted", "category": "produce"},
+      {"name": "sunflower seed butter", "amount": 3, "unit": "tbsp", "category": "pantry"},
+      {"name": "flaky sea salt", "amount": 1, "unit": "pinch", "category": "spices"},
+      {"name": "dark chocolate", "amount": 2, "unit": "oz", "notes": "dairy-free, melted, optional", "category": "pantry"}
+    ],
+    "instructions": [
+      "Slice each date lengthwise, just enough to open without splitting.",
+      "Fill each with about 1 tsp sunflower seed butter.",
+      "Sprinkle with flaky sea salt.",
+      "Optional: drizzle with melted dark chocolate. Set on parchment until firm."
+    ],
+    "nutrition": {"calories": 110, "protein": 2, "carbs": 18, "fat": 4, "fiber": 2, "sugar": 15},
+    "tags": ["quick-energy", "portable", "athlete"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "spicy-pickled-vegetables",
+    "slug": "spicy-pickled-vegetables",
+    "title": "Spicy Pickled Vegetables",
+    "description": "Mixed pickled vegetables for electrolyte replenishment. A few bites after heavy sweat sessions restores electrolytes fast.",
+    "frameworks": ["paleo", "whole30", "dairy-free", "gluten-free", "keto"],
+    "category": "snack",
+    "prepTime": 20,
+    "cookTime": 0,
+    "servings": 8,
+    "difficulty": "easy",
+    "ingredients": [
+      {"name": "cauliflower florets", "amount": 1, "unit": "cup", "notes": "small", "category": "produce"},
+      {"name": "carrots", "amount": 1, "unit": "cup", "notes": "sliced", "category": "produce"},
+      {"name": "celery", "amount": 0.5, "unit": "cup", "notes": "sliced", "category": "produce"},
+      {"name": "banana peppers", "amount": 0.5, "unit": "cup", "notes": "sliced", "category": "produce"},
+      {"name": "garlic", "amount": 4, "unit": "cloves", "category": "produce"},
+      {"name": "white vinegar", "amount": 1.5, "unit": "cups", "category": "pantry"},
+      {"name": "water", "amount": 0.5, "unit": "cup", "category": "other"},
+      {"name": "sea salt", "amount": 1, "unit": "tbsp", "category": "spices"},
+      {"name": "dried oregano", "amount": 1, "unit": "tsp", "category": "spices"},
+      {"name": "red pepper flakes", "amount": 0.5, "unit": "tsp", "category": "spices"}
+    ],
+    "instructions": [
+      "Pack vegetables and garlic tightly into a clean quart jar.",
+      "Bring vinegar, water, salt, oregano, and pepper flakes to a boil.",
+      "Pour hot brine over vegetables, leaving ½ inch headspace.",
+      "Tap jar to release air. Seal tightly.",
+      "Refrigerate at least 24 hours. Best after 3-5 days. Keeps 1 month."
+    ],
+    "nutrition": {"calories": 15, "protein": 1, "carbs": 3, "fat": 0, "fiber": 1, "sugar": 1},
+    "tags": ["electrolytes", "low-calorie", "athlete"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "chia-pudding",
+    "slug": "chia-pudding",
+    "title": "Chia Seed Pudding",
+    "description": "Creamy chia pudding with coconut milk. MCT fats and omega-3s, gentle on sensitive guts.",
+    "frameworks": ["paleo", "dairy-free", "gluten-free"],
+    "category": "snack",
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      {"name": "full-fat coconut milk", "amount": 1, "unit": "can", "notes": "13.5 oz", "category": "pantry"},
+      {"name": "chia seeds", "amount": 0.25, "unit": "cup", "category": "pantry"},
+      {"name": "maple syrup", "amount": 1, "unit": "tbsp", "category": "pantry"},
+      {"name": "vanilla extract", "amount": 0.5, "unit": "tsp", "category": "pantry"},
+      {"name": "sea salt", "amount": 1, "unit": "pinch", "category": "spices"},
+      {"name": "fresh berries", "amount": 0.5, "unit": "cup", "notes": "for topping", "category": "produce"}
+    ],
+    "instructions": [
+      "Whisk coconut milk, chia seeds, maple syrup, vanilla, and salt in a bowl.",
+      "Whisk again after 5 minutes to break up any clumps.",
+      "Cover and refrigerate at least 4 hours or overnight.",
+      "Stir before serving. Top with fresh berries."
+    ],
+    "nutrition": {"calories": 220, "protein": 5, "carbs": 15, "fat": 16, "fiber": 6, "sugar": 6},
+    "tags": ["omega-3", "recovery", "athlete"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "smoked-salmon-rice-cakes",
+    "slug": "smoked-salmon-rice-cakes",
+    "title": "Smoked Salmon Rice Cakes",
+    "description": "High-quality protein and omega-3s with zero dairy. Assemble at your desk in under 2 minutes.",
+    "frameworks": ["dairy-free", "gluten-free"],
+    "category": "snack",
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      {"name": "plain rice cakes", "amount": 4, "unit": "cakes", "category": "pantry"},
+      {"name": "smoked salmon", "amount": 4, "unit": "oz", "category": "seafood"},
+      {"name": "avocado", "amount": 0.5, "unit": "medium", "notes": "mashed", "category": "produce"},
+      {"name": "lemon juice", "amount": 1, "unit": "tsp", "category": "produce"},
+      {"name": "everything bagel seasoning", "amount": 1, "unit": "to taste", "category": "spices"},
+      {"name": "fresh dill", "amount": 1, "unit": "tbsp", "notes": "optional", "category": "produce"},
+      {"name": "capers", "amount": 1, "unit": "tsp", "notes": "optional", "category": "pantry"}
+    ],
+    "instructions": [
+      "Spread mashed avocado evenly on each rice cake.",
+      "Lay smoked salmon on top.",
+      "Squeeze lemon juice over each.",
+      "Sprinkle with everything bagel seasoning, dill, and capers."
+    ],
+    "nutrition": {"calories": 150, "protein": 10, "carbs": 12, "fat": 7, "fiber": 2, "sugar": 0},
+    "tags": ["protein", "omega-3", "quick", "athlete"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "frozen-banana-bites",
+    "slug": "frozen-banana-bites",
+    "title": "Frozen Banana Bites",
+    "description": "Frozen bananas have a creamy, ice-cream-like texture that kills sweet cravings without dairy.",
+    "frameworks": ["dairy-free", "gluten-free"],
+    "category": "snack",
+    "prepTime": 15,
+    "cookTime": 0,
+    "servings": 20,
+    "difficulty": "easy",
+    "ingredients": [
+      {"name": "bananas", "amount": 3, "unit": "medium", "notes": "sliced into ½-inch rounds", "category": "produce"},
+      {"name": "sunflower seed butter", "amount": 0.25, "unit": "cup", "category": "pantry"},
+      {"name": "dark chocolate", "amount": 4, "unit": "oz", "notes": "dairy-free, melted", "category": "pantry"},
+      {"name": "coconut oil", "amount": 1, "unit": "tbsp", "category": "oils"},
+      {"name": "flaky sea salt", "amount": 1, "unit": "pinch", "category": "spices"}
+    ],
+    "instructions": [
+      "Spread nut butter on a banana round. Top with another round to make a sandwich.",
+      "Repeat with remaining slices. Freeze on parchment-lined tray for 1 hour.",
+      "Melt chocolate with coconut oil. Dip each frozen sandwich halfway.",
+      "Return to tray. Sprinkle with salt. Freeze 1 more hour until solid.",
+      "Store in a freezer bag up to 1 month."
+    ],
+    "nutrition": {"calories": 60, "protein": 1, "carbs": 8, "fat": 3, "fiber": 1, "sugar": 5},
+    "tags": ["sweet", "post-workout", "athlete"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "edamame-chili-lime",
+    "slug": "edamame-chili-lime",
+    "title": "Edamame with Chili & Lime",
+    "description": "17g of complete plant protein per serving. One of the fastest high-protein snacks you can make.",
+    "frameworks": ["dairy-free", "gluten-free"],
+    "category": "snack",
+    "prepTime": 10,
+    "cookTime": 5,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      {"name": "frozen edamame", "amount": 1, "unit": "lb", "notes": "in shell", "category": "produce"},
+      {"name": "toasted sesame oil", "amount": 1, "unit": "tbsp", "category": "oils"},
+      {"name": "coconut aminos", "amount": 1, "unit": "tbsp", "category": "pantry"},
+      {"name": "lime juice", "amount": 1, "unit": "lime", "category": "produce"},
+      {"name": "chili flakes", "amount": 0.5, "unit": "tsp", "category": "spices"},
+      {"name": "sesame seeds", "amount": 1, "unit": "tsp", "category": "pantry"},
+      {"name": "flaky sea salt", "amount": 1, "unit": "to taste", "category": "spices"}
+    ],
+    "instructions": [
+      "Boil edamame 4-5 minutes until tender. Drain well.",
+      "Toss hot edamame with sesame oil, coconut aminos, lime juice, and chili flakes.",
+      "Transfer to a serving bowl. Top with sesame seeds and salt.",
+      "Eat warm or refrigerate for a cold snack."
+    ],
+    "nutrition": {"calories": 120, "protein": 17, "carbs": 8, "fat": 6, "fiber": 4, "sugar": 2},
+    "tags": ["plant-protein", "quick", "athlete"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "apple-almond-stackers",
+    "slug": "apple-almond-stackers",
+    "title": "Apple & Almond Butter Stackers",
+    "description": "Hits protein, healthy fats, fiber, and quick carbs in one snack. Perfect between meals on training days.",
+    "frameworks": ["paleo", "dairy-free", "gluten-free"],
+    "category": "snack",
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      {"name": "apple", "amount": 1, "unit": "large", "notes": "cored and sliced into rounds", "category": "produce"},
+      {"name": "almond butter", "amount": 3, "unit": "tbsp", "category": "pantry"},
+      {"name": "hemp seeds", "amount": 1, "unit": "tbsp", "category": "pantry"},
+      {"name": "mini chocolate chips", "amount": 1, "unit": "tbsp", "notes": "dairy-free", "category": "pantry"},
+      {"name": "raw honey", "amount": 1, "unit": "drizzle", "category": "pantry"},
+      {"name": "cinnamon", "amount": 1, "unit": "pinch", "category": "spices"}
+    ],
+    "instructions": [
+      "Lay apple rounds flat on a plate or cutting board.",
+      "Spread almond butter across each round.",
+      "Sprinkle with hemp seeds, chocolate chips, and cinnamon.",
+      "Drizzle lightly with honey. Stack or eat open-faced."
+    ],
+    "nutrition": {"calories": 200, "protein": 5, "carbs": 20, "fat": 12, "fiber": 4, "sugar": 12},
+    "tags": ["quick", "balanced-macros", "athlete"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "fermented-honey-garlic",
+    "slug": "fermented-honey-garlic",
+    "title": "Fermented Honey Garlic",
+    "description": "One clove daily supports immune function. The fermented honey doubles as a sore throat remedy or glaze for meats.",
+    "frameworks": ["paleo", "dairy-free", "gluten-free"],
+    "category": "snack",
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 20,
+    "difficulty": "medium",
+    "ingredients": [
+      {"name": "garlic cloves", "amount": 1, "unit": "cup", "notes": "peeled, about 2 heads", "category": "produce"},
+      {"name": "raw honey", "amount": 1, "unit": "cup", "notes": "enough to cover garlic", "category": "pantry"}
+    ],
+    "instructions": [
+      "Lightly crush each garlic clove with the flat of a knife to release juices.",
+      "Place garlic in a clean pint jar.",
+      "Pour raw honey over garlic until fully submerged. Leave 1 inch headspace.",
+      "Loosely cap the jar (fermentation produces CO2). Flip jar daily for the first week.",
+      "After 2-4 weeks, honey will thin and bubble. Garlic is ready when it darkens slightly.",
+      "Tighten lid and store at room temperature indefinitely. Flavor improves with age."
+    ],
+    "nutrition": {"calories": 20, "protein": 0, "carbs": 5, "fat": 0, "fiber": 0, "sugar": 4},
+    "tags": ["immune", "gut-health", "fermented", "athlete"],
+    "biblicallyClean": true
+  }
+]

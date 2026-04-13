@@ -1,0 +1,2022 @@
+[
+    {
+        "id": "gfdf-narisawa-charcoal-grilled-salmon",
+        "slug": "gfdf-narisawa-charcoal-grilled-salmon",
+        "title": "Charcoal-Grilled Salmon with Forest Herb Oil",
+        "description": "Salmon seared over high heat with a binchotan-inspired char, served with a wild herb oil of shiso, chives, and parsley. Inspired by Narisawa's reverence for fire and forest.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 12,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "wild salmon fillets",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "skin-on",
+                "category": "seafood"
+            },
+            {
+                "name": "avocado oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "fresh shiso leaves",
+                "amount": 10,
+                "unit": "",
+                "notes": "or substitute basil",
+                "category": "produce"
+            },
+            {
+                "name": "fresh chives",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "fresh parsley",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "packed",
+                "category": "produce"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 0.33,
+                "unit": "cup",
+                "notes": "for herb oil",
+                "category": "oils"
+            },
+            {
+                "name": "lemon",
+                "amount": 1,
+                "unit": "",
+                "notes": "juiced and zested",
+                "category": "produce"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 2,
+                "unit": "",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "activated charcoal powder",
+                "amount": 0.25,
+                "unit": "tsp",
+                "notes": "food-grade, optional for color",
+                "category": "pantry"
+            }
+        ],
+        "instructions": [
+            "Blend shiso, chives, parsley, olive oil, lemon juice, lemon zest, and garlic in a small blender until smooth. Season herb oil with a pinch of salt and set aside.",
+            "Pat salmon fillets dry. Rub with avocado oil, sea salt, black pepper, and optional charcoal powder for a dark crust effect.",
+            "Heat a cast-iron skillet or grill to very high heat. Sear salmon skin-side down for 4 minutes until the skin is deeply crisp.",
+            "Flip and cook 3-4 minutes more for medium, adjusting for thickness.",
+            "Rest salmon 2 minutes. Spoon forest herb oil generously over each fillet and serve."
+        ],
+        "nutrition": {
+            "calories": 420,
+            "protein": 36,
+            "carbs": 3,
+            "fat": 30,
+            "fiber": 1,
+            "sugar": 1
+        },
+        "tags": [
+            "narisawa-inspired",
+            "japanese-french",
+            "satoyama",
+            "charcoal",
+            "salmon"
+        ],
+        "biblicallyClean": true,
+        "chef": "Yoshihiro Narisawa"
+    },
+    {
+        "id": "gfdf-narisawa-soil-crusted-beef",
+        "slug": "gfdf-narisawa-soil-crusted-beef",
+        "title": "Soil-Crusted Beef Tenderloin with Root Vegetables",
+        "description": "Beef tenderloin coated in an earthy spice crust of mushroom powder, black sesame, and smoked paprika \u2014 evoking Narisawa's iconic 'Soil Soup' and his dialogue between earth and plate.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 25,
+        "cookTime": 35,
+        "servings": 4,
+        "difficulty": "hard",
+        "ingredients": [
+            {
+                "name": "beef tenderloin",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "trimmed, tied",
+                "category": "meat"
+            },
+            {
+                "name": "dried porcini mushroom powder",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "ground in spice grinder",
+                "category": "pantry"
+            },
+            {
+                "name": "black sesame seeds",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "ground",
+                "category": "pantry"
+            },
+            {
+                "name": "smoked paprika",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "avocado oil",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "beets",
+                "amount": 2,
+                "unit": "",
+                "notes": "peeled, cut into wedges",
+                "category": "produce"
+            },
+            {
+                "name": "parsnips",
+                "amount": 2,
+                "unit": "",
+                "notes": "peeled, halved lengthwise",
+                "category": "produce"
+            },
+            {
+                "name": "carrots",
+                "amount": 3,
+                "unit": "",
+                "notes": "peeled, halved lengthwise",
+                "category": "produce"
+            },
+            {
+                "name": "fresh thyme",
+                "amount": 4,
+                "unit": "sprigs",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 425\u00b0F. Toss beets, parsnips, and carrots with 1 tbsp avocado oil, thyme, and a pinch of salt. Spread on a sheet pan and roast for 20 minutes.",
+            "Mix mushroom powder, ground black sesame, smoked paprika, 1 tsp salt, and pepper in a bowl.",
+            "Pat beef dry, rub with 1 tbsp avocado oil, then press the soil spice crust mixture all over the surface.",
+            "Heat remaining 1 tbsp avocado oil in a cast-iron skillet over high heat. Sear beef on all sides, about 2 minutes per side.",
+            "Transfer seared beef to the sheet pan with root vegetables. Roast 15-18 minutes for medium-rare (internal temp 130\u00b0F).",
+            "Rest beef 10 minutes, then slice. Arrange over roasted root vegetables and serve."
+        ],
+        "nutrition": {
+            "calories": 480,
+            "protein": 40,
+            "carbs": 22,
+            "fat": 25,
+            "fiber": 6,
+            "sugar": 9
+        },
+        "tags": [
+            "narisawa-inspired",
+            "japanese-french",
+            "satoyama",
+            "earthy",
+            "beef"
+        ],
+        "biblicallyClean": true,
+        "chef": "Yoshihiro Narisawa"
+    },
+    {
+        "id": "gfdf-narisawa-dashi-poached-cod",
+        "slug": "gfdf-narisawa-dashi-poached-cod",
+        "title": "Kombu Dashi-Poached Cod with Bamboo Shoots",
+        "description": "Cod gently poached in a rich kombu and bonito dashi with bamboo shoots and shiitake. Narisawa's ocean-meets-forest philosophy, rendered clean and simple.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 20,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "cod fillets",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "skin removed, cut into 4 portions",
+                "category": "seafood"
+            },
+            {
+                "name": "kombu seaweed",
+                "amount": 1,
+                "unit": "piece",
+                "notes": "4-inch strip",
+                "category": "pantry"
+            },
+            {
+                "name": "bonito flakes",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "packed",
+                "category": "pantry"
+            },
+            {
+                "name": "water",
+                "amount": 4,
+                "unit": "cups",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "bamboo shoots",
+                "amount": 1,
+                "unit": "cup",
+                "notes": "sliced, canned or fresh",
+                "category": "produce"
+            },
+            {
+                "name": "shiitake mushrooms",
+                "amount": 6,
+                "unit": "",
+                "notes": "stemmed, sliced",
+                "category": "produce"
+            },
+            {
+                "name": "coconut aminos",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "mirin",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "fresh ginger",
+                "amount": 1,
+                "unit": "inch",
+                "notes": "sliced into coins",
+                "category": "produce"
+            },
+            {
+                "name": "green onions",
+                "amount": 3,
+                "unit": "",
+                "notes": "thinly sliced",
+                "category": "produce"
+            },
+            {
+                "name": "sea salt",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Make dashi: bring water and kombu to a gentle simmer over medium heat (do not boil). Remove kombu just before boiling. Add bonito flakes, steep 3 minutes, then strain through a fine-mesh sieve.",
+            "Return dashi to pot. Add coconut aminos, mirin, ginger coins, and salt. Bring to a gentle simmer.",
+            "Add shiitake mushrooms and bamboo shoots, simmer 5 minutes.",
+            "Season cod with a pinch of salt. Gently lower fillets into the simmering dashi. Poach at a bare simmer for 8-10 minutes until cod flakes easily.",
+            "Ladle cod into shallow bowls with broth, mushrooms, and bamboo shoots. Garnish with sliced green onions."
+        ],
+        "nutrition": {
+            "calories": 260,
+            "protein": 38,
+            "carbs": 10,
+            "fat": 5,
+            "fiber": 2,
+            "sugar": 4
+        },
+        "tags": [
+            "narisawa-inspired",
+            "japanese-french",
+            "satoyama",
+            "dashi",
+            "cod",
+            "poached"
+        ],
+        "biblicallyClean": true,
+        "chef": "Yoshihiro Narisawa"
+    },
+    {
+        "id": "gfdf-narisawa-forest-floor-chicken",
+        "slug": "gfdf-narisawa-forest-floor-chicken",
+        "title": "Forest Floor Chicken with Wild Mushrooms and Herbs",
+        "description": "Roasted chicken thighs nestled among a medley of wild mushrooms, fresh herbs, and pine nuts \u2014 a tribute to Narisawa's satoyama walks through the Japanese forest floor.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 35,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "bone-in chicken thighs",
+                "amount": 2,
+                "unit": "lbs",
+                "notes": "skin-on",
+                "category": "meat"
+            },
+            {
+                "name": "mixed wild mushrooms",
+                "amount": 1,
+                "unit": "lb",
+                "notes": "maitake, shiitake, oyster \u2014 torn into pieces",
+                "category": "produce"
+            },
+            {
+                "name": "fresh rosemary",
+                "amount": 2,
+                "unit": "sprigs",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "fresh thyme",
+                "amount": 4,
+                "unit": "sprigs",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 5,
+                "unit": "",
+                "notes": "smashed",
+                "category": "produce"
+            },
+            {
+                "name": "pine nuts",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "toasted",
+                "category": "pantry"
+            },
+            {
+                "name": "avocado oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "coconut aminos",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.75,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 425\u00b0F. Season chicken thighs generously with salt and pepper.",
+            "Heat avocado oil in a large oven-safe skillet over medium-high heat. Sear chicken skin-side down for 6-7 minutes until golden and crisp. Remove and set aside.",
+            "In the same skillet, add mushrooms, garlic, rosemary, and thyme. Cook 4-5 minutes, stirring, until mushrooms begin to brown. Drizzle with coconut aminos.",
+            "Nestle chicken thighs skin-side up on top of the mushroom bed. Transfer skillet to oven.",
+            "Roast 20-25 minutes until chicken reaches 175\u00b0F internal temperature and skin is deeply golden.",
+            "Scatter toasted pine nuts over the dish. Serve directly from the skillet."
+        ],
+        "nutrition": {
+            "calories": 460,
+            "protein": 38,
+            "carbs": 8,
+            "fat": 32,
+            "fiber": 3,
+            "sugar": 3
+        },
+        "tags": [
+            "narisawa-inspired",
+            "japanese-french",
+            "satoyama",
+            "mushrooms",
+            "chicken",
+            "forest"
+        ],
+        "biblicallyClean": true,
+        "chef": "Yoshihiro Narisawa"
+    },
+    {
+        "id": "gfdf-narisawa-black-garlic-strip-steak",
+        "slug": "gfdf-narisawa-black-garlic-strip-steak",
+        "title": "Black Garlic Strip Steak with Charred Scallions",
+        "description": "Seared strip steak finished with a black garlic and coconut aminos glaze, served with charred scallions. The deep umami of black garlic channels Narisawa's mastery of fermentation and fire.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 10,
+        "cookTime": 15,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "NY strip steaks",
+                "amount": 2,
+                "unit": "lbs",
+                "notes": "2 large or 4 small steaks, 1-inch thick",
+                "category": "meat"
+            },
+            {
+                "name": "black garlic cloves",
+                "amount": 6,
+                "unit": "",
+                "notes": "mashed into a paste",
+                "category": "pantry"
+            },
+            {
+                "name": "coconut aminos",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "rice vinegar",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "scallions",
+                "amount": 2,
+                "unit": "bunches",
+                "notes": "trimmed, left whole",
+                "category": "produce"
+            },
+            {
+                "name": "avocado oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "sesame oil",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "toasted",
+                "category": "oils"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "coarsely ground",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Bring steaks to room temperature 30 minutes before cooking. Season generously with salt and pepper on all sides.",
+            "Mix black garlic paste with coconut aminos, rice vinegar, and sesame oil to form a glaze.",
+            "Heat avocado oil in a heavy skillet over high heat until smoking. Sear steaks 4 minutes per side for medium-rare.",
+            "In the last minute, spoon the black garlic glaze over the steaks and baste with pan juices.",
+            "Remove steaks to a cutting board to rest. In the same hot skillet, char the whole scallions for 2-3 minutes, turning once, until blistered and softened.",
+            "Slice steaks against the grain. Serve topped with any remaining pan glaze and charred scallions alongside."
+        ],
+        "nutrition": {
+            "calories": 510,
+            "protein": 48,
+            "carbs": 6,
+            "fat": 33,
+            "fiber": 1,
+            "sugar": 3
+        },
+        "tags": [
+            "narisawa-inspired",
+            "japanese-french",
+            "satoyama",
+            "black-garlic",
+            "steak",
+            "umami"
+        ],
+        "biblicallyClean": true,
+        "chef": "Yoshihiro Narisawa"
+    },
+    {
+        "id": "gfdf-narisawa-ocean-trout-seaweed",
+        "slug": "gfdf-narisawa-ocean-trout-seaweed",
+        "title": "Ocean Trout with Nori Butter and Wakame Salad",
+        "description": "Pan-seared trout with a nori-infused coconut oil finish, paired with a refreshing wakame seaweed salad. Narisawa's deep respect for the ocean, adapted dairy-free.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 10,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "trout fillets",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "skin-on",
+                "category": "seafood"
+            },
+            {
+                "name": "coconut oil",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "refined",
+                "category": "oils"
+            },
+            {
+                "name": "nori sheets",
+                "amount": 2,
+                "unit": "",
+                "notes": "crumbled finely",
+                "category": "pantry"
+            },
+            {
+                "name": "dried wakame",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "rehydrated in water 5 minutes",
+                "category": "pantry"
+            },
+            {
+                "name": "cucumber",
+                "amount": 1,
+                "unit": "",
+                "notes": "thinly sliced",
+                "category": "produce"
+            },
+            {
+                "name": "rice vinegar",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "sesame oil",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "toasted",
+                "category": "oils"
+            },
+            {
+                "name": "sesame seeds",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "lemon",
+                "amount": 1,
+                "unit": "",
+                "notes": "cut into wedges",
+                "category": "produce"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "white pepper",
+                "amount": 0.25,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Toss rehydrated wakame with sliced cucumber, rice vinegar, sesame oil, sesame seeds, and a pinch of salt. Refrigerate while cooking fish.",
+            "Melt 2 tbsp coconut oil in a skillet over medium-high heat. Season trout with salt and white pepper.",
+            "Sear trout skin-side down for 4 minutes until skin is crisp. Flip, cook 2-3 minutes more.",
+            "Remove trout to plates. Reduce heat to low, add remaining 1 tbsp coconut oil and crumbled nori to the skillet. Stir until nori is fragrant and oil is infused, about 30 seconds.",
+            "Spoon nori oil over each trout fillet. Serve with wakame-cucumber salad and lemon wedges."
+        ],
+        "nutrition": {
+            "calories": 380,
+            "protein": 34,
+            "carbs": 5,
+            "fat": 26,
+            "fiber": 2,
+            "sugar": 2
+        },
+        "tags": [
+            "narisawa-inspired",
+            "japanese-french",
+            "satoyama",
+            "ocean",
+            "trout",
+            "seaweed"
+        ],
+        "biblicallyClean": true,
+        "chef": "Yoshihiro Narisawa"
+    },
+    {
+        "id": "gfdf-narisawa-smoked-duck-kabocha",
+        "slug": "gfdf-narisawa-smoked-duck-kabocha",
+        "title": "Tea-Smoked Duck Breast with Kabocha Pur\u00e9e",
+        "description": "Duck breast lightly smoked with hojicha tea leaves, served over a silky kabocha squash pur\u00e9e. Narisawa's balance of smoke, sweetness, and precision in every slice.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 25,
+        "cookTime": 40,
+        "servings": 4,
+        "difficulty": "hard",
+        "ingredients": [
+            {
+                "name": "duck breasts",
+                "amount": 2,
+                "unit": "lbs",
+                "notes": "2 whole breasts, skin scored",
+                "category": "meat"
+            },
+            {
+                "name": "hojicha tea leaves",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "or lapsang souchong for smokier flavor",
+                "category": "pantry"
+            },
+            {
+                "name": "rice",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "uncooked, for smoking",
+                "category": "pantry"
+            },
+            {
+                "name": "kabocha squash",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "peeled, seeded, cubed",
+                "category": "produce"
+            },
+            {
+                "name": "coconut cream",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "full-fat, from can",
+                "category": "pantry"
+            },
+            {
+                "name": "fresh ginger",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "grated",
+                "category": "produce"
+            },
+            {
+                "name": "nutmeg",
+                "amount": 0.25,
+                "unit": "tsp",
+                "notes": "freshly grated",
+                "category": "spices"
+            },
+            {
+                "name": "avocado oil",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.75,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "fresh chives",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "for garnish",
+                "category": "produce"
+            }
+        ],
+        "instructions": [
+            "Steam or boil kabocha cubes until very tender, about 15 minutes. Drain and mash with coconut cream, grated ginger, nutmeg, and a pinch of salt until smooth. Keep warm.",
+            "Season duck breasts with salt and pepper. Place skin-side down in a cold skillet, then turn heat to medium. Render fat slowly for 10-12 minutes until skin is very crisp.",
+            "Flip duck and cook 4-5 minutes for medium-rare (135\u00b0F internal). Remove and rest on a cutting board.",
+            "Optional tea-smoke: line a wok with foil, add tea leaves and rice. Set a rack above, place seared duck on rack, cover tightly. Heat over medium 3-4 minutes to lightly smoke.",
+            "Slice duck breast thinly on the bias. Spoon kabocha pur\u00e9e onto plates, fan duck slices over top, and garnish with chives."
+        ],
+        "nutrition": {
+            "calories": 490,
+            "protein": 35,
+            "carbs": 24,
+            "fat": 28,
+            "fiber": 4,
+            "sugar": 6
+        },
+        "tags": [
+            "narisawa-inspired",
+            "japanese-french",
+            "satoyama",
+            "duck",
+            "smoked",
+            "kabocha"
+        ],
+        "biblicallyClean": true,
+        "chef": "Yoshihiro Narisawa"
+    },
+    {
+        "id": "gfdf-narisawa-miso-glazed-lamb",
+        "slug": "gfdf-narisawa-miso-glazed-lamb",
+        "title": "White Miso-Glazed Lamb Chops with Sansho Pepper",
+        "description": "Lamb chops marinated in white miso and mirin, seared until caramelized, finished with sansho pepper. Narisawa's Japanese-French fusion at its most elegant.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 12,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "lamb loin chops",
+                "amount": 2,
+                "unit": "lbs",
+                "notes": "8 chops, frenched",
+                "category": "meat"
+            },
+            {
+                "name": "white miso paste",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "ensure gluten-free (rice-based)",
+                "category": "pantry"
+            },
+            {
+                "name": "mirin",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "coconut aminos",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "fresh ginger",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "grated",
+                "category": "produce"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 2,
+                "unit": "",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "sansho pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "or substitute Sichuan peppercorn, ground",
+                "category": "spices"
+            },
+            {
+                "name": "avocado oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "green onions",
+                "amount": 3,
+                "unit": "",
+                "notes": "sliced on the bias",
+                "category": "produce"
+            },
+            {
+                "name": "sea salt",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Whisk together white miso, mirin, coconut aminos, ginger, and garlic. Coat lamb chops with the mixture, marinate 15 minutes (or up to 4 hours refrigerated).",
+            "Scrape off excess marinade (reserve it). Pat chops lightly dry. Season with salt.",
+            "Heat avocado oil in a heavy skillet over high heat. Sear lamb chops 3 minutes per side for medium-rare.",
+            "Reduce heat to medium. Add reserved marinade to the pan, let it bubble and caramelize around the chops for 30 seconds per side.",
+            "Transfer to plates, dust with sansho pepper, and garnish with sliced green onions."
+        ],
+        "nutrition": {
+            "calories": 440,
+            "protein": 36,
+            "carbs": 8,
+            "fat": 29,
+            "fiber": 1,
+            "sugar": 4
+        },
+        "tags": [
+            "narisawa-inspired",
+            "japanese-french",
+            "satoyama",
+            "miso",
+            "lamb",
+            "sansho"
+        ],
+        "biblicallyClean": true,
+        "chef": "Yoshihiro Narisawa"
+    },
+    {
+        "id": "gfdf-narisawa-bamboo-chicken-broth",
+        "slug": "gfdf-narisawa-bamboo-chicken-broth",
+        "title": "Bamboo Forest Chicken in Aromatic Broth",
+        "description": "Tender chicken simmered in a clear aromatic broth with bamboo shoots, enoki mushrooms, and yuzu. Narisawa's bamboo forest walks distilled into a nourishing bowl.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 25,
+        "servings": 4,
+        "difficulty": "easy",
+        "ingredients": [
+            {
+                "name": "chicken breast",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "boneless, sliced thin",
+                "category": "meat"
+            },
+            {
+                "name": "chicken bone broth",
+                "amount": 6,
+                "unit": "cups",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "bamboo shoots",
+                "amount": 1,
+                "unit": "cup",
+                "notes": "sliced",
+                "category": "produce"
+            },
+            {
+                "name": "enoki mushrooms",
+                "amount": 4,
+                "unit": "oz",
+                "notes": "trimmed",
+                "category": "produce"
+            },
+            {
+                "name": "fresh ginger",
+                "amount": 2,
+                "unit": "inches",
+                "notes": "sliced",
+                "category": "produce"
+            },
+            {
+                "name": "coconut aminos",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "yuzu juice",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "or substitute lemon juice",
+                "category": "pantry"
+            },
+            {
+                "name": "fresh cilantro",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "leaves only",
+                "category": "produce"
+            },
+            {
+                "name": "sea salt",
+                "amount": 0.75,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "white pepper",
+                "amount": 0.25,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Bring chicken bone broth to a simmer with ginger slices. Let ginger infuse for 5 minutes.",
+            "Add bamboo shoots and coconut aminos. Simmer 5 minutes.",
+            "Add sliced chicken breast. Poach gently at a bare simmer for 6-8 minutes until cooked through.",
+            "Add enoki mushrooms in the last 2 minutes of cooking.",
+            "Remove ginger slices. Season with salt, white pepper, and yuzu juice.",
+            "Ladle into deep bowls. Garnish with fresh cilantro leaves."
+        ],
+        "nutrition": {
+            "calories": 290,
+            "protein": 42,
+            "carbs": 8,
+            "fat": 9,
+            "fiber": 2,
+            "sugar": 3
+        },
+        "tags": [
+            "narisawa-inspired",
+            "japanese-french",
+            "satoyama",
+            "bamboo",
+            "broth",
+            "chicken"
+        ],
+        "biblicallyClean": true,
+        "chef": "Yoshihiro Narisawa"
+    },
+    {
+        "id": "gfdf-narisawa-charred-brassica-beef",
+        "slug": "gfdf-narisawa-charred-brassica-beef",
+        "title": "Charred Brassicas with Sliced Beef and Ponzu",
+        "description": "Deeply charred broccoli and broccolini alongside thin-sliced seared beef, dressed in a bright citrus ponzu. Narisawa's celebration of vegetables elevated to co-star with the protein.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 15,
+        "servings": 4,
+        "difficulty": "easy",
+        "ingredients": [
+            {
+                "name": "sirloin steak",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "",
+                "category": "meat"
+            },
+            {
+                "name": "broccoli",
+                "amount": 1,
+                "unit": "lb",
+                "notes": "cut into large florets",
+                "category": "produce"
+            },
+            {
+                "name": "broccolini",
+                "amount": 0.5,
+                "unit": "lb",
+                "notes": "trimmed",
+                "category": "produce"
+            },
+            {
+                "name": "coconut aminos",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "lemon juice",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "orange juice",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "fresh",
+                "category": "produce"
+            },
+            {
+                "name": "rice vinegar",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "avocado oil",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 3,
+                "unit": "",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "sesame seeds",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "for garnish",
+                "category": "pantry"
+            }
+        ],
+        "instructions": [
+            "Make ponzu: whisk together coconut aminos, lemon juice, orange juice, and rice vinegar. Set aside.",
+            "Heat 2 tbsp avocado oil in a large skillet over high heat. Add broccoli and broccolini in a single layer, pressing down. Char without moving for 3-4 minutes. Flip, char 2 more minutes. Season with salt, add garlic, toss 30 seconds. Transfer to a platter.",
+            "Season sirloin with salt and pepper. Add remaining 1 tbsp oil to the same screaming-hot skillet. Sear steak 3-4 minutes per side for medium-rare.",
+            "Rest steak 5 minutes, then slice thin against the grain.",
+            "Arrange sliced beef over charred brassicas. Drizzle generously with ponzu and sprinkle with sesame seeds."
+        ],
+        "nutrition": {
+            "calories": 430,
+            "protein": 42,
+            "carbs": 14,
+            "fat": 24,
+            "fiber": 5,
+            "sugar": 4
+        },
+        "tags": [
+            "narisawa-inspired",
+            "japanese-french",
+            "satoyama",
+            "charred",
+            "vegetables",
+            "beef"
+        ],
+        "biblicallyClean": true,
+        "chef": "Yoshihiro Narisawa"
+    },
+    {
+        "id": "gfdf-narisawa-mountain-vegetable-salmon",
+        "slug": "gfdf-narisawa-mountain-vegetable-salmon",
+        "title": "Salmon with Mountain Vegetables and Sansho Salt",
+        "description": "Crispy-skinned salmon served over saut\u00e9ed mountain vegetables \u2014 fiddleheads, asparagus, and ramps \u2014 with sansho salt. Narisawa's spring sansai tradition.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 15,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "salmon fillets",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "skin-on, 4 portions",
+                "category": "seafood"
+            },
+            {
+                "name": "asparagus",
+                "amount": 1,
+                "unit": "bunch",
+                "notes": "trimmed, cut into 2-inch pieces",
+                "category": "produce"
+            },
+            {
+                "name": "ramps",
+                "amount": 1,
+                "unit": "cup",
+                "notes": "or substitute spring onions",
+                "category": "produce"
+            },
+            {
+                "name": "fiddlehead ferns",
+                "amount": 1,
+                "unit": "cup",
+                "notes": "cleaned, or substitute snap peas",
+                "category": "produce"
+            },
+            {
+                "name": "avocado oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "sansho pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "ground, or Sichuan peppercorn",
+                "category": "spices"
+            },
+            {
+                "name": "flaky sea salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "lemon",
+                "amount": 1,
+                "unit": "",
+                "notes": "halved",
+                "category": "produce"
+            }
+        ],
+        "instructions": [
+            "Mix sansho pepper with flaky sea salt to create sansho salt. Set aside.",
+            "Heat avocado oil in a large skillet over medium-high heat. Season salmon with a pinch of sansho salt. Place skin-side down, press gently. Sear 5 minutes until skin is deeply crisp.",
+            "Flip salmon, cook 3 minutes more. Remove to a plate.",
+            "In the same skillet, add olive oil. Saut\u00e9 fiddleheads (or snap peas) and asparagus 3 minutes. Add ramps, cook 1 minute more until just wilted.",
+            "Divide mountain vegetables among plates. Top with salmon. Squeeze lemon over everything and finish with a generous pinch of sansho salt."
+        ],
+        "nutrition": {
+            "calories": 400,
+            "protein": 37,
+            "carbs": 8,
+            "fat": 25,
+            "fiber": 3,
+            "sugar": 3
+        },
+        "tags": [
+            "narisawa-inspired",
+            "japanese-french",
+            "satoyama",
+            "mountain-vegetables",
+            "salmon",
+            "spring"
+        ],
+        "biblicallyClean": true,
+        "chef": "Yoshihiro Narisawa"
+    },
+    {
+        "id": "gfdf-narisawa-earthy-beet-venison",
+        "slug": "gfdf-narisawa-earthy-beet-venison",
+        "title": "Seared Venison with Beet Reduction and Watercress",
+        "description": "Pan-seared venison loin with a deep ruby beet reduction and peppery watercress. Narisawa's earth-to-plate philosophy, where the soil's color becomes the sauce.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 30,
+        "servings": 4,
+        "difficulty": "hard",
+        "ingredients": [
+            {
+                "name": "venison loin",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "or substitute beef tenderloin",
+                "category": "meat"
+            },
+            {
+                "name": "beet juice",
+                "amount": 1,
+                "unit": "cup",
+                "notes": "fresh or store-bought",
+                "category": "produce"
+            },
+            {
+                "name": "red wine vinegar",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "coconut aminos",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "watercress",
+                "amount": 2,
+                "unit": "cups",
+                "notes": "stems trimmed",
+                "category": "produce"
+            },
+            {
+                "name": "shallot",
+                "amount": 1,
+                "unit": "",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "fresh thyme",
+                "amount": 3,
+                "unit": "sprigs",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "avocado oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "for watercress",
+                "category": "oils"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "coarsely cracked",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Make beet reduction: simmer beet juice with shallot, red wine vinegar, coconut aminos, and thyme sprigs over medium heat until reduced to about 1/4 cup and syrupy, about 15 minutes. Strain and keep warm.",
+            "Season venison generously with salt and cracked pepper. Let sit at room temperature 15 minutes.",
+            "Heat avocado oil in a cast-iron skillet over high heat. Sear venison on all sides, about 2 minutes per side for medium-rare (130\u00b0F internal).",
+            "Rest venison 8 minutes, then slice into medallions.",
+            "Lightly dress watercress with olive oil and a pinch of salt. Arrange on plates.",
+            "Fan venison medallions over watercress, drizzle beet reduction over and around the plate."
+        ],
+        "nutrition": {
+            "calories": 370,
+            "protein": 42,
+            "carbs": 10,
+            "fat": 18,
+            "fiber": 1,
+            "sugar": 7
+        },
+        "tags": [
+            "narisawa-inspired",
+            "japanese-french",
+            "satoyama",
+            "earthy",
+            "venison",
+            "beet"
+        ],
+        "biblicallyClean": true,
+        "chef": "Yoshihiro Narisawa"
+    },
+    {
+        "id": "gfdf-narisawa-shiitake-stuffed-squash",
+        "slug": "gfdf-narisawa-shiitake-stuffed-squash",
+        "title": "Shiitake-Stuffed Delicata Squash with Ground Turkey",
+        "description": "Roasted delicata squash halves filled with a savory mixture of ground turkey, shiitake mushrooms, and water chestnuts. Narisawa's ethos of honoring each ingredient's natural form.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 40,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "delicata squash",
+                "amount": 2,
+                "unit": "",
+                "notes": "halved and seeded",
+                "category": "produce"
+            },
+            {
+                "name": "ground turkey",
+                "amount": 1,
+                "unit": "lb",
+                "notes": "",
+                "category": "meat"
+            },
+            {
+                "name": "shiitake mushrooms",
+                "amount": 8,
+                "unit": "oz",
+                "notes": "stemmed, finely diced",
+                "category": "produce"
+            },
+            {
+                "name": "water chestnuts",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "diced",
+                "category": "produce"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 3,
+                "unit": "",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "fresh ginger",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "grated",
+                "category": "produce"
+            },
+            {
+                "name": "coconut aminos",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "sesame oil",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "toasted",
+                "category": "oils"
+            },
+            {
+                "name": "avocado oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "green onions",
+                "amount": 3,
+                "unit": "",
+                "notes": "sliced",
+                "category": "produce"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 400\u00b0F. Brush squash halves with 1 tbsp avocado oil, season with salt and pepper. Roast cut-side down on a sheet pan for 20 minutes until just tender.",
+            "While squash roasts, heat remaining avocado oil in a skillet over medium-high heat. Cook ground turkey, breaking it up, until browned \u2014 about 6 minutes.",
+            "Add shiitake mushrooms, garlic, and ginger. Cook 4 minutes until mushrooms are softened.",
+            "Stir in water chestnuts, coconut aminos, and sesame oil. Cook 2 minutes more. Season with salt and pepper.",
+            "Flip roasted squash cut-side up. Fill each half generously with the turkey-mushroom mixture.",
+            "Return to oven for 10 minutes to heat through. Garnish with green onions and serve."
+        ],
+        "nutrition": {
+            "calories": 380,
+            "protein": 30,
+            "carbs": 28,
+            "fat": 18,
+            "fiber": 4,
+            "sugar": 6
+        },
+        "tags": [
+            "narisawa-inspired",
+            "japanese-french",
+            "satoyama",
+            "stuffed",
+            "squash",
+            "mushrooms"
+        ],
+        "biblicallyClean": true,
+        "chef": "Yoshihiro Narisawa"
+    },
+    {
+        "id": "gfdf-narisawa-matcha-crusted-tuna",
+        "slug": "gfdf-narisawa-matcha-crusted-tuna",
+        "title": "Matcha-Crusted Seared Tuna with Daikon",
+        "description": "Ahi tuna seared in a vibrant matcha and black sesame crust, served with grated daikon and a citrus-aminos dipping sauce. Narisawa's reverence for tea culture meets the ocean.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 5,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "sushi-grade ahi tuna steaks",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "2 thick steaks",
+                "category": "seafood"
+            },
+            {
+                "name": "matcha powder",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "culinary grade",
+                "category": "pantry"
+            },
+            {
+                "name": "black sesame seeds",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "white sesame seeds",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "daikon radish",
+                "amount": 1,
+                "unit": "cup",
+                "notes": "finely grated, squeezed dry",
+                "category": "produce"
+            },
+            {
+                "name": "coconut aminos",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "lime juice",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "fresh ginger",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "finely grated",
+                "category": "produce"
+            },
+            {
+                "name": "avocado oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "sea salt",
+                "amount": 0.75,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Mix matcha powder, black sesame seeds, white sesame seeds, and salt on a plate.",
+            "Make dipping sauce: combine coconut aminos, lime juice, and grated ginger in a small bowl.",
+            "Pat tuna steaks very dry. Press all sides firmly into the matcha-sesame mixture to coat.",
+            "Heat avocado oil in a skillet over highest heat until just smoking. Sear tuna 30-45 seconds per side for rare (or longer to preference). Edges should be seared, center raw.",
+            "Slice tuna into 1/4-inch slices. Arrange on plates with a mound of grated daikon. Serve dipping sauce alongside."
+        ],
+        "nutrition": {
+            "calories": 350,
+            "protein": 44,
+            "carbs": 6,
+            "fat": 16,
+            "fiber": 2,
+            "sugar": 2
+        },
+        "tags": [
+            "narisawa-inspired",
+            "japanese-french",
+            "satoyama",
+            "matcha",
+            "tuna",
+            "seared"
+        ],
+        "biblicallyClean": true,
+        "chef": "Yoshihiro Narisawa"
+    },
+    {
+        "id": "gfdf-narisawa-root-braised-short-ribs",
+        "slug": "gfdf-narisawa-root-braised-short-ribs",
+        "title": "Root Vegetable-Braised Short Ribs with Burdock",
+        "description": "Beef short ribs slow-braised with burdock root, turnips, and shiitake in a coconut aminos-mirin broth. Narisawa's deep-earth cooking \u2014 patient, elemental, transformative.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 25,
+        "cookTime": 180,
+        "servings": 4,
+        "difficulty": "hard",
+        "ingredients": [
+            {
+                "name": "bone-in beef short ribs",
+                "amount": 3,
+                "unit": "lbs",
+                "notes": "",
+                "category": "meat"
+            },
+            {
+                "name": "burdock root",
+                "amount": 1,
+                "unit": "cup",
+                "notes": "peeled, sliced on bias \u2014 or substitute salsify or parsnip",
+                "category": "produce"
+            },
+            {
+                "name": "turnips",
+                "amount": 2,
+                "unit": "",
+                "notes": "peeled, quartered",
+                "category": "produce"
+            },
+            {
+                "name": "shiitake mushrooms",
+                "amount": 6,
+                "unit": "",
+                "notes": "stemmed, halved",
+                "category": "produce"
+            },
+            {
+                "name": "onion",
+                "amount": 1,
+                "unit": "",
+                "notes": "quartered",
+                "category": "produce"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 4,
+                "unit": "",
+                "notes": "smashed",
+                "category": "produce"
+            },
+            {
+                "name": "fresh ginger",
+                "amount": 2,
+                "unit": "inches",
+                "notes": "sliced",
+                "category": "produce"
+            },
+            {
+                "name": "coconut aminos",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "mirin",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "beef bone broth",
+                "amount": 3,
+                "unit": "cups",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "avocado oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "green onions",
+                "amount": 3,
+                "unit": "",
+                "notes": "sliced, for garnish",
+                "category": "produce"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 325\u00b0F. Season short ribs generously with salt and pepper.",
+            "Heat avocado oil in a Dutch oven over high heat. Sear short ribs on all sides until deeply browned, about 8 minutes total. Remove and set aside.",
+            "Reduce heat to medium. Add onion, garlic, and ginger to the pot. Cook 3 minutes, stirring.",
+            "Add coconut aminos, mirin, and bone broth. Scrape up any fond from the bottom. Bring to a simmer.",
+            "Return short ribs to the pot. Add burdock root, turnips, and shiitake mushrooms around the ribs.",
+            "Cover and braise in the oven for 2.5-3 hours until the meat is fall-off-the-bone tender.",
+            "Remove ribs and vegetables to a serving dish. Skim fat from braising liquid, then reduce on stovetop 5 minutes. Spoon sauce over ribs, garnish with green onions."
+        ],
+        "nutrition": {
+            "calories": 560,
+            "protein": 44,
+            "carbs": 18,
+            "fat": 34,
+            "fiber": 4,
+            "sugar": 7
+        },
+        "tags": [
+            "narisawa-inspired",
+            "japanese-french",
+            "satoyama",
+            "braised",
+            "short-ribs",
+            "burdock",
+            "root-vegetables"
+        ],
+        "biblicallyClean": true,
+        "chef": "Yoshihiro Narisawa"
+    },
+    {
+        "id": "gfdf-narisawa-yuzu-herb-branzino",
+        "slug": "gfdf-narisawa-yuzu-herb-branzino",
+        "title": "Whole Roasted Branzino with Yuzu and Fresh Herbs",
+        "description": "Whole branzino stuffed with yuzu slices, shiso, and ginger, roasted until the skin crackles. Narisawa's respect for the whole animal \u2014 head to tail, nothing wasted.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 25,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "whole branzino",
+                "amount": 2,
+                "unit": "",
+                "notes": "about 1 lb each, cleaned and scaled",
+                "category": "seafood"
+            },
+            {
+                "name": "yuzu",
+                "amount": 1,
+                "unit": "",
+                "notes": "thinly sliced \u2014 or substitute Meyer lemon",
+                "category": "produce"
+            },
+            {
+                "name": "fresh shiso leaves",
+                "amount": 8,
+                "unit": "",
+                "notes": "or substitute basil",
+                "category": "produce"
+            },
+            {
+                "name": "fresh ginger",
+                "amount": 1,
+                "unit": "inch",
+                "notes": "thinly sliced",
+                "category": "produce"
+            },
+            {
+                "name": "avocado oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "white pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "lemon",
+                "amount": 1,
+                "unit": "",
+                "notes": "cut into wedges for serving",
+                "category": "produce"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "for finishing",
+                "category": "oils"
+            },
+            {
+                "name": "fresh chives",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "finely chopped",
+                "category": "produce"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 450\u00b0F. Line a sheet pan with parchment paper.",
+            "Score each branzino with 3 diagonal slashes on each side. Season inside and out with salt and white pepper.",
+            "Stuff each cavity with yuzu slices, shiso leaves, and ginger slices.",
+            "Rub the outside of each fish with avocado oil. Place on the prepared sheet pan.",
+            "Roast 20-25 minutes until the skin is golden and crisp and the flesh flakes easily near the bone.",
+            "Drizzle with olive oil, scatter chives over the top, and serve with lemon wedges."
+        ],
+        "nutrition": {
+            "calories": 340,
+            "protein": 38,
+            "carbs": 3,
+            "fat": 19,
+            "fiber": 1,
+            "sugar": 1
+        },
+        "tags": [
+            "narisawa-inspired",
+            "japanese-french",
+            "satoyama",
+            "whole-fish",
+            "branzino",
+            "yuzu"
+        ],
+        "biblicallyClean": true,
+        "chef": "Yoshihiro Narisawa"
+    },
+    {
+        "id": "gfdf-narisawa-forest-mushroom-egg-bowl",
+        "slug": "gfdf-narisawa-forest-mushroom-egg-bowl",
+        "title": "Forest Mushroom and Soft Egg Rice Bowl",
+        "description": "A donburi of mixed forest mushrooms saut\u00e9ed with garlic and coconut aminos, laid over rice with a soft-cooked egg. Narisawa's humble satoyama comfort \u2014 foraged simplicity at its best.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 10,
+        "cookTime": 20,
+        "servings": 4,
+        "difficulty": "easy",
+        "ingredients": [
+            {
+                "name": "mixed mushrooms",
+                "amount": 1.25,
+                "unit": "lbs",
+                "notes": "shiitake, maitake, king oyster \u2014 sliced or torn",
+                "category": "produce"
+            },
+            {
+                "name": "eggs",
+                "amount": 4,
+                "unit": "",
+                "notes": "pasture-raised",
+                "category": "eggs"
+            },
+            {
+                "name": "cooked white rice",
+                "amount": 3,
+                "unit": "cups",
+                "notes": "short-grain preferred",
+                "category": "pantry"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 4,
+                "unit": "",
+                "notes": "thinly sliced",
+                "category": "produce"
+            },
+            {
+                "name": "coconut aminos",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "mirin",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "avocado oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "sesame oil",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "toasted",
+                "category": "oils"
+            },
+            {
+                "name": "green onions",
+                "amount": 3,
+                "unit": "",
+                "notes": "sliced",
+                "category": "produce"
+            },
+            {
+                "name": "sea salt",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "shichimi togarashi",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "optional",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Bring a pot of water to a boil. Gently lower eggs in, cook exactly 6.5 minutes for a jammy yolk. Transfer to ice water.",
+            "Heat avocado oil in a large skillet over high heat. Add mushrooms in a single layer, do not stir for 3 minutes to get a sear. Stir, cook 3 more minutes.",
+            "Add garlic, cook 1 minute. Add coconut aminos and mirin, toss to coat. Cook 2 minutes until glossy. Drizzle with sesame oil and season with salt.",
+            "Divide warm rice among 4 bowls. Top with saut\u00e9ed mushrooms.",
+            "Peel eggs and halve. Place one egg on each bowl. Garnish with green onions and shichimi togarashi."
+        ],
+        "nutrition": {
+            "calories": 390,
+            "protein": 18,
+            "carbs": 48,
+            "fat": 15,
+            "fiber": 4,
+            "sugar": 5
+        },
+        "tags": [
+            "narisawa-inspired",
+            "japanese-french",
+            "satoyama",
+            "mushrooms",
+            "donburi",
+            "eggs"
+        ],
+        "biblicallyClean": true,
+        "chef": "Yoshihiro Narisawa"
+    }
+]

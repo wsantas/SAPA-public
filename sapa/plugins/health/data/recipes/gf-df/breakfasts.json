@@ -1,0 +1,3256 @@
+[
+  {
+    "id": "gfdf-scrambled-eggs-avocado",
+    "slug": "gfdf-scrambled-eggs-avocado",
+    "title": "Scrambled Eggs with Avocado and Salsa",
+    "description": "Fluffy scrambled eggs topped with creamy avocado and fresh tomato salsa. A quick, protein-packed start to the day.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "whole30",
+      "keto"
+    ],
+    "category": "breakfast",
+    "prepTime": 5,
+    "cookTime": 5,
+    "servings": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "eggs",
+        "amount": 6,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "avocado",
+        "amount": 1,
+        "unit": "large",
+        "notes": "sliced",
+        "category": "produce"
+      },
+      {
+        "name": "roma tomatoes",
+        "amount": 2,
+        "unit": "medium",
+        "notes": "diced",
+        "category": "produce"
+      },
+      {
+        "name": "fresh cilantro",
+        "amount": 2,
+        "unit": "tbsp",
+        "notes": "chopped",
+        "category": "produce"
+      },
+      {
+        "name": "lime juice",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "produce"
+      },
+      {
+        "name": "ghee",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "oils"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "black pepper",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      }
+    ],
+    "instructions": [
+      "Mix diced tomatoes, cilantro, lime juice, and a pinch of salt to make a quick salsa. Set aside.",
+      "Whisk eggs with salt and pepper until well combined.",
+      "Heat ghee in a non-stick skillet over medium-low heat. Pour in eggs and gently stir with a spatula, forming soft curds.",
+      "Remove from heat when eggs are just set but still slightly moist.",
+      "Plate eggs, top with sliced avocado and fresh salsa. Serve immediately."
+    ],
+    "nutrition": {
+      "calories": 380,
+      "protein": 22,
+      "carbs": 10,
+      "fat": 28,
+      "fiber": 6,
+      "sugar": 3
+    },
+    "tags": [
+      "quick",
+      "high-protein",
+      "low-carb",
+      "simple"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-chicken-sausage-veggie-scramble",
+    "slug": "gfdf-chicken-sausage-veggie-scramble",
+    "title": "Chicken Sausage Veggie Scramble",
+    "description": "A hearty breakfast scramble with chicken sausage, peppers, onions, and eggs. One pan, big flavor.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "whole30"
+    ],
+    "category": "breakfast",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "chicken sausage",
+        "amount": 12,
+        "unit": "oz",
+        "notes": "sugar-free, sliced",
+        "category": "meat"
+      },
+      {
+        "name": "eggs",
+        "amount": 8,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "bell peppers",
+        "amount": 2,
+        "unit": "medium",
+        "notes": "diced",
+        "category": "produce"
+      },
+      {
+        "name": "yellow onion",
+        "amount": 1,
+        "unit": "medium",
+        "notes": "diced",
+        "category": "produce"
+      },
+      {
+        "name": "baby spinach",
+        "amount": 2,
+        "unit": "cups",
+        "category": "produce"
+      },
+      {
+        "name": "avocado oil",
+        "amount": 2,
+        "unit": "tbsp",
+        "category": "oils"
+      },
+      {
+        "name": "garlic powder",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "smoked paprika",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "salt",
+        "amount": 0.75,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "black pepper",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      }
+    ],
+    "instructions": [
+      "Heat avocado oil in a large skillet over medium-high heat. Add sliced chicken sausage and cook until browned, about 4 minutes.",
+      "Add bell peppers and onion. Cook 4-5 minutes until softened.",
+      "Add spinach and stir until wilted, about 1 minute.",
+      "Whisk eggs with garlic powder, smoked paprika, salt, and pepper. Pour over the vegetables and sausage.",
+      "Gently stir to form soft curds, cooking until eggs are just set, about 2-3 minutes.",
+      "Serve hot, optionally with sliced avocado on top."
+    ],
+    "nutrition": {
+      "calories": 345,
+      "protein": 28,
+      "carbs": 8,
+      "fat": 22,
+      "fiber": 2,
+      "sugar": 4
+    },
+    "tags": [
+      "one-pan",
+      "high-protein",
+      "meal-prep",
+      "hearty"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-sweet-potato-toast-eggs",
+    "slug": "gfdf-sweet-potato-toast-eggs",
+    "title": "Sweet Potato Toast with Fried Eggs",
+    "description": "Thick slices of roasted sweet potato as toast, topped with fried eggs and everything bagel seasoning. A creative grain-free breakfast.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "whole30"
+    ],
+    "category": "breakfast",
+    "prepTime": 5,
+    "cookTime": 20,
+    "servings": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "sweet potato",
+        "amount": 1,
+        "unit": "large",
+        "notes": "sliced lengthwise 1/4 inch thick",
+        "category": "produce"
+      },
+      {
+        "name": "eggs",
+        "amount": 4,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "avocado oil",
+        "amount": 2,
+        "unit": "tbsp",
+        "category": "oils"
+      },
+      {
+        "name": "everything bagel seasoning",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "avocado",
+        "amount": 1,
+        "unit": "medium",
+        "notes": "mashed",
+        "category": "produce"
+      }
+    ],
+    "instructions": [
+      "Preheat oven to 400\u00b0F. Brush sweet potato slices with 1 tbsp avocado oil and season with salt.",
+      "Bake on a sheet pan for 15-18 minutes, flipping halfway, until tender and lightly browned.",
+      "Fry eggs in remaining avocado oil over medium heat to desired doneness.",
+      "Spread mashed avocado on sweet potato toasts, top each with a fried egg.",
+      "Sprinkle with everything bagel seasoning and serve."
+    ],
+    "nutrition": {
+      "calories": 365,
+      "protein": 16,
+      "carbs": 28,
+      "fat": 22,
+      "fiber": 5,
+      "sugar": 6
+    },
+    "tags": [
+      "grain-free",
+      "creative",
+      "whole30-compliant",
+      "filling"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-beef-breakfast-burrito-bowl",
+    "slug": "gfdf-beef-breakfast-burrito-bowl",
+    "title": "Beef Breakfast Burrito Bowl",
+    "description": "All the flavors of a breakfast burrito in a bowl -- seasoned ground beef, eggs, avocado, and salsa over cauliflower rice.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "keto"
+    ],
+    "category": "breakfast",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "ground beef",
+        "amount": 1,
+        "unit": "lb",
+        "category": "meat"
+      },
+      {
+        "name": "eggs",
+        "amount": 6,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "cauliflower rice",
+        "amount": 2,
+        "unit": "cups",
+        "category": "produce"
+      },
+      {
+        "name": "avocado",
+        "amount": 1,
+        "unit": "large",
+        "notes": "diced",
+        "category": "produce"
+      },
+      {
+        "name": "salsa",
+        "amount": 0.5,
+        "unit": "cup",
+        "notes": "sugar-free",
+        "category": "pantry"
+      },
+      {
+        "name": "cumin",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "chili powder",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "garlic powder",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "avocado oil",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "oils"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "fresh cilantro",
+        "amount": 2,
+        "unit": "tbsp",
+        "notes": "chopped",
+        "category": "produce"
+      }
+    ],
+    "instructions": [
+      "Brown ground beef in a large skillet over medium-high heat, breaking it up. Season with cumin, chili powder, garlic powder, and half the salt. Drain and set aside.",
+      "In the same skillet, heat avocado oil and cook cauliflower rice for 3-4 minutes until tender. Season with remaining salt.",
+      "Scramble eggs in a separate pan over medium heat until just set.",
+      "Build bowls: cauliflower rice base, seasoned beef, scrambled eggs, diced avocado, and salsa.",
+      "Top with fresh cilantro and serve."
+    ],
+    "nutrition": {
+      "calories": 420,
+      "protein": 32,
+      "carbs": 10,
+      "fat": 28,
+      "fiber": 4,
+      "sugar": 3
+    },
+    "tags": [
+      "bowl",
+      "high-protein",
+      "tex-mex",
+      "filling"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-salmon-egg-stack",
+    "slug": "gfdf-salmon-egg-stack",
+    "title": "Smoked Salmon and Egg Stack",
+    "description": "Poached eggs over smoked salmon with capers, red onion, and fresh dill. An elegant, nutrient-dense breakfast.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "keto"
+    ],
+    "category": "breakfast",
+    "prepTime": 5,
+    "cookTime": 10,
+    "servings": 2,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "smoked salmon",
+        "amount": 6,
+        "unit": "oz",
+        "category": "seafood"
+      },
+      {
+        "name": "eggs",
+        "amount": 4,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "avocado",
+        "amount": 1,
+        "unit": "medium",
+        "notes": "sliced",
+        "category": "produce"
+      },
+      {
+        "name": "capers",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "pantry"
+      },
+      {
+        "name": "red onion",
+        "amount": 2,
+        "unit": "tbsp",
+        "notes": "thinly sliced",
+        "category": "produce"
+      },
+      {
+        "name": "fresh dill",
+        "amount": 1,
+        "unit": "tbsp",
+        "notes": "chopped",
+        "category": "produce"
+      },
+      {
+        "name": "lemon juice",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "produce"
+      },
+      {
+        "name": "white vinegar",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "pantry"
+      },
+      {
+        "name": "salt",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "black pepper",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      }
+    ],
+    "instructions": [
+      "Bring a pot of water to a gentle simmer. Add white vinegar.",
+      "Create a gentle whirlpool and poach eggs one at a time for 3-4 minutes until whites are set.",
+      "Arrange smoked salmon on plates. Top with avocado slices and poached eggs.",
+      "Garnish with capers, red onion, and fresh dill. Drizzle with lemon juice.",
+      "Season with salt and pepper. Serve immediately."
+    ],
+    "nutrition": {
+      "calories": 350,
+      "protein": 28,
+      "carbs": 8,
+      "fat": 24,
+      "fiber": 4,
+      "sugar": 2
+    },
+    "tags": [
+      "elegant",
+      "omega-3",
+      "brunch",
+      "low-carb"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-turkey-zucchini-hash",
+    "slug": "gfdf-turkey-zucchini-hash",
+    "title": "Turkey and Zucchini Breakfast Hash",
+    "description": "Ground turkey sauteed with zucchini, mushrooms, and herbs. Light yet satisfying and great for meal prep.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "whole30"
+    ],
+    "category": "breakfast",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "ground turkey",
+        "amount": 1,
+        "unit": "lb",
+        "category": "meat"
+      },
+      {
+        "name": "zucchini",
+        "amount": 2,
+        "unit": "medium",
+        "notes": "diced",
+        "category": "produce"
+      },
+      {
+        "name": "cremini mushrooms",
+        "amount": 8,
+        "unit": "oz",
+        "notes": "sliced",
+        "category": "produce"
+      },
+      {
+        "name": "garlic",
+        "amount": 3,
+        "unit": "cloves",
+        "notes": "minced",
+        "category": "produce"
+      },
+      {
+        "name": "fresh thyme",
+        "amount": 1,
+        "unit": "tbsp",
+        "notes": "chopped",
+        "category": "produce"
+      },
+      {
+        "name": "avocado oil",
+        "amount": 2,
+        "unit": "tbsp",
+        "category": "oils"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "black pepper",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "onion powder",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      }
+    ],
+    "instructions": [
+      "Heat avocado oil in a large skillet over medium-high heat. Add ground turkey and cook until browned, about 5 minutes, breaking it apart.",
+      "Add mushrooms and cook for 3 minutes until they release their liquid.",
+      "Add zucchini, garlic, thyme, onion powder, salt, and pepper. Cook for 5-6 minutes until zucchini is tender.",
+      "Taste and adjust seasonings. Serve hot, optionally topped with fried eggs."
+    ],
+    "nutrition": {
+      "calories": 275,
+      "protein": 26,
+      "carbs": 6,
+      "fat": 16,
+      "fiber": 2,
+      "sugar": 3
+    },
+    "tags": [
+      "one-pan",
+      "meal-prep",
+      "lean",
+      "low-carb"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-plantain-egg-skillet",
+    "slug": "gfdf-plantain-egg-skillet",
+    "title": "Plantain and Egg Breakfast Skillet",
+    "description": "Caramelized ripe plantains with eggs and crispy bacon. A Caribbean-inspired breakfast that is naturally grain-free.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo"
+    ],
+    "category": "breakfast",
+    "prepTime": 5,
+    "cookTime": 15,
+    "servings": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "ripe plantains",
+        "amount": 2,
+        "unit": "medium",
+        "notes": "sliced 1/4 inch thick",
+        "category": "produce"
+      },
+      {
+        "name": "eggs",
+        "amount": 4,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "beef bacon",
+        "amount": 4,
+        "unit": "slices",
+        "category": "meat"
+      },
+      {
+        "name": "coconut oil",
+        "amount": 2,
+        "unit": "tbsp",
+        "category": "oils"
+      },
+      {
+        "name": "cinnamon",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      }
+    ],
+    "instructions": [
+      "Cook beef bacon in a large skillet over medium heat until crispy. Remove and set aside, keeping the drippings.",
+      "Add coconut oil to the skillet. Fry plantain slices for 2-3 minutes per side until golden and caramelized. Sprinkle with cinnamon.",
+      "Push plantains to the edges. Crack eggs into the center of the skillet.",
+      "Cover and cook 3-4 minutes until egg whites are set. Season with salt.",
+      "Crumble bacon over the top and serve directly from the skillet."
+    ],
+    "nutrition": {
+      "calories": 410,
+      "protein": 18,
+      "carbs": 38,
+      "fat": 22,
+      "fiber": 3,
+      "sugar": 18
+    },
+    "tags": [
+      "caribbean",
+      "sweet-savory",
+      "one-pan",
+      "grain-free"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-berry-coconut-smoothie-bowl",
+    "slug": "gfdf-berry-coconut-smoothie-bowl",
+    "title": "Berry Coconut Smoothie Bowl",
+    "description": "A thick, creamy smoothie bowl with mixed berries and coconut milk, topped with seeds and fresh fruit.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo"
+    ],
+    "category": "breakfast",
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "frozen mixed berries",
+        "amount": 2,
+        "unit": "cups",
+        "category": "produce"
+      },
+      {
+        "name": "frozen banana",
+        "amount": 1,
+        "unit": "medium",
+        "category": "produce"
+      },
+      {
+        "name": "full-fat coconut milk",
+        "amount": 0.5,
+        "unit": "cup",
+        "category": "pantry"
+      },
+      {
+        "name": "collagen peptides",
+        "amount": 2,
+        "unit": "scoops",
+        "notes": "about 20g protein",
+        "category": "pantry"
+      },
+      {
+        "name": "hemp seeds",
+        "amount": 2,
+        "unit": "tbsp",
+        "category": "pantry"
+      },
+      {
+        "name": "pumpkin seeds",
+        "amount": 2,
+        "unit": "tbsp",
+        "category": "pantry"
+      },
+      {
+        "name": "unsweetened coconut flakes",
+        "amount": 2,
+        "unit": "tbsp",
+        "category": "pantry"
+      },
+      {
+        "name": "fresh blueberries",
+        "amount": 0.25,
+        "unit": "cup",
+        "notes": "for topping",
+        "category": "produce"
+      }
+    ],
+    "instructions": [
+      "Blend frozen berries, banana, coconut milk, and collagen peptides in a high-speed blender until thick and smooth. Add more coconut milk 1 tbsp at a time if needed -- keep it thick.",
+      "Pour into two bowls.",
+      "Top with hemp seeds, pumpkin seeds, coconut flakes, and fresh blueberries.",
+      "Serve immediately before it melts."
+    ],
+    "nutrition": {
+      "calories": 310,
+      "protein": 18,
+      "carbs": 32,
+      "fat": 14,
+      "fiber": 7,
+      "sugar": 16
+    },
+    "tags": [
+      "no-cook",
+      "refreshing",
+      "antioxidant",
+      "collagen"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-chorizo-sweet-potato-bake",
+    "slug": "gfdf-chorizo-sweet-potato-bake",
+    "title": "Chorizo and Sweet Potato Breakfast Bake",
+    "description": "Spicy beef chorizo baked with sweet potatoes and eggs. A bold, satisfying one-dish breakfast for the whole family.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo"
+    ],
+    "category": "breakfast",
+    "prepTime": 15,
+    "cookTime": 35,
+    "servings": 6,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "beef chorizo",
+        "amount": 1,
+        "unit": "lb",
+        "notes": "sugar-free if possible",
+        "category": "meat"
+      },
+      {
+        "name": "sweet potatoes",
+        "amount": 2,
+        "unit": "large",
+        "notes": "diced into 1/2 inch cubes",
+        "category": "produce"
+      },
+      {
+        "name": "eggs",
+        "amount": 8,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "red bell pepper",
+        "amount": 1,
+        "unit": "medium",
+        "notes": "diced",
+        "category": "produce"
+      },
+      {
+        "name": "yellow onion",
+        "amount": 1,
+        "unit": "medium",
+        "notes": "diced",
+        "category": "produce"
+      },
+      {
+        "name": "avocado oil",
+        "amount": 2,
+        "unit": "tbsp",
+        "category": "oils"
+      },
+      {
+        "name": "cumin",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "salt",
+        "amount": 0.75,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "fresh cilantro",
+        "amount": 2,
+        "unit": "tbsp",
+        "notes": "chopped",
+        "category": "produce"
+      }
+    ],
+    "instructions": [
+      "Preheat oven to 400\u00b0F. Toss sweet potatoes with avocado oil, cumin, and salt. Spread on a baking sheet and roast for 15 minutes.",
+      "While potatoes roast, brown chorizo in a skillet, breaking it apart. Add bell pepper and onion, cook 3-4 minutes.",
+      "Combine roasted sweet potatoes and chorizo mixture in a 9x13 baking dish.",
+      "Make 8 wells in the mixture. Crack an egg into each well.",
+      "Bake for 12-15 minutes until egg whites are set but yolks are still runny.",
+      "Garnish with fresh cilantro. Serve from the dish."
+    ],
+    "nutrition": {
+      "calories": 380,
+      "protein": 24,
+      "carbs": 22,
+      "fat": 22,
+      "fiber": 3,
+      "sugar": 6
+    },
+    "tags": [
+      "one-dish",
+      "family-friendly",
+      "spicy",
+      "meal-prep"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-coconut-flour-waffles",
+    "slug": "gfdf-coconut-flour-waffles",
+    "title": "Coconut Flour Waffles",
+    "description": "Light and fluffy waffles made with coconut flour. Naturally grain-free and perfect with fresh berries and maple syrup.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo"
+    ],
+    "category": "breakfast",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 4,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "coconut flour",
+        "amount": 0.5,
+        "unit": "cup",
+        "category": "pantry"
+      },
+      {
+        "name": "eggs",
+        "amount": 6,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "full-fat coconut milk",
+        "amount": 0.5,
+        "unit": "cup",
+        "category": "pantry"
+      },
+      {
+        "name": "coconut oil",
+        "amount": 3,
+        "unit": "tbsp",
+        "notes": "melted",
+        "category": "oils"
+      },
+      {
+        "name": "raw honey",
+        "amount": 2,
+        "unit": "tbsp",
+        "category": "pantry"
+      },
+      {
+        "name": "vanilla extract",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "pantry"
+      },
+      {
+        "name": "baking powder",
+        "amount": 0.5,
+        "unit": "tsp",
+        "notes": "grain-free",
+        "category": "pantry"
+      },
+      {
+        "name": "salt",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "fresh berries",
+        "amount": 1,
+        "unit": "cup",
+        "notes": "for topping",
+        "category": "produce"
+      }
+    ],
+    "instructions": [
+      "Preheat waffle iron and grease lightly with coconut oil.",
+      "Whisk eggs, coconut milk, melted coconut oil, honey, and vanilla in a bowl.",
+      "In a separate bowl, combine coconut flour, baking powder, and salt.",
+      "Add dry ingredients to wet and whisk until smooth. Let batter rest 3 minutes to thicken.",
+      "Pour batter into waffle iron (about 1/3 cup per waffle). Cook until golden and crisp, about 4-5 minutes per waffle.",
+      "Serve topped with fresh berries and a drizzle of honey."
+    ],
+    "nutrition": {
+      "calories": 290,
+      "protein": 12,
+      "carbs": 16,
+      "fat": 20,
+      "fiber": 4,
+      "sugar": 10
+    },
+    "tags": [
+      "grain-free",
+      "kid-friendly",
+      "weekend",
+      "sweet"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-steak-and-eggs",
+    "slug": "gfdf-steak-and-eggs",
+    "title": "Steak and Eggs with Herb Compound Ghee",
+    "description": "Seared flank steak alongside sunny-side-up eggs, finished with herb-infused ghee. Classic high-protein fuel.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "keto"
+    ],
+    "category": "breakfast",
+    "prepTime": 5,
+    "cookTime": 12,
+    "servings": 2,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "flank steak",
+        "amount": 12,
+        "unit": "oz",
+        "category": "meat"
+      },
+      {
+        "name": "eggs",
+        "amount": 4,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "ghee",
+        "amount": 2,
+        "unit": "tbsp",
+        "category": "oils"
+      },
+      {
+        "name": "fresh rosemary",
+        "amount": 1,
+        "unit": "tsp",
+        "notes": "minced",
+        "category": "produce"
+      },
+      {
+        "name": "fresh thyme",
+        "amount": 1,
+        "unit": "tsp",
+        "notes": "minced",
+        "category": "produce"
+      },
+      {
+        "name": "garlic",
+        "amount": 2,
+        "unit": "cloves",
+        "notes": "minced",
+        "category": "produce"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "black pepper",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      }
+    ],
+    "instructions": [
+      "Season steak generously with salt and pepper. Let sit at room temperature for 10 minutes.",
+      "Heat a cast iron skillet over high heat. Add 1 tbsp ghee. Sear steak 3-4 minutes per side for medium-rare. Rest 5 minutes, then slice against the grain.",
+      "Reduce heat to medium. Add remaining ghee, garlic, rosemary, and thyme. Cook 30 seconds until fragrant.",
+      "Crack eggs into the herbed ghee. Cook sunny-side-up until whites are set, about 3 minutes.",
+      "Plate sliced steak alongside eggs. Spoon herbed ghee from the pan over everything."
+    ],
+    "nutrition": {
+      "calories": 480,
+      "protein": 42,
+      "carbs": 1,
+      "fat": 34,
+      "fiber": 0,
+      "sugar": 0
+    },
+    "tags": [
+      "high-protein",
+      "carnivore-friendly",
+      "classic",
+      "hearty"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-chicken-apple-sausage-patties",
+    "slug": "gfdf-chicken-apple-sausage-patties",
+    "title": "Homemade Chicken Apple Sausage Patties",
+    "description": "Savory-sweet breakfast sausage patties made from scratch with ground chicken, diced apple, and sage. Freezer-friendly.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "whole30"
+    ],
+    "category": "breakfast",
+    "prepTime": 15,
+    "cookTime": 10,
+    "servings": 6,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "ground chicken",
+        "amount": 1.5,
+        "unit": "lbs",
+        "category": "meat"
+      },
+      {
+        "name": "Granny Smith apple",
+        "amount": 1,
+        "unit": "medium",
+        "notes": "peeled, finely diced",
+        "category": "produce"
+      },
+      {
+        "name": "fresh sage",
+        "amount": 1,
+        "unit": "tbsp",
+        "notes": "minced",
+        "category": "produce"
+      },
+      {
+        "name": "fresh thyme",
+        "amount": 1,
+        "unit": "tsp",
+        "notes": "minced",
+        "category": "produce"
+      },
+      {
+        "name": "garlic powder",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "onion powder",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "nutmeg",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "salt",
+        "amount": 1.25,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "black pepper",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "avocado oil",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "oils"
+      }
+    ],
+    "instructions": [
+      "Combine ground chicken, diced apple, sage, thyme, garlic powder, onion powder, nutmeg, salt, and pepper in a large bowl. Mix gently with hands until just combined.",
+      "Form into 12 patties, about 2 inches across and 1/2 inch thick.",
+      "Heat avocado oil in a large skillet over medium heat. Cook patties in batches for 4-5 minutes per side until golden and cooked through (165\u00b0F internal).",
+      "Serve hot. Store extras in the fridge up to 4 days or freeze up to 3 months."
+    ],
+    "nutrition": {
+      "calories": 195,
+      "protein": 22,
+      "carbs": 5,
+      "fat": 10,
+      "fiber": 1,
+      "sugar": 3
+    },
+    "tags": [
+      "meal-prep",
+      "freezer-friendly",
+      "homemade",
+      "batch-cook"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-egg-stuffed-peppers",
+    "slug": "gfdf-egg-stuffed-peppers",
+    "title": "Breakfast Egg-Stuffed Bell Peppers",
+    "description": "Bell pepper halves filled with seasoned ground beef, topped with an egg, and baked to perfection. Colorful and nutritious.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "whole30"
+    ],
+    "category": "breakfast",
+    "prepTime": 10,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "bell peppers",
+        "amount": 4,
+        "unit": "large",
+        "notes": "halved and seeded",
+        "category": "produce"
+      },
+      {
+        "name": "ground beef",
+        "amount": 0.5,
+        "unit": "lb",
+        "category": "meat"
+      },
+      {
+        "name": "eggs",
+        "amount": 8,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "green onions",
+        "amount": 3,
+        "unit": "stalks",
+        "notes": "sliced",
+        "category": "produce"
+      },
+      {
+        "name": "garlic powder",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "smoked paprika",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "black pepper",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "avocado oil",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "oils"
+      }
+    ],
+    "instructions": [
+      "Preheat oven to 375\u00b0F. Lightly oil a baking dish.",
+      "Brown ground beef in a skillet with garlic powder, smoked paprika, half the salt, and pepper. Drain excess fat.",
+      "Place pepper halves cut-side-up in the baking dish. Divide cooked beef among pepper halves.",
+      "Crack an egg into each pepper half. Season eggs with remaining salt.",
+      "Bake 20-22 minutes until egg whites are set.",
+      "Garnish with sliced green onions and serve."
+    ],
+    "nutrition": {
+      "calories": 310,
+      "protein": 24,
+      "carbs": 8,
+      "fat": 20,
+      "fiber": 2,
+      "sugar": 4
+    },
+    "tags": [
+      "colorful",
+      "one-dish",
+      "whole30-compliant",
+      "family-friendly"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-tropical-chia-pudding",
+    "slug": "gfdf-tropical-chia-pudding",
+    "title": "Tropical Mango Chia Pudding",
+    "description": "Overnight chia pudding with mango puree and coconut cream. A refreshing make-ahead tropical breakfast.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo"
+    ],
+    "category": "breakfast",
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "chia seeds",
+        "amount": 0.5,
+        "unit": "cup",
+        "category": "pantry"
+      },
+      {
+        "name": "full-fat coconut milk",
+        "amount": 1.5,
+        "unit": "cups",
+        "category": "pantry"
+      },
+      {
+        "name": "mango",
+        "amount": 1,
+        "unit": "large",
+        "notes": "pureed (about 1 cup)",
+        "category": "produce"
+      },
+      {
+        "name": "vanilla extract",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "pantry"
+      },
+      {
+        "name": "raw honey",
+        "amount": 1,
+        "unit": "tbsp",
+        "notes": "optional",
+        "category": "pantry"
+      },
+      {
+        "name": "fresh kiwi",
+        "amount": 2,
+        "unit": "medium",
+        "notes": "sliced, for topping",
+        "category": "produce"
+      },
+      {
+        "name": "unsweetened coconut flakes",
+        "amount": 2,
+        "unit": "tbsp",
+        "category": "pantry"
+      },
+      {
+        "name": "macadamia nuts",
+        "amount": 2,
+        "unit": "tbsp",
+        "notes": "chopped",
+        "category": "pantry"
+      }
+    ],
+    "instructions": [
+      "Blend mango until smooth to create a puree.",
+      "Whisk together chia seeds, coconut milk, mango puree, vanilla, and honey in a bowl.",
+      "Stir well, let sit 5 minutes, then stir again to prevent clumping.",
+      "Cover and refrigerate at least 4 hours or overnight.",
+      "Serve topped with sliced kiwi, coconut flakes, and chopped macadamia nuts."
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein": 6,
+      "carbs": 28,
+      "fat": 18,
+      "fiber": 9,
+      "sugar": 14
+    },
+    "tags": [
+      "make-ahead",
+      "tropical",
+      "no-cook",
+      "refreshing"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-lamb-breakfast-meatballs",
+    "slug": "gfdf-lamb-breakfast-meatballs",
+    "title": "Lamb Breakfast Meatballs with Mint",
+    "description": "Savory ground lamb meatballs seasoned with cumin, coriander, and fresh mint. A Middle Eastern-inspired protein start.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "whole30"
+    ],
+    "category": "breakfast",
+    "prepTime": 15,
+    "cookTime": 15,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "ground lamb",
+        "amount": 1,
+        "unit": "lb",
+        "category": "meat"
+      },
+      {
+        "name": "fresh mint",
+        "amount": 2,
+        "unit": "tbsp",
+        "notes": "chopped",
+        "category": "produce"
+      },
+      {
+        "name": "fresh parsley",
+        "amount": 2,
+        "unit": "tbsp",
+        "notes": "chopped",
+        "category": "produce"
+      },
+      {
+        "name": "garlic",
+        "amount": 2,
+        "unit": "cloves",
+        "notes": "minced",
+        "category": "produce"
+      },
+      {
+        "name": "cumin",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "coriander",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "cinnamon",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "black pepper",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "avocado oil",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "oils"
+      }
+    ],
+    "instructions": [
+      "Combine ground lamb, mint, parsley, garlic, cumin, coriander, cinnamon, salt, and pepper. Mix gently until combined.",
+      "Roll into about 16 meatballs, roughly 1.5 inches each.",
+      "Heat avocado oil in a large skillet over medium-high heat. Add meatballs and cook, turning occasionally, for 10-12 minutes until browned all over and cooked through.",
+      "Serve with sliced cucumbers, cherry tomatoes, and scrambled eggs for a complete breakfast."
+    ],
+    "nutrition": {
+      "calories": 290,
+      "protein": 22,
+      "carbs": 2,
+      "fat": 22,
+      "fiber": 1,
+      "sugar": 0
+    },
+    "tags": [
+      "middle-eastern",
+      "high-protein",
+      "batch-cook",
+      "freezer-friendly"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-green-power-smoothie",
+    "slug": "gfdf-green-power-smoothie",
+    "title": "Green Power Breakfast Smoothie",
+    "description": "A nutrient-dense green smoothie with spinach, avocado, banana, and collagen protein. Thick enough to eat with a spoon.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo"
+    ],
+    "category": "breakfast",
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "baby spinach",
+        "amount": 3,
+        "unit": "cups",
+        "notes": "packed",
+        "category": "produce"
+      },
+      {
+        "name": "avocado",
+        "amount": 0.5,
+        "unit": "medium",
+        "category": "produce"
+      },
+      {
+        "name": "frozen banana",
+        "amount": 1,
+        "unit": "medium",
+        "category": "produce"
+      },
+      {
+        "name": "full-fat coconut milk",
+        "amount": 1,
+        "unit": "cup",
+        "category": "pantry"
+      },
+      {
+        "name": "collagen peptides",
+        "amount": 2,
+        "unit": "scoops",
+        "notes": "about 20g protein",
+        "category": "pantry"
+      },
+      {
+        "name": "almond butter",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "pantry"
+      },
+      {
+        "name": "fresh ginger",
+        "amount": 0.5,
+        "unit": "inch",
+        "notes": "peeled",
+        "category": "produce"
+      },
+      {
+        "name": "lemon juice",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "produce"
+      }
+    ],
+    "instructions": [
+      "Add coconut milk, spinach, and lemon juice to a high-speed blender. Blend until greens are fully broken down.",
+      "Add avocado, frozen banana, collagen, almond butter, and ginger. Blend until smooth and creamy.",
+      "Pour into glasses. Serve immediately."
+    ],
+    "nutrition": {
+      "calories": 295,
+      "protein": 16,
+      "carbs": 22,
+      "fat": 18,
+      "fiber": 6,
+      "sugar": 10
+    },
+    "tags": [
+      "smoothie",
+      "no-cook",
+      "quick",
+      "nutrient-dense"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-blt-egg-cups",
+    "slug": "gfdf-blt-egg-cups",
+    "title": "BLT Egg Cups",
+    "description": "Turkey bacon-wrapped egg cups with spinach and sun-dried tomatoes baked in a muffin tin. Grab-and-go perfection.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "whole30",
+      "keto"
+    ],
+    "category": "breakfast",
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 6,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "turkey bacon",
+        "amount": 12,
+        "unit": "slices",
+        "notes": "sugar-free",
+        "category": "meat"
+      },
+      {
+        "name": "eggs",
+        "amount": 12,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "baby spinach",
+        "amount": 1,
+        "unit": "cup",
+        "notes": "chopped",
+        "category": "produce"
+      },
+      {
+        "name": "sun-dried tomatoes",
+        "amount": 0.25,
+        "unit": "cup",
+        "notes": "chopped, oil-packed drained",
+        "category": "produce"
+      },
+      {
+        "name": "garlic powder",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "black pepper",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      }
+    ],
+    "instructions": [
+      "Preheat oven to 375\u00b0F. Line each muffin cup with a slice of turkey bacon around the edge.",
+      "Place a small amount of spinach and sun-dried tomatoes in each cup.",
+      "Crack an egg into each bacon-lined cup. Season with garlic powder, salt, and pepper.",
+      "Bake for 15-18 minutes until egg whites are set.",
+      "Let cool 2 minutes in the tin before removing. Store in fridge up to 4 days."
+    ],
+    "nutrition": {
+      "calories": 185,
+      "protein": 16,
+      "carbs": 2,
+      "fat": 12,
+      "fiber": 0,
+      "sugar": 1
+    },
+    "tags": [
+      "meal-prep",
+      "portable",
+      "grab-and-go",
+      "high-protein"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-cassava-flour-crepes",
+    "slug": "gfdf-cassava-flour-crepes",
+    "title": "Cassava Flour Breakfast Crepes",
+    "description": "Thin, pliable crepes made with cassava flour and coconut milk. Fill with berries and almond butter for a special breakfast.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo"
+    ],
+    "category": "breakfast",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 4,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "cassava flour",
+        "amount": 0.75,
+        "unit": "cup",
+        "category": "pantry"
+      },
+      {
+        "name": "eggs",
+        "amount": 3,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "full-fat coconut milk",
+        "amount": 0.75,
+        "unit": "cup",
+        "category": "pantry"
+      },
+      {
+        "name": "water",
+        "amount": 0.25,
+        "unit": "cup",
+        "category": "pantry"
+      },
+      {
+        "name": "coconut oil",
+        "amount": 2,
+        "unit": "tbsp",
+        "notes": "melted, plus more for pan",
+        "category": "oils"
+      },
+      {
+        "name": "vanilla extract",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "pantry"
+      },
+      {
+        "name": "salt",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "almond butter",
+        "amount": 4,
+        "unit": "tbsp",
+        "notes": "for filling",
+        "category": "pantry"
+      },
+      {
+        "name": "fresh strawberries",
+        "amount": 1,
+        "unit": "cup",
+        "notes": "sliced, for filling",
+        "category": "produce"
+      },
+      {
+        "name": "raw honey",
+        "amount": 2,
+        "unit": "tbsp",
+        "notes": "for drizzle",
+        "category": "pantry"
+      }
+    ],
+    "instructions": [
+      "Whisk cassava flour, eggs, coconut milk, water, melted coconut oil, vanilla, and salt until smooth. Let batter rest 5 minutes.",
+      "Heat a non-stick skillet over medium heat. Lightly grease with coconut oil.",
+      "Pour about 3 tbsp of batter, swirling the pan to create a thin even layer. Cook 1-2 minutes until edges lift, then flip and cook 30 seconds more.",
+      "Repeat with remaining batter, making about 8 crepes.",
+      "Fill each crepe with almond butter and sliced strawberries. Roll up and drizzle with honey."
+    ],
+    "nutrition": {
+      "calories": 320,
+      "protein": 10,
+      "carbs": 30,
+      "fat": 20,
+      "fiber": 3,
+      "sugar": 12
+    },
+    "tags": [
+      "grain-free",
+      "weekend",
+      "special",
+      "kid-friendly"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-mediterranean-egg-scramble",
+    "slug": "gfdf-mediterranean-egg-scramble",
+    "title": "Mediterranean Egg Scramble",
+    "description": "Eggs scrambled with olives, artichoke hearts, sun-dried tomatoes, and fresh basil. A Mediterranean morning in a skillet.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "keto"
+    ],
+    "category": "breakfast",
+    "prepTime": 5,
+    "cookTime": 8,
+    "servings": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "eggs",
+        "amount": 6,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "kalamata olives",
+        "amount": 0.25,
+        "unit": "cup",
+        "notes": "sliced",
+        "category": "produce"
+      },
+      {
+        "name": "artichoke hearts",
+        "amount": 0.5,
+        "unit": "cup",
+        "notes": "canned, drained, chopped",
+        "category": "pantry"
+      },
+      {
+        "name": "sun-dried tomatoes",
+        "amount": 3,
+        "unit": "tbsp",
+        "notes": "chopped",
+        "category": "produce"
+      },
+      {
+        "name": "fresh basil",
+        "amount": 2,
+        "unit": "tbsp",
+        "notes": "torn",
+        "category": "produce"
+      },
+      {
+        "name": "olive oil",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "oils"
+      },
+      {
+        "name": "garlic",
+        "amount": 1,
+        "unit": "clove",
+        "notes": "minced",
+        "category": "produce"
+      },
+      {
+        "name": "salt",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "black pepper",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "red pepper flakes",
+        "amount": 0.125,
+        "unit": "tsp",
+        "category": "spices"
+      }
+    ],
+    "instructions": [
+      "Heat olive oil in a skillet over medium heat. Add garlic and cook 30 seconds.",
+      "Add artichoke hearts, sun-dried tomatoes, and olives. Warm through for 1-2 minutes.",
+      "Whisk eggs with salt, pepper, and red pepper flakes. Pour into the skillet.",
+      "Gently stir to form soft curds, about 2-3 minutes. Remove from heat while still slightly wet.",
+      "Top with torn fresh basil and serve."
+    ],
+    "nutrition": {
+      "calories": 340,
+      "protein": 20,
+      "carbs": 8,
+      "fat": 26,
+      "fiber": 3,
+      "sugar": 3
+    },
+    "tags": [
+      "mediterranean",
+      "quick",
+      "flavorful",
+      "low-carb"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-butternut-squash-porridge",
+    "slug": "gfdf-butternut-squash-porridge",
+    "title": "Butternut Squash Breakfast Porridge",
+    "description": "A warm, creamy porridge made from roasted butternut squash and coconut milk. A comforting grain-free alternative to oatmeal.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "whole30"
+    ],
+    "category": "breakfast",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 3,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "butternut squash",
+        "amount": 2,
+        "unit": "cups",
+        "notes": "cooked and mashed",
+        "category": "produce"
+      },
+      {
+        "name": "full-fat coconut milk",
+        "amount": 0.75,
+        "unit": "cup",
+        "category": "pantry"
+      },
+      {
+        "name": "cinnamon",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "nutmeg",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "vanilla extract",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "pantry"
+      },
+      {
+        "name": "raw honey",
+        "amount": 1,
+        "unit": "tbsp",
+        "notes": "optional",
+        "category": "pantry"
+      },
+      {
+        "name": "pecans",
+        "amount": 3,
+        "unit": "tbsp",
+        "notes": "chopped, for topping",
+        "category": "pantry"
+      },
+      {
+        "name": "salt",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      }
+    ],
+    "instructions": [
+      "Combine mashed butternut squash and coconut milk in a saucepan over medium heat.",
+      "Add cinnamon, nutmeg, vanilla, honey, and salt. Stir until smooth and heated through, about 5-7 minutes.",
+      "Adjust consistency with more coconut milk if desired.",
+      "Divide into bowls and top with chopped pecans. Serve warm."
+    ],
+    "nutrition": {
+      "calories": 230,
+      "protein": 3,
+      "carbs": 28,
+      "fat": 14,
+      "fiber": 4,
+      "sugar": 10
+    },
+    "tags": [
+      "grain-free",
+      "warming",
+      "comfort-food",
+      "fall-flavors"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-spicy-beef-egg-skillet",
+    "slug": "gfdf-spicy-beef-egg-skillet",
+    "title": "Spicy Ground Beef and Egg Skillet",
+    "description": "Heavily seasoned ground beef with jalape\u00f1os, topped with fried eggs. A bold, fiery breakfast for those who like heat.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "whole30",
+      "keto"
+    ],
+    "category": "breakfast",
+    "prepTime": 5,
+    "cookTime": 12,
+    "servings": 3,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "ground beef",
+        "amount": 1,
+        "unit": "lb",
+        "category": "meat"
+      },
+      {
+        "name": "eggs",
+        "amount": 6,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "jalape\u00f1o",
+        "amount": 2,
+        "unit": "medium",
+        "notes": "sliced",
+        "category": "produce"
+      },
+      {
+        "name": "yellow onion",
+        "amount": 0.5,
+        "unit": "medium",
+        "notes": "diced",
+        "category": "produce"
+      },
+      {
+        "name": "cumin",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "chili powder",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "garlic powder",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "avocado oil",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "oils"
+      },
+      {
+        "name": "fresh cilantro",
+        "amount": 2,
+        "unit": "tbsp",
+        "notes": "chopped",
+        "category": "produce"
+      }
+    ],
+    "instructions": [
+      "Heat avocado oil in a large cast iron skillet over medium-high heat. Add onion and jalape\u00f1os, cook 2 minutes.",
+      "Add ground beef, cumin, chili powder, garlic powder, and salt. Brown and break apart, about 5 minutes.",
+      "Make wells in the beef mixture and crack eggs into them.",
+      "Cover and cook 3-4 minutes until egg whites are set.",
+      "Garnish with cilantro and serve straight from the skillet."
+    ],
+    "nutrition": {
+      "calories": 420,
+      "protein": 34,
+      "carbs": 4,
+      "fat": 30,
+      "fiber": 1,
+      "sugar": 2
+    },
+    "tags": [
+      "spicy",
+      "one-pan",
+      "high-protein",
+      "bold"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-salmon-avocado-bowl",
+    "slug": "gfdf-salmon-avocado-bowl",
+    "title": "Salmon and Avocado Breakfast Bowl",
+    "description": "Flaked baked salmon over cauliflower rice with avocado, cucumber, and a sesame-lime dressing. A savory, omega-3-rich breakfast.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "whole30"
+    ],
+    "category": "breakfast",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 2,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "salmon fillets",
+        "amount": 2,
+        "unit": "6-oz",
+        "category": "seafood"
+      },
+      {
+        "name": "cauliflower rice",
+        "amount": 2,
+        "unit": "cups",
+        "category": "produce"
+      },
+      {
+        "name": "avocado",
+        "amount": 1,
+        "unit": "medium",
+        "notes": "sliced",
+        "category": "produce"
+      },
+      {
+        "name": "cucumber",
+        "amount": 0.5,
+        "unit": "medium",
+        "notes": "sliced",
+        "category": "produce"
+      },
+      {
+        "name": "sesame seeds",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "pantry"
+      },
+      {
+        "name": "coconut aminos",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "pantry"
+      },
+      {
+        "name": "lime juice",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "produce"
+      },
+      {
+        "name": "sesame oil",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "oils"
+      },
+      {
+        "name": "avocado oil",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "oils"
+      },
+      {
+        "name": "salt",
+        "amount": 0.75,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "black pepper",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      }
+    ],
+    "instructions": [
+      "Season salmon with salt and pepper. Bake at 400\u00b0F for 12-14 minutes until flaky.",
+      "While salmon bakes, heat avocado oil in a skillet over medium heat. Cook cauliflower rice for 3-4 minutes. Season lightly with salt.",
+      "Whisk together coconut aminos, lime juice, and sesame oil for dressing.",
+      "Build bowls: cauliflower rice base, flaked salmon, sliced avocado, and cucumber.",
+      "Drizzle with dressing and sprinkle with sesame seeds."
+    ],
+    "nutrition": {
+      "calories": 420,
+      "protein": 36,
+      "carbs": 10,
+      "fat": 28,
+      "fiber": 5,
+      "sugar": 3
+    },
+    "tags": [
+      "omega-3",
+      "bowl",
+      "savory",
+      "asian-inspired"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-almond-flour-blueberry-muffins",
+    "slug": "gfdf-almond-flour-blueberry-muffins",
+    "title": "Almond Flour Blueberry Muffins",
+    "description": "Moist, tender muffins made with almond flour and fresh blueberries. Naturally sweetened and perfect for on-the-go mornings.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo"
+    ],
+    "category": "breakfast",
+    "prepTime": 10,
+    "cookTime": 22,
+    "servings": 12,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "almond flour",
+        "amount": 2.5,
+        "unit": "cups",
+        "category": "pantry"
+      },
+      {
+        "name": "eggs",
+        "amount": 3,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "raw honey",
+        "amount": 0.25,
+        "unit": "cup",
+        "category": "pantry"
+      },
+      {
+        "name": "coconut oil",
+        "amount": 0.25,
+        "unit": "cup",
+        "notes": "melted",
+        "category": "oils"
+      },
+      {
+        "name": "vanilla extract",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "pantry"
+      },
+      {
+        "name": "baking soda",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "pantry"
+      },
+      {
+        "name": "salt",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "fresh blueberries",
+        "amount": 1,
+        "unit": "cup",
+        "category": "produce"
+      },
+      {
+        "name": "lemon zest",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "produce"
+      }
+    ],
+    "instructions": [
+      "Preheat oven to 350\u00b0F. Line a 12-cup muffin tin with parchment liners.",
+      "Whisk eggs, honey, melted coconut oil, and vanilla in a large bowl.",
+      "Add almond flour, baking soda, salt, and lemon zest. Stir until just combined.",
+      "Gently fold in blueberries.",
+      "Divide batter evenly among muffin cups, filling about 3/4 full.",
+      "Bake for 20-22 minutes until a toothpick comes out clean and tops are golden.",
+      "Cool in the tin 5 minutes, then transfer to a wire rack. Store in an airtight container up to 4 days."
+    ],
+    "nutrition": {
+      "calories": 195,
+      "protein": 6,
+      "carbs": 12,
+      "fat": 15,
+      "fiber": 2,
+      "sugar": 8
+    },
+    "tags": [
+      "portable",
+      "kid-friendly",
+      "batch-cook",
+      "naturally-sweet"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-carnitas-breakfast-plate",
+    "slug": "gfdf-carnitas-breakfast-plate",
+    "title": "Carnitas Breakfast Plate",
+    "description": "Slow-cooked beef carnitas served with eggs, plantains, and fresh pico de gallo. A Latin-inspired feast.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo"
+    ],
+    "category": "breakfast",
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "beef chuck roast",
+        "amount": 1,
+        "unit": "lb",
+        "notes": "cooked and shredded (leftover carnitas)",
+        "category": "meat"
+      },
+      {
+        "name": "eggs",
+        "amount": 8,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "ripe plantain",
+        "amount": 1,
+        "unit": "large",
+        "notes": "sliced",
+        "category": "produce"
+      },
+      {
+        "name": "roma tomatoes",
+        "amount": 2,
+        "unit": "medium",
+        "notes": "diced",
+        "category": "produce"
+      },
+      {
+        "name": "white onion",
+        "amount": 0.25,
+        "unit": "cup",
+        "notes": "diced",
+        "category": "produce"
+      },
+      {
+        "name": "fresh cilantro",
+        "amount": 3,
+        "unit": "tbsp",
+        "notes": "chopped",
+        "category": "produce"
+      },
+      {
+        "name": "lime juice",
+        "amount": 2,
+        "unit": "tbsp",
+        "category": "produce"
+      },
+      {
+        "name": "avocado oil",
+        "amount": 3,
+        "unit": "tbsp",
+        "category": "oils"
+      },
+      {
+        "name": "cumin",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "spices"
+      }
+    ],
+    "instructions": [
+      "Make pico de gallo: combine diced tomatoes, onion, cilantro, lime juice, and a pinch of salt.",
+      "Heat 1 tbsp avocado oil in a skillet over medium-high heat. Crisp shredded beef with cumin for 5-6 minutes until edges are browned.",
+      "In another skillet, fry plantain slices in 1 tbsp oil for 2-3 minutes per side until golden.",
+      "Fry eggs in remaining oil to desired doneness.",
+      "Plate: crispy carnitas, fried plantains, eggs, and a generous scoop of pico de gallo."
+    ],
+    "nutrition": {
+      "calories": 460,
+      "protein": 34,
+      "carbs": 22,
+      "fat": 26,
+      "fiber": 2,
+      "sugar": 10
+    },
+    "tags": [
+      "latin-inspired",
+      "hearty",
+      "weekend",
+      "brunch"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-mushroom-spinach-omelette",
+    "slug": "gfdf-mushroom-spinach-omelette",
+    "title": "Mushroom and Spinach Omelette",
+    "description": "A classic French-style omelette filled with sauteed mushrooms, spinach, and fresh herbs. Simple, elegant, and satisfying.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "whole30",
+      "keto"
+    ],
+    "category": "breakfast",
+    "prepTime": 5,
+    "cookTime": 8,
+    "servings": 1,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "eggs",
+        "amount": 3,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "cremini mushrooms",
+        "amount": 0.5,
+        "unit": "cup",
+        "notes": "sliced",
+        "category": "produce"
+      },
+      {
+        "name": "baby spinach",
+        "amount": 1,
+        "unit": "cup",
+        "category": "produce"
+      },
+      {
+        "name": "ghee",
+        "amount": 1.5,
+        "unit": "tbsp",
+        "category": "oils"
+      },
+      {
+        "name": "fresh chives",
+        "amount": 1,
+        "unit": "tbsp",
+        "notes": "chopped",
+        "category": "produce"
+      },
+      {
+        "name": "salt",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "black pepper",
+        "amount": 0.125,
+        "unit": "tsp",
+        "category": "spices"
+      }
+    ],
+    "instructions": [
+      "Heat 0.5 tbsp ghee in a non-stick skillet over medium heat. Saute mushrooms 3-4 minutes until golden. Add spinach, stir until wilted. Remove and set aside.",
+      "Whisk eggs with salt and pepper. Heat remaining ghee in the same skillet over medium-low heat.",
+      "Pour in eggs. Tilt pan to spread evenly. As edges set, gently lift with a spatula to let uncooked egg flow underneath.",
+      "When mostly set but still slightly moist on top, spoon mushroom-spinach filling onto one half.",
+      "Fold omelette in half. Slide onto plate and garnish with chives."
+    ],
+    "nutrition": {
+      "calories": 330,
+      "protein": 20,
+      "carbs": 3,
+      "fat": 26,
+      "fiber": 1,
+      "sugar": 1
+    },
+    "tags": [
+      "classic",
+      "quick",
+      "low-carb",
+      "single-serving"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-banana-collagen-pancakes",
+    "slug": "gfdf-banana-collagen-pancakes",
+    "title": "Banana Collagen Protein Pancakes",
+    "description": "Fluffy pancakes boosted with collagen peptides for extra protein. Made with cassava flour for a grain-free option.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo"
+    ],
+    "category": "breakfast",
+    "prepTime": 10,
+    "cookTime": 12,
+    "servings": 3,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "cassava flour",
+        "amount": 0.5,
+        "unit": "cup",
+        "category": "pantry"
+      },
+      {
+        "name": "ripe banana",
+        "amount": 1,
+        "unit": "medium",
+        "notes": "mashed",
+        "category": "produce"
+      },
+      {
+        "name": "eggs",
+        "amount": 2,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "collagen peptides",
+        "amount": 2,
+        "unit": "scoops",
+        "notes": "about 20g",
+        "category": "pantry"
+      },
+      {
+        "name": "full-fat coconut milk",
+        "amount": 0.33,
+        "unit": "cup",
+        "category": "pantry"
+      },
+      {
+        "name": "baking powder",
+        "amount": 0.5,
+        "unit": "tsp",
+        "notes": "grain-free",
+        "category": "pantry"
+      },
+      {
+        "name": "cinnamon",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "coconut oil",
+        "amount": 1,
+        "unit": "tbsp",
+        "notes": "for cooking",
+        "category": "oils"
+      },
+      {
+        "name": "fresh berries",
+        "amount": 0.5,
+        "unit": "cup",
+        "notes": "for topping",
+        "category": "produce"
+      }
+    ],
+    "instructions": [
+      "Mash banana in a bowl. Add eggs, coconut milk, and collagen. Whisk until smooth.",
+      "Add cassava flour, baking powder, and cinnamon. Stir until just combined. Let rest 2 minutes.",
+      "Heat coconut oil in a skillet over medium-low heat. Pour about 3 tbsp of batter per pancake.",
+      "Cook 2-3 minutes until bubbles form and edges set. Flip and cook 1-2 minutes more.",
+      "Serve stacked with fresh berries on top."
+    ],
+    "nutrition": {
+      "calories": 280,
+      "protein": 16,
+      "carbs": 30,
+      "fat": 10,
+      "fiber": 3,
+      "sugar": 9
+    },
+    "tags": [
+      "protein-boosted",
+      "kid-friendly",
+      "grain-free",
+      "collagen"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-turkey-bacon-sweet-potato-rounds",
+    "slug": "gfdf-turkey-bacon-sweet-potato-rounds",
+    "title": "Turkey Bacon Sweet Potato Rounds",
+    "description": "Roasted sweet potato rounds topped with turkey bacon, avocado, and a drizzle of hot sauce. Fun, stackable bites.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "whole30"
+    ],
+    "category": "breakfast",
+    "prepTime": 10,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "sweet potato",
+        "amount": 2,
+        "unit": "large",
+        "notes": "sliced into 1/2 inch rounds",
+        "category": "produce"
+      },
+      {
+        "name": "turkey bacon",
+        "amount": 8,
+        "unit": "slices",
+        "notes": "sugar-free, cooked and crumbled",
+        "category": "meat"
+      },
+      {
+        "name": "avocado",
+        "amount": 1,
+        "unit": "large",
+        "notes": "mashed",
+        "category": "produce"
+      },
+      {
+        "name": "avocado oil",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "oils"
+      },
+      {
+        "name": "hot sauce",
+        "amount": 1,
+        "unit": "tsp",
+        "notes": "sugar-free",
+        "category": "pantry"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "black pepper",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      }
+    ],
+    "instructions": [
+      "Preheat oven to 400\u00b0F. Brush sweet potato rounds with avocado oil and season with salt and pepper.",
+      "Bake on a sheet pan for 20-22 minutes, flipping halfway, until tender and golden.",
+      "Meanwhile, cook turkey bacon until crispy and crumble.",
+      "Top each sweet potato round with mashed avocado, crumbled turkey bacon, and a dash of hot sauce.",
+      "Serve as finger food or plate 4-5 rounds per person."
+    ],
+    "nutrition": {
+      "calories": 260,
+      "protein": 12,
+      "carbs": 28,
+      "fat": 12,
+      "fiber": 5,
+      "sugar": 6
+    },
+    "tags": [
+      "finger-food",
+      "fun",
+      "whole30-compliant",
+      "stackable"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-chicken-veggie-breakfast-stir-fry",
+    "slug": "gfdf-chicken-veggie-breakfast-stir-fry",
+    "title": "Chicken and Veggie Breakfast Stir-Fry",
+    "description": "Leftover chicken stir-fried with broccoli, peppers, and coconut aminos. A savory Asian-inspired way to start the morning.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "whole30"
+    ],
+    "category": "breakfast",
+    "prepTime": 5,
+    "cookTime": 10,
+    "servings": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "cooked chicken breast",
+        "amount": 8,
+        "unit": "oz",
+        "notes": "diced",
+        "category": "meat"
+      },
+      {
+        "name": "broccoli florets",
+        "amount": 1.5,
+        "unit": "cups",
+        "category": "produce"
+      },
+      {
+        "name": "red bell pepper",
+        "amount": 1,
+        "unit": "medium",
+        "notes": "sliced",
+        "category": "produce"
+      },
+      {
+        "name": "coconut aminos",
+        "amount": 2,
+        "unit": "tbsp",
+        "category": "pantry"
+      },
+      {
+        "name": "sesame oil",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "oils"
+      },
+      {
+        "name": "avocado oil",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "oils"
+      },
+      {
+        "name": "garlic",
+        "amount": 2,
+        "unit": "cloves",
+        "notes": "minced",
+        "category": "produce"
+      },
+      {
+        "name": "fresh ginger",
+        "amount": 1,
+        "unit": "tsp",
+        "notes": "grated",
+        "category": "produce"
+      },
+      {
+        "name": "eggs",
+        "amount": 2,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "sesame seeds",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "pantry"
+      }
+    ],
+    "instructions": [
+      "Heat avocado oil in a wok or large skillet over high heat. Add broccoli and bell pepper, stir-fry 3-4 minutes.",
+      "Add garlic, ginger, and diced chicken. Cook 2 minutes until heated through.",
+      "Push everything to the sides. Crack eggs into the center and scramble until set.",
+      "Add coconut aminos and sesame oil. Toss everything together.",
+      "Sprinkle with sesame seeds and serve hot."
+    ],
+    "nutrition": {
+      "calories": 340,
+      "protein": 34,
+      "carbs": 10,
+      "fat": 18,
+      "fiber": 3,
+      "sugar": 4
+    },
+    "tags": [
+      "asian-inspired",
+      "quick",
+      "leftover-friendly",
+      "high-protein"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-pumpkin-spice-n-oatmeal",
+    "slug": "gfdf-pumpkin-spice-n-oatmeal",
+    "title": "Pumpkin Spice Noatmeal",
+    "description": "Warm grain-free porridge made with ground flaxseed, pumpkin puree, and warming spices. All the cozy vibes without any grains.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "keto"
+    ],
+    "category": "breakfast",
+    "prepTime": 5,
+    "cookTime": 5,
+    "servings": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "ground flaxseed",
+        "amount": 0.5,
+        "unit": "cup",
+        "category": "pantry"
+      },
+      {
+        "name": "pumpkin puree",
+        "amount": 0.5,
+        "unit": "cup",
+        "notes": "canned, not pie filling",
+        "category": "pantry"
+      },
+      {
+        "name": "full-fat coconut milk",
+        "amount": 1,
+        "unit": "cup",
+        "category": "pantry"
+      },
+      {
+        "name": "cinnamon",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "ginger",
+        "amount": 0.25,
+        "unit": "tsp",
+        "notes": "ground",
+        "category": "spices"
+      },
+      {
+        "name": "nutmeg",
+        "amount": 0.125,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "cloves",
+        "amount": 0.125,
+        "unit": "tsp",
+        "notes": "ground",
+        "category": "spices"
+      },
+      {
+        "name": "raw honey",
+        "amount": 1,
+        "unit": "tbsp",
+        "notes": "optional",
+        "category": "pantry"
+      },
+      {
+        "name": "pecans",
+        "amount": 2,
+        "unit": "tbsp",
+        "notes": "chopped, for topping",
+        "category": "pantry"
+      },
+      {
+        "name": "salt",
+        "amount": 0.125,
+        "unit": "tsp",
+        "category": "spices"
+      }
+    ],
+    "instructions": [
+      "Combine coconut milk and pumpkin puree in a small saucepan over medium heat. Stir until smooth.",
+      "Add ground flaxseed, cinnamon, ginger, nutmeg, cloves, and salt. Stir continuously for 3-4 minutes until thickened to porridge consistency.",
+      "Remove from heat. Stir in honey if using.",
+      "Divide into bowls and top with chopped pecans. Serve warm."
+    ],
+    "nutrition": {
+      "calories": 285,
+      "protein": 8,
+      "carbs": 16,
+      "fat": 22,
+      "fiber": 10,
+      "sugar": 6
+    },
+    "tags": [
+      "grain-free",
+      "warming",
+      "fall-flavors",
+      "high-fiber"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-zucchini-fritters",
+    "slug": "gfdf-zucchini-fritters",
+    "title": "Zucchini Fritters with Eggs",
+    "description": "Crispy pan-fried zucchini fritters made with almond flour, served alongside sunny eggs. A veggie-forward breakfast.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo"
+    ],
+    "category": "breakfast",
+    "prepTime": 15,
+    "cookTime": 12,
+    "servings": 3,
+    "difficulty": "medium",
+    "ingredients": [
+      {
+        "name": "zucchini",
+        "amount": 2,
+        "unit": "large",
+        "notes": "grated and squeezed dry",
+        "category": "produce"
+      },
+      {
+        "name": "eggs",
+        "amount": 4,
+        "unit": "large",
+        "notes": "2 for fritters, 2 for serving",
+        "category": "eggs"
+      },
+      {
+        "name": "almond flour",
+        "amount": 0.33,
+        "unit": "cup",
+        "category": "pantry"
+      },
+      {
+        "name": "green onions",
+        "amount": 3,
+        "unit": "stalks",
+        "notes": "sliced",
+        "category": "produce"
+      },
+      {
+        "name": "garlic",
+        "amount": 1,
+        "unit": "clove",
+        "notes": "minced",
+        "category": "produce"
+      },
+      {
+        "name": "avocado oil",
+        "amount": 3,
+        "unit": "tbsp",
+        "category": "oils"
+      },
+      {
+        "name": "salt",
+        "amount": 0.75,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "black pepper",
+        "amount": 0.25,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "lemon juice",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "produce"
+      }
+    ],
+    "instructions": [
+      "Grate zucchini and squeeze out as much moisture as possible using a clean towel.",
+      "Mix zucchini, 2 eggs, almond flour, green onions, garlic, salt, and pepper in a bowl.",
+      "Heat avocado oil in a skillet over medium heat. Drop 2 tbsp of mixture per fritter and flatten slightly. Cook 3-4 minutes per side until golden and crispy.",
+      "Fry remaining 2 eggs in the same skillet.",
+      "Serve fritters with fried eggs on top and a squeeze of lemon."
+    ],
+    "nutrition": {
+      "calories": 270,
+      "protein": 14,
+      "carbs": 8,
+      "fat": 22,
+      "fiber": 3,
+      "sugar": 3
+    },
+    "tags": [
+      "veggie-forward",
+      "crispy",
+      "grain-free",
+      "light"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-acai-bowl",
+    "slug": "gfdf-acai-bowl",
+    "title": "Acai Breakfast Bowl",
+    "description": "A thick, antioxidant-rich acai base topped with banana, granola-free crunch, and drizzled with almond butter.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo"
+    ],
+    "category": "breakfast",
+    "prepTime": 10,
+    "cookTime": 0,
+    "servings": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "frozen acai puree",
+        "amount": 2,
+        "unit": "packets",
+        "notes": "unsweetened",
+        "category": "produce"
+      },
+      {
+        "name": "frozen banana",
+        "amount": 1,
+        "unit": "medium",
+        "category": "produce"
+      },
+      {
+        "name": "full-fat coconut milk",
+        "amount": 0.33,
+        "unit": "cup",
+        "category": "pantry"
+      },
+      {
+        "name": "almond butter",
+        "amount": 2,
+        "unit": "tbsp",
+        "notes": "for drizzle",
+        "category": "pantry"
+      },
+      {
+        "name": "fresh banana",
+        "amount": 1,
+        "unit": "medium",
+        "notes": "sliced, for topping",
+        "category": "produce"
+      },
+      {
+        "name": "fresh strawberries",
+        "amount": 0.5,
+        "unit": "cup",
+        "notes": "sliced",
+        "category": "produce"
+      },
+      {
+        "name": "unsweetened coconut flakes",
+        "amount": 2,
+        "unit": "tbsp",
+        "category": "pantry"
+      },
+      {
+        "name": "hemp seeds",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "pantry"
+      },
+      {
+        "name": "raw honey",
+        "amount": 1,
+        "unit": "tbsp",
+        "notes": "optional",
+        "category": "pantry"
+      }
+    ],
+    "instructions": [
+      "Break frozen acai packets into pieces. Add to a blender with frozen banana and coconut milk.",
+      "Blend until thick and smooth, scraping down sides as needed. The consistency should be thicker than a smoothie.",
+      "Divide between two bowls.",
+      "Top with sliced fresh banana, strawberries, coconut flakes, and hemp seeds.",
+      "Drizzle with almond butter and honey if using. Serve immediately."
+    ],
+    "nutrition": {
+      "calories": 310,
+      "protein": 7,
+      "carbs": 36,
+      "fat": 18,
+      "fiber": 7,
+      "sugar": 20
+    },
+    "tags": [
+      "antioxidant",
+      "no-cook",
+      "refreshing",
+      "superfood"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-breakfast-taco-lettuce-wraps",
+    "slug": "gfdf-breakfast-taco-lettuce-wraps",
+    "title": "Breakfast Taco Lettuce Wraps",
+    "description": "Seasoned ground beef and scrambled eggs in crisp butter lettuce cups, topped with avocado and salsa. Low-carb taco morning.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "whole30",
+      "keto"
+    ],
+    "category": "breakfast",
+    "prepTime": 10,
+    "cookTime": 10,
+    "servings": 3,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "ground beef",
+        "amount": 0.75,
+        "unit": "lb",
+        "category": "meat"
+      },
+      {
+        "name": "eggs",
+        "amount": 4,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "butter lettuce",
+        "amount": 1,
+        "unit": "head",
+        "notes": "leaves separated",
+        "category": "produce"
+      },
+      {
+        "name": "avocado",
+        "amount": 1,
+        "unit": "medium",
+        "notes": "diced",
+        "category": "produce"
+      },
+      {
+        "name": "salsa",
+        "amount": 0.5,
+        "unit": "cup",
+        "notes": "sugar-free",
+        "category": "pantry"
+      },
+      {
+        "name": "taco seasoning",
+        "amount": 2,
+        "unit": "tbsp",
+        "notes": "homemade or sugar-free",
+        "category": "spices"
+      },
+      {
+        "name": "avocado oil",
+        "amount": 1,
+        "unit": "tbsp",
+        "category": "oils"
+      },
+      {
+        "name": "fresh cilantro",
+        "amount": 2,
+        "unit": "tbsp",
+        "notes": "chopped",
+        "category": "produce"
+      },
+      {
+        "name": "lime",
+        "amount": 1,
+        "unit": "medium",
+        "notes": "cut into wedges",
+        "category": "produce"
+      }
+    ],
+    "instructions": [
+      "Brown ground beef in a skillet over medium-high heat. Add taco seasoning and a splash of water. Simmer 2 minutes.",
+      "In a separate pan, heat avocado oil. Scramble eggs until just set.",
+      "Arrange butter lettuce cups on a platter.",
+      "Fill each cup with seasoned beef and scrambled eggs.",
+      "Top with diced avocado, salsa, and cilantro. Serve with lime wedges."
+    ],
+    "nutrition": {
+      "calories": 380,
+      "protein": 28,
+      "carbs": 8,
+      "fat": 26,
+      "fiber": 4,
+      "sugar": 3
+    },
+    "tags": [
+      "low-carb",
+      "taco",
+      "lettuce-wraps",
+      "fun"
+    ],
+    "biblicallyClean": true
+  },
+  {
+    "id": "gfdf-sweet-potato-turkey-casserole",
+    "slug": "gfdf-sweet-potato-turkey-casserole",
+    "title": "Sweet Potato Turkey Breakfast Casserole",
+    "description": "A make-ahead casserole with layers of shredded sweet potato, ground turkey, and eggs. Cut into squares for easy weekday breakfasts.",
+    "frameworks": [
+      "dairy-free",
+      "gluten-free",
+      "whole-foods",
+      "paleo",
+      "whole30"
+    ],
+    "category": "breakfast",
+    "prepTime": 20,
+    "cookTime": 40,
+    "servings": 8,
+    "difficulty": "easy",
+    "ingredients": [
+      {
+        "name": "sweet potatoes",
+        "amount": 2,
+        "unit": "large",
+        "notes": "peeled and shredded",
+        "category": "produce"
+      },
+      {
+        "name": "ground turkey",
+        "amount": 1,
+        "unit": "lb",
+        "category": "meat"
+      },
+      {
+        "name": "eggs",
+        "amount": 10,
+        "unit": "large",
+        "category": "eggs"
+      },
+      {
+        "name": "yellow onion",
+        "amount": 1,
+        "unit": "medium",
+        "notes": "diced",
+        "category": "produce"
+      },
+      {
+        "name": "baby spinach",
+        "amount": 3,
+        "unit": "cups",
+        "category": "produce"
+      },
+      {
+        "name": "garlic",
+        "amount": 3,
+        "unit": "cloves",
+        "notes": "minced",
+        "category": "produce"
+      },
+      {
+        "name": "avocado oil",
+        "amount": 2,
+        "unit": "tbsp",
+        "category": "oils"
+      },
+      {
+        "name": "Italian seasoning",
+        "amount": 1,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "salt",
+        "amount": 1.25,
+        "unit": "tsp",
+        "category": "spices"
+      },
+      {
+        "name": "black pepper",
+        "amount": 0.5,
+        "unit": "tsp",
+        "category": "spices"
+      }
+    ],
+    "instructions": [
+      "Preheat oven to 375\u00b0F. Grease a 9x13 baking dish with avocado oil.",
+      "Brown ground turkey with onion and garlic in a skillet. Add spinach and cook until wilted. Season with Italian seasoning, half the salt, and pepper.",
+      "Press shredded sweet potato into the bottom of the baking dish as a crust. Season with remaining salt. Bake 10 minutes to set.",
+      "Spread turkey mixture over the sweet potato layer.",
+      "Whisk eggs and pour evenly over everything.",
+      "Bake 30-35 minutes until eggs are set and top is lightly golden.",
+      "Let cool 10 minutes. Cut into 8 squares. Store in fridge up to 5 days."
+    ],
+    "nutrition": {
+      "calories": 250,
+      "protein": 20,
+      "carbs": 14,
+      "fat": 12,
+      "fiber": 2,
+      "sugar": 4
+    },
+    "tags": [
+      "meal-prep",
+      "make-ahead",
+      "family-size",
+      "freezer-friendly"
+    ],
+    "biblicallyClean": true
+  }
+]

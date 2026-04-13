@@ -1,0 +1,165 @@
+[
+  {
+    "id": "roasted-cauliflower-mash",
+    "slug": "roasted-cauliflower-mash",
+    "title": "Roasted Cauliflower Mash",
+    "description": "Creamy, buttery mashed cauliflower that rivals traditional mashed potatoes. A perfect low-carb side dish.",
+    "frameworks": ["paleo", "whole30", "keto"],
+    "category": "side",
+    "prepTime": 10,
+    "cookTime": 25,
+    "servings": 6,
+    "difficulty": "easy",
+    "ingredients": [
+      { "name": "cauliflower", "amount": 2, "unit": "large heads", "notes": "cut into florets", "category": "produce" },
+      { "name": "ghee", "amount": 4, "unit": "tbsp", "category": "oils" },
+      { "name": "garlic", "amount": 4, "unit": "cloves", "notes": "roasted", "category": "produce" },
+      { "name": "coconut cream", "amount": 0.25, "unit": "cup", "category": "pantry" },
+      { "name": "salt", "amount": 1, "unit": "tsp", "category": "spices" },
+      { "name": "white pepper", "amount": 0.25, "unit": "tsp", "category": "spices" },
+      { "name": "fresh chives", "amount": 2, "unit": "tbsp", "notes": "chopped", "category": "produce" },
+      { "name": "nutritional yeast", "amount": 2, "unit": "tbsp", "notes": "optional, for cheesy flavor", "category": "pantry" }
+    ],
+    "instructions": [
+      "Preheat oven to 425°F (220°C). Toss cauliflower florets with 2 tbsp melted ghee and spread on a baking sheet.",
+      "Wrap garlic cloves in foil with a drizzle of oil. Place on the baking sheet with cauliflower.",
+      "Roast for 25-30 minutes until cauliflower is golden and very tender.",
+      "Transfer roasted cauliflower and garlic to a food processor or high-powered blender.",
+      "Add remaining ghee, coconut cream, salt, and white pepper. Process until completely smooth, scraping down sides as needed.",
+      "Taste and adjust seasonings. If using nutritional yeast for a cheesy flavor, add now and pulse to combine.",
+      "Transfer to a serving bowl and garnish with chives. Serve warm."
+    ],
+    "nutrition": {
+      "calories": 145,
+      "protein": 4,
+      "carbs": 10,
+      "fat": 11,
+      "fiber": 4,
+      "sugar": 4
+    },
+    "tags": ["low-carb", "comfort-food", "creamy", "versatile"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "roasted-brussels-sprouts",
+    "slug": "roasted-brussels-sprouts",
+    "title": "Roasted Brussels Sprouts with Olive Oil & Garlic",
+    "description": "Crispy, caramelized Brussels sprouts roasted with garlic and finished with a squeeze of lemon. Simple perfection.",
+    "frameworks": ["paleo", "whole30", "keto", "aip"],
+    "category": "side",
+    "prepTime": 10,
+    "cookTime": 25,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "name": "Brussels sprouts", "amount": 1.5, "unit": "lbs", "notes": "trimmed and halved", "category": "produce" },
+      { "name": "olive oil", "amount": 3, "unit": "tbsp", "category": "oils" },
+      { "name": "garlic", "amount": 4, "unit": "cloves", "notes": "minced", "category": "produce" },
+      { "name": "salt", "amount": 0.75, "unit": "tsp", "category": "spices" },
+      { "name": "black pepper", "amount": 0.5, "unit": "tsp", "category": "spices" },
+      { "name": "lemon juice", "amount": 1, "unit": "tbsp", "category": "produce" },
+      { "name": "lemon zest", "amount": 1, "unit": "tsp", "category": "produce" },
+      { "name": "red pepper flakes", "amount": 0.25, "unit": "tsp", "notes": "optional", "category": "spices" }
+    ],
+    "instructions": [
+      "Preheat oven to 425°F (220°C). Line a large baking sheet with parchment paper.",
+      "Toss Brussels sprouts with olive oil, salt, and pepper in a large bowl.",
+      "Spread in a single layer on the baking sheet, cut side down.",
+      "Roast for 20 minutes until bottoms are deeply caramelized.",
+      "Add minced garlic, toss everything together, and roast for 5 more minutes.",
+      "Remove from oven and immediately toss with lemon juice and zest.",
+      "Sprinkle with red pepper flakes if desired. Serve hot."
+    ],
+    "nutrition": {
+      "calories": 145,
+      "protein": 5,
+      "carbs": 13,
+      "fat": 10,
+      "fiber": 5,
+      "sugar": 3
+    },
+    "tags": ["crispy", "simple", "holiday-worthy", "vegan"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "sweet-potato-fries",
+    "slug": "sweet-potato-fries",
+    "title": "Crispy Sweet Potato Fries",
+    "description": "Perfectly crispy baked sweet potato fries with a hint of spice. A healthier alternative to regular fries.",
+    "frameworks": ["paleo", "whole30"],
+    "category": "side",
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "name": "sweet potatoes", "amount": 2, "unit": "large", "notes": "cut into 1/4 inch sticks", "category": "produce" },
+      { "name": "avocado oil", "amount": 2, "unit": "tbsp", "category": "oils" },
+      { "name": "arrowroot powder", "amount": 1, "unit": "tbsp", "notes": "helps with crispiness", "category": "pantry" },
+      { "name": "smoked paprika", "amount": 1, "unit": "tsp", "category": "spices" },
+      { "name": "garlic powder", "amount": 0.5, "unit": "tsp", "category": "spices" },
+      { "name": "salt", "amount": 1, "unit": "tsp", "category": "spices" },
+      { "name": "black pepper", "amount": 0.25, "unit": "tsp", "category": "spices" },
+      { "name": "fresh parsley", "amount": 2, "unit": "tbsp", "notes": "chopped, for garnish", "category": "produce" }
+    ],
+    "instructions": [
+      "Preheat oven to 425°F (220°C). Line two baking sheets with parchment paper.",
+      "Soak sweet potato sticks in cold water for 30 minutes to remove excess starch. Drain and pat completely dry.",
+      "Toss dried sweet potatoes with avocado oil and arrowroot powder until evenly coated.",
+      "Add paprika, garlic powder, salt, and pepper. Toss to coat evenly.",
+      "Spread in a single layer on baking sheets, ensuring fries don't touch each other.",
+      "Bake for 15 minutes, flip each fry, then bake for another 10-15 minutes until crispy and golden.",
+      "Season with additional salt if needed and garnish with parsley. Serve immediately."
+    ],
+    "nutrition": {
+      "calories": 165,
+      "protein": 2,
+      "carbs": 28,
+      "fat": 7,
+      "fiber": 4,
+      "sugar": 6
+    },
+    "tags": ["crispy", "kid-friendly", "snack", "baked"],
+    "biblicallyClean": true
+  },
+  {
+    "id": "garlic-sauteed-greens",
+    "slug": "garlic-sauteed-greens",
+    "title": "Garlic Sautéed Greens",
+    "description": "Quick and nutritious sautéed greens with plenty of garlic. Use any combination of kale, chard, or collards.",
+    "frameworks": ["paleo", "whole30", "keto", "aip"],
+    "category": "side",
+    "prepTime": 10,
+    "cookTime": 10,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "name": "mixed greens", "amount": 1, "unit": "lb", "notes": "kale, chard, collards - stems removed, roughly chopped", "category": "produce" },
+      { "name": "olive oil", "amount": 3, "unit": "tbsp", "category": "oils" },
+      { "name": "garlic", "amount": 5, "unit": "cloves", "notes": "thinly sliced", "category": "produce" },
+      { "name": "chicken broth", "amount": 0.25, "unit": "cup", "category": "pantry" },
+      { "name": "red pepper flakes", "amount": 0.25, "unit": "tsp", "category": "spices" },
+      { "name": "salt", "amount": 0.5, "unit": "tsp", "category": "spices" },
+      { "name": "lemon juice", "amount": 1, "unit": "tbsp", "category": "produce" }
+    ],
+    "instructions": [
+      "Heat olive oil in a large skillet or Dutch oven over medium heat.",
+      "Add sliced garlic and red pepper flakes. Cook for 1-2 minutes until garlic is golden and fragrant (don't let it burn).",
+      "Add greens in batches, tossing with tongs as they wilt to make room for more.",
+      "Once all greens are added, pour in chicken broth and season with salt.",
+      "Cover and cook for 5-7 minutes, stirring occasionally, until greens are tender but still vibrant.",
+      "Remove lid and cook for another 1-2 minutes to evaporate excess liquid.",
+      "Finish with a squeeze of lemon juice. Taste and adjust seasonings. Serve warm."
+    ],
+    "nutrition": {
+      "calories": 125,
+      "protein": 4,
+      "carbs": 10,
+      "fat": 10,
+      "fiber": 3,
+      "sugar": 1
+    },
+    "tags": ["quick", "nutritious", "versatile", "vegan-option"],
+    "biblicallyClean": true
+  }
+]

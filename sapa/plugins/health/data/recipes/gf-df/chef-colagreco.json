@@ -1,0 +1,2156 @@
+[
+    {
+        "id": "gfdf-colagreco-riviera-branzino",
+        "slug": "gfdf-colagreco-riviera-branzino",
+        "title": "Riviera Branzino with Citrus & Herb Garden Salsa",
+        "description": "Whole roasted branzino with a vibrant citrus-herb salsa inspired by Colagreco's Mirazur garden overlooking the Mediterranean. Bright lemon, orange, and fresh herbs celebrate the Riviera.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 25,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "whole branzino",
+                "amount": 2,
+                "unit": "lbs",
+                "notes": "scaled and gutted, 2 fish",
+                "category": "seafood"
+            },
+            {
+                "name": "lemon",
+                "amount": 2,
+                "unit": "",
+                "notes": "1 sliced, 1 juiced",
+                "category": "produce"
+            },
+            {
+                "name": "orange",
+                "amount": 1,
+                "unit": "",
+                "notes": "segmented and diced",
+                "category": "produce"
+            },
+            {
+                "name": "fresh parsley",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "fresh basil",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "torn",
+                "category": "produce"
+            },
+            {
+                "name": "fresh mint",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "shallot",
+                "amount": 1,
+                "unit": "",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "capers",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "rinsed",
+                "category": "pantry"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 0.33,
+                "unit": "cup",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 3,
+                "unit": "",
+                "notes": "sliced",
+                "category": "produce"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "red pepper flakes",
+                "amount": 0.25,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 425F. Score branzino 3 times on each side.",
+            "Stuff cavities with lemon slices, garlic, and a few basil leaves. Drizzle fish with 2 tbsp olive oil, season generously with salt and pepper.",
+            "Roast on a sheet pan for 22-25 minutes until skin is crispy and flesh flakes easily.",
+            "While fish roasts, make citrus salsa: combine diced orange segments, lemon juice, shallot, capers, parsley, remaining basil, mint, remaining olive oil, red pepper flakes, and a pinch of salt.",
+            "Plate fish and spoon citrus-herb salsa over the top. Serve immediately."
+        ],
+        "nutrition": {
+            "calories": 380,
+            "protein": 42,
+            "carbs": 8,
+            "fat": 20,
+            "fiber": 2,
+            "sugar": 4
+        },
+        "tags": [
+            "colagreco-inspired",
+            "mediterranean",
+            "riviera",
+            "whole-fish",
+            "citrus"
+        ],
+        "biblicallyClean": true,
+        "chef": "Mauro Colagreco"
+    },
+    {
+        "id": "gfdf-colagreco-garden-lamb-chimichurri",
+        "slug": "gfdf-colagreco-garden-lamb-chimichurri",
+        "title": "Garden Herb Lamb Chops with Flower Chimichurri",
+        "description": "Mirazur-inspired lamb chops with a chimichurri brightened by edible flowers and garden herbs, bridging Colagreco's Argentine roots with his Riviera garden.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 15,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "lamb loin chops",
+                "amount": 2,
+                "unit": "lbs",
+                "notes": "about 8 chops",
+                "category": "meat"
+            },
+            {
+                "name": "fresh parsley",
+                "amount": 1,
+                "unit": "cup",
+                "notes": "packed, finely chopped",
+                "category": "produce"
+            },
+            {
+                "name": "fresh oregano",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "finely chopped",
+                "category": "produce"
+            },
+            {
+                "name": "fresh thyme",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "leaves only",
+                "category": "produce"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 4,
+                "unit": "",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "red wine vinegar",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "red pepper flakes",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "lemon zest",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "divided",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "smoked paprika",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Make chimichurri: combine parsley, oregano, thyme, garlic, vinegar, lemon zest, red pepper flakes, and 1/4 cup olive oil. Season with 1/2 tsp salt. Set aside.",
+            "Pat lamb chops dry. Season generously with remaining salt, black pepper, and smoked paprika.",
+            "Heat a cast-iron skillet or grill to high heat. Add remaining olive oil.",
+            "Sear lamb chops 3-4 minutes per side for medium-rare (internal temp 130F).",
+            "Rest 5 minutes, then serve topped with generous spoonfuls of chimichurri."
+        ],
+        "nutrition": {
+            "calories": 520,
+            "protein": 40,
+            "carbs": 3,
+            "fat": 38,
+            "fiber": 1,
+            "sugar": 1
+        },
+        "tags": [
+            "colagreco-inspired",
+            "argentine",
+            "mediterranean",
+            "lamb",
+            "chimichurri",
+            "grilled"
+        ],
+        "biblicallyClean": true,
+        "chef": "Mauro Colagreco"
+    },
+    {
+        "id": "gfdf-colagreco-fire-roasted-chicken",
+        "slug": "gfdf-colagreco-fire-roasted-chicken",
+        "title": "Open-Fire Spatchcock Chicken with Lemon & Wild Herbs",
+        "description": "Inspired by Colagreco's Argentine open-fire traditions, this spatchcocked chicken is roasted with Riviera citrus and wild herbs for crispy skin and deep flavor.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 45,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "whole chicken",
+                "amount": 4,
+                "unit": "lbs",
+                "notes": "spatchcocked",
+                "category": "meat"
+            },
+            {
+                "name": "lemon",
+                "amount": 2,
+                "unit": "",
+                "notes": "halved",
+                "category": "produce"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 6,
+                "unit": "",
+                "notes": "smashed",
+                "category": "produce"
+            },
+            {
+                "name": "fresh rosemary",
+                "amount": 3,
+                "unit": "sprigs",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "fresh thyme",
+                "amount": 5,
+                "unit": "sprigs",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "smoked paprika",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "dried oregano",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "sea salt",
+                "amount": 2,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 450F (or prepare a hot grill for indirect cooking).",
+            "Rub spatchcocked chicken with olive oil, then season all over with salt, pepper, smoked paprika, and dried oregano.",
+            "Place chicken skin-side up on a sheet pan. Tuck smashed garlic, rosemary, and thyme underneath and around the bird. Nestle lemon halves cut-side down alongside.",
+            "Roast 40-45 minutes until skin is deeply golden and thigh registers 165F.",
+            "Squeeze roasted lemon halves over chicken. Rest 10 minutes before carving."
+        ],
+        "nutrition": {
+            "calories": 450,
+            "protein": 48,
+            "carbs": 4,
+            "fat": 26,
+            "fiber": 1,
+            "sugar": 1
+        },
+        "tags": [
+            "colagreco-inspired",
+            "argentine",
+            "open-fire",
+            "roasted-chicken",
+            "herbs"
+        ],
+        "biblicallyClean": true,
+        "chef": "Mauro Colagreco"
+    },
+    {
+        "id": "gfdf-colagreco-root-veg-salmon",
+        "slug": "gfdf-colagreco-root-veg-salmon",
+        "title": "Roasted Root Vegetable Bowl with Herb-Crusted Salmon",
+        "description": "A Mirazur 'Universo' root-course tribute: earthy roasted roots topped with herb-crusted salmon. Inspired by Colagreco's biodynamic garden philosophy.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 35,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "salmon fillets",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "4 fillets, skin-on",
+                "category": "seafood"
+            },
+            {
+                "name": "parsnips",
+                "amount": 2,
+                "unit": "",
+                "notes": "peeled and cubed",
+                "category": "produce"
+            },
+            {
+                "name": "carrots",
+                "amount": 3,
+                "unit": "",
+                "notes": "peeled and cubed",
+                "category": "produce"
+            },
+            {
+                "name": "beets",
+                "amount": 2,
+                "unit": "",
+                "notes": "peeled and cubed",
+                "category": "produce"
+            },
+            {
+                "name": "turnip",
+                "amount": 1,
+                "unit": "",
+                "notes": "peeled and cubed",
+                "category": "produce"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "fresh dill",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "fresh parsley",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "lemon",
+                "amount": 1,
+                "unit": "",
+                "notes": "zested and juiced",
+                "category": "produce"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 3,
+                "unit": "",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "divided",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "cumin",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 400F. Toss root vegetables with 2 tbsp olive oil, cumin, 1 tsp salt, and pepper. Spread on a sheet pan.",
+            "Roast vegetables 20 minutes, then stir.",
+            "Mix remaining olive oil with garlic, dill, parsley, lemon zest, and remaining salt. Pat salmon dry and press herb mixture onto the top of each fillet.",
+            "Nestle salmon fillets among the roasted roots. Return to oven for 12-15 minutes until salmon is just cooked through.",
+            "Squeeze lemon juice over everything. Serve salmon atop the roots."
+        ],
+        "nutrition": {
+            "calories": 460,
+            "protein": 38,
+            "carbs": 28,
+            "fat": 22,
+            "fiber": 7,
+            "sugar": 10
+        },
+        "tags": [
+            "colagreco-inspired",
+            "mediterranean",
+            "root-vegetables",
+            "salmon",
+            "biodynamic"
+        ],
+        "biblicallyClean": true,
+        "chef": "Mauro Colagreco"
+    },
+    {
+        "id": "gfdf-colagreco-patagonian-steak",
+        "slug": "gfdf-colagreco-patagonian-steak",
+        "title": "Patagonian Skirt Steak with Smoked Olive Oil & Herbs",
+        "description": "Colagreco's Argentine heritage meets Riviera refinement: skirt steak with a smoked olive oil drizzle, charred scallions, and fresh herb salad.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 12,
+        "servings": 4,
+        "difficulty": "easy",
+        "ingredients": [
+            {
+                "name": "skirt steak",
+                "amount": 2,
+                "unit": "lbs",
+                "notes": "",
+                "category": "meat"
+            },
+            {
+                "name": "scallions",
+                "amount": 8,
+                "unit": "",
+                "notes": "trimmed",
+                "category": "produce"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "smoked olive oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "or regular olive oil with pinch smoked salt",
+                "category": "oils"
+            },
+            {
+                "name": "fresh parsley",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "leaves",
+                "category": "produce"
+            },
+            {
+                "name": "fresh cilantro",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "leaves",
+                "category": "produce"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 3,
+                "unit": "",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "red wine vinegar",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "coarsely ground",
+                "category": "spices"
+            },
+            {
+                "name": "lemon",
+                "amount": 1,
+                "unit": "",
+                "notes": "halved",
+                "category": "produce"
+            }
+        ],
+        "instructions": [
+            "Bring skirt steak to room temperature. Season generously with salt and pepper on both sides.",
+            "Heat a grill or cast-iron skillet to very high heat. Sear steak 3-4 minutes per side for medium-rare.",
+            "In the last minute, char scallions alongside the steak until wilted and lightly blackened.",
+            "Rest steak 5 minutes, then slice against the grain.",
+            "Toss parsley and cilantro with vinegar and regular olive oil for a quick herb salad.",
+            "Plate sliced steak with charred scallions and herb salad. Drizzle with smoked olive oil and squeeze lemon over the top."
+        ],
+        "nutrition": {
+            "calories": 490,
+            "protein": 46,
+            "carbs": 4,
+            "fat": 32,
+            "fiber": 1,
+            "sugar": 1
+        },
+        "tags": [
+            "colagreco-inspired",
+            "argentine",
+            "patagonian",
+            "grilled",
+            "skirt-steak"
+        ],
+        "biblicallyClean": true,
+        "chef": "Mauro Colagreco"
+    },
+    {
+        "id": "gfdf-colagreco-sea-bass-olive-tapenade",
+        "slug": "gfdf-colagreco-sea-bass-olive-tapenade",
+        "title": "Pan-Seared Sea Bass with Olive Tapenade & Fennel",
+        "description": "A tribute to Mirazur's Menton seaside setting: delicate sea bass with Provencal olive tapenade and shaved fennel, Colagreco's Mediterranean soul on a plate.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 15,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "sea bass fillets",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "4 fillets, skin-on",
+                "category": "seafood"
+            },
+            {
+                "name": "kalamata olives",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "pitted",
+                "category": "pantry"
+            },
+            {
+                "name": "capers",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "rinsed",
+                "category": "pantry"
+            },
+            {
+                "name": "anchovy fillets",
+                "amount": 2,
+                "unit": "",
+                "notes": "optional",
+                "category": "seafood"
+            },
+            {
+                "name": "fennel bulb",
+                "amount": 1,
+                "unit": "large",
+                "notes": "thinly shaved, fronds reserved",
+                "category": "produce"
+            },
+            {
+                "name": "lemon",
+                "amount": 1,
+                "unit": "",
+                "notes": "juiced",
+                "category": "produce"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 2,
+                "unit": "",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "fresh basil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "torn",
+                "category": "produce"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Make tapenade: pulse olives, capers, anchovy (if using), garlic, and 1 tbsp olive oil in a food processor until coarsely chopped. Stir in basil.",
+            "Toss shaved fennel with lemon juice, 1 tbsp olive oil, and a pinch of salt. Set aside.",
+            "Pat sea bass dry. Season with salt and pepper.",
+            "Heat remaining olive oil in a skillet over medium-high heat. Place fillets skin-side down, press gently for 30 seconds to prevent curling. Cook 4 minutes until skin is crispy.",
+            "Flip and cook 2-3 minutes more until just opaque through.",
+            "Plate fennel salad, top with sea bass skin-side up, and spoon olive tapenade alongside. Garnish with fennel fronds."
+        ],
+        "nutrition": {
+            "calories": 390,
+            "protein": 36,
+            "carbs": 8,
+            "fat": 24,
+            "fiber": 3,
+            "sugar": 2
+        },
+        "tags": [
+            "colagreco-inspired",
+            "mediterranean",
+            "riviera",
+            "sea-bass",
+            "provencal"
+        ],
+        "biblicallyClean": true,
+        "chef": "Mauro Colagreco"
+    },
+    {
+        "id": "gfdf-colagreco-leaf-course-chicken",
+        "slug": "gfdf-colagreco-leaf-course-chicken",
+        "title": "Leaf Course Chicken with Braised Greens & Salsa Verde",
+        "description": "Inspired by Colagreco's Universo 'leaf' course: tender chicken thighs over braised garden greens with a vibrant Italian-Argentine salsa verde.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 35,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "bone-in chicken thighs",
+                "amount": 2,
+                "unit": "lbs",
+                "notes": "about 6 thighs",
+                "category": "meat"
+            },
+            {
+                "name": "lacinato kale",
+                "amount": 1,
+                "unit": "bunch",
+                "notes": "stemmed and roughly chopped",
+                "category": "produce"
+            },
+            {
+                "name": "Swiss chard",
+                "amount": 1,
+                "unit": "bunch",
+                "notes": "stemmed and chopped",
+                "category": "produce"
+            },
+            {
+                "name": "fresh parsley",
+                "amount": 1,
+                "unit": "cup",
+                "notes": "packed",
+                "category": "produce"
+            },
+            {
+                "name": "fresh basil",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 5,
+                "unit": "",
+                "notes": "3 minced, 2 sliced",
+                "category": "produce"
+            },
+            {
+                "name": "anchovy fillets",
+                "amount": 2,
+                "unit": "",
+                "notes": "minced",
+                "category": "seafood"
+            },
+            {
+                "name": "red wine vinegar",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 0.33,
+                "unit": "cup",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "chicken broth",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "divided",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "red pepper flakes",
+                "amount": 0.25,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Season chicken thighs with 1 tsp salt and pepper. Heat 1 tbsp olive oil in a large skillet over medium-high. Sear thighs skin-side down 6-7 minutes until golden, flip and cook 5 more minutes. Remove and set aside.",
+            "In the same pan, add sliced garlic and red pepper flakes. Cook 30 seconds. Add kale, chard, and chicken broth. Cover and braise 5 minutes until wilted.",
+            "Return chicken to pan, nestling into greens. Cover and cook 10-12 minutes until chicken reaches 175F.",
+            "Make salsa verde: blend parsley, basil, minced garlic, anchovy, vinegar, and remaining olive oil until just combined but still chunky.",
+            "Serve chicken over braised greens with salsa verde drizzled generously on top."
+        ],
+        "nutrition": {
+            "calories": 480,
+            "protein": 42,
+            "carbs": 10,
+            "fat": 30,
+            "fiber": 4,
+            "sugar": 2
+        },
+        "tags": [
+            "colagreco-inspired",
+            "universo",
+            "leaf-course",
+            "braised-greens",
+            "salsa-verde"
+        ],
+        "biblicallyClean": true,
+        "chef": "Mauro Colagreco"
+    },
+    {
+        "id": "gfdf-colagreco-citrus-cured-salmon",
+        "slug": "gfdf-colagreco-citrus-cured-salmon",
+        "title": "Riviera Citrus-Cured Salmon with Avocado & Radish",
+        "description": "Colagreco's love of citrus and the sea in one dish: quick-cured salmon with a bright citrus dressing, creamy avocado, and peppery radish.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 25,
+        "cookTime": 0,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "sushi-grade salmon",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "thinly sliced",
+                "category": "seafood"
+            },
+            {
+                "name": "lemon",
+                "amount": 2,
+                "unit": "",
+                "notes": "juiced",
+                "category": "produce"
+            },
+            {
+                "name": "orange",
+                "amount": 1,
+                "unit": "",
+                "notes": "juiced",
+                "category": "produce"
+            },
+            {
+                "name": "grapefruit",
+                "amount": 0.5,
+                "unit": "",
+                "notes": "juiced",
+                "category": "produce"
+            },
+            {
+                "name": "avocado",
+                "amount": 2,
+                "unit": "",
+                "notes": "sliced",
+                "category": "produce"
+            },
+            {
+                "name": "radishes",
+                "amount": 6,
+                "unit": "",
+                "notes": "thinly sliced",
+                "category": "produce"
+            },
+            {
+                "name": "shallot",
+                "amount": 1,
+                "unit": "small",
+                "notes": "thinly sliced into rings",
+                "category": "produce"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "fresh dill",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "fresh chives",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "flaky sea salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Arrange salmon slices on a platter. Combine lemon, orange, and grapefruit juices with a pinch of salt. Pour over salmon and let cure 10-15 minutes.",
+            "Drain most of the citrus juice. Arrange avocado slices and radishes around and over the salmon.",
+            "Scatter shallot rings, dill, and chives over the platter.",
+            "Drizzle generously with olive oil. Season with flaky sea salt and cracked black pepper.",
+            "Serve immediately as a composed platter \u2014 elegant and bright."
+        ],
+        "nutrition": {
+            "calories": 420,
+            "protein": 36,
+            "carbs": 14,
+            "fat": 26,
+            "fiber": 6,
+            "sugar": 6
+        },
+        "tags": [
+            "colagreco-inspired",
+            "mediterranean",
+            "citrus",
+            "raw-fish",
+            "riviera"
+        ],
+        "biblicallyClean": true,
+        "chef": "Mauro Colagreco"
+    },
+    {
+        "id": "gfdf-colagreco-seed-crusted-tuna",
+        "slug": "gfdf-colagreco-seed-crusted-tuna",
+        "title": "Seed-Crusted Tuna with Roasted Pepper Sauce",
+        "description": "Inspired by Colagreco's Universo 'seed' course: tuna steaks crusted in a vibrant seed mix, served over a smoky roasted red pepper sauce.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 15,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "ahi tuna steaks",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "4 steaks, sushi-grade",
+                "category": "seafood"
+            },
+            {
+                "name": "sesame seeds",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "white and black mixed",
+                "category": "pantry"
+            },
+            {
+                "name": "sunflower seeds",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "finely chopped",
+                "category": "pantry"
+            },
+            {
+                "name": "pumpkin seeds",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "finely chopped",
+                "category": "pantry"
+            },
+            {
+                "name": "roasted red peppers",
+                "amount": 1,
+                "unit": "cup",
+                "notes": "jarred, drained",
+                "category": "pantry"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 2,
+                "unit": "",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "smoked paprika",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "lemon",
+                "amount": 1,
+                "unit": "",
+                "notes": "juiced",
+                "category": "produce"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "arugula",
+                "amount": 4,
+                "unit": "cups",
+                "notes": "",
+                "category": "produce"
+            }
+        ],
+        "instructions": [
+            "Blend roasted red peppers, garlic, smoked paprika, 1 tbsp olive oil, lemon juice, and a pinch of salt until smooth. Set sauce aside.",
+            "Combine sesame seeds, sunflower seeds, and pumpkin seeds on a plate. Season tuna steaks with salt and pepper, then press into seed mixture on all sides.",
+            "Heat remaining olive oil in a skillet over high heat. Sear tuna 1-2 minutes per side for rare to medium-rare.",
+            "Spread roasted pepper sauce on plates. Top with a bed of arugula and place sliced tuna on top.",
+            "Serve immediately with any remaining sauce on the side."
+        ],
+        "nutrition": {
+            "calories": 400,
+            "protein": 44,
+            "carbs": 10,
+            "fat": 20,
+            "fiber": 3,
+            "sugar": 4
+        },
+        "tags": [
+            "colagreco-inspired",
+            "universo",
+            "seed-course",
+            "seared-tuna",
+            "seeds"
+        ],
+        "biblicallyClean": true,
+        "chef": "Mauro Colagreco"
+    },
+    {
+        "id": "gfdf-colagreco-flower-turkey-meatballs",
+        "slug": "gfdf-colagreco-flower-turkey-meatballs",
+        "title": "Flower Course Turkey Meatballs in Saffron Tomato Broth",
+        "description": "Colagreco's Universo 'flower' course reimagined: tender turkey meatballs simmered in a saffron-kissed tomato broth with zucchini and fresh herbs.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 25,
+        "cookTime": 30,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "ground turkey",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "",
+                "category": "meat"
+            },
+            {
+                "name": "almond flour",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "as binder",
+                "category": "pantry"
+            },
+            {
+                "name": "egg",
+                "amount": 1,
+                "unit": "",
+                "notes": "beaten",
+                "category": "eggs"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 4,
+                "unit": "",
+                "notes": "minced, divided",
+                "category": "produce"
+            },
+            {
+                "name": "crushed tomatoes",
+                "amount": 28,
+                "unit": "oz",
+                "notes": "1 can",
+                "category": "pantry"
+            },
+            {
+                "name": "saffron threads",
+                "amount": 0.25,
+                "unit": "tsp",
+                "notes": "steeped in 2 tbsp warm water",
+                "category": "spices"
+            },
+            {
+                "name": "zucchini",
+                "amount": 2,
+                "unit": "",
+                "notes": "diced",
+                "category": "produce"
+            },
+            {
+                "name": "onion",
+                "amount": 1,
+                "unit": "",
+                "notes": "diced",
+                "category": "produce"
+            },
+            {
+                "name": "fresh basil",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "torn",
+                "category": "produce"
+            },
+            {
+                "name": "fresh oregano",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "divided",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Mix turkey, almond flour, egg, half the garlic, oregano, 1 tsp salt, and 1/2 tsp pepper. Form into 16 meatballs.",
+            "Heat olive oil in a large pot over medium-high heat. Brown meatballs on all sides, about 5 minutes. Remove and set aside.",
+            "In the same pot, saute onion until soft (3 minutes). Add remaining garlic and zucchini, cook 2 minutes.",
+            "Add crushed tomatoes, saffron with its water, remaining salt, and pepper. Bring to a simmer.",
+            "Return meatballs to the pot. Cover and simmer 20 minutes until meatballs are cooked through.",
+            "Stir in torn basil. Serve in bowls with broth ladled generously over the meatballs."
+        ],
+        "nutrition": {
+            "calories": 420,
+            "protein": 38,
+            "carbs": 18,
+            "fat": 22,
+            "fiber": 5,
+            "sugar": 9
+        },
+        "tags": [
+            "colagreco-inspired",
+            "universo",
+            "flower-course",
+            "meatballs",
+            "saffron"
+        ],
+        "biblicallyClean": true,
+        "chef": "Mauro Colagreco"
+    },
+    {
+        "id": "gfdf-colagreco-herb-garden-frittata",
+        "slug": "gfdf-colagreco-herb-garden-frittata",
+        "title": "Mirazur Herb Garden Frittata with Roasted Tomatoes",
+        "description": "Inspired by Colagreco's legendary Mirazur garden: a loaded frittata with fresh herbs, roasted cherry tomatoes, and olives. Simple, elegant, garden-driven.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 25,
+        "servings": 4,
+        "difficulty": "easy",
+        "ingredients": [
+            {
+                "name": "eggs",
+                "amount": 10,
+                "unit": "",
+                "notes": "",
+                "category": "eggs"
+            },
+            {
+                "name": "cherry tomatoes",
+                "amount": 1,
+                "unit": "cup",
+                "notes": "halved",
+                "category": "produce"
+            },
+            {
+                "name": "kalamata olives",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "halved",
+                "category": "pantry"
+            },
+            {
+                "name": "fresh basil",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "torn",
+                "category": "produce"
+            },
+            {
+                "name": "fresh chives",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "fresh thyme",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "leaves only",
+                "category": "produce"
+            },
+            {
+                "name": "red onion",
+                "amount": 0.5,
+                "unit": "",
+                "notes": "thinly sliced",
+                "category": "produce"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 2,
+                "unit": "",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "coconut cream",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "for richness",
+                "category": "pantry"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 375F. Whisk eggs with coconut cream, salt, pepper, chives, and thyme.",
+            "Heat olive oil in a 10-inch oven-safe skillet over medium heat. Saute red onion 3 minutes, add garlic for 30 seconds.",
+            "Scatter cherry tomatoes and olives in the skillet. Pour egg mixture over the top.",
+            "Cook on stovetop 3-4 minutes until edges begin to set.",
+            "Transfer to oven and bake 15-18 minutes until puffed and golden.",
+            "Top with torn basil. Let cool 5 minutes before slicing into wedges."
+        ],
+        "nutrition": {
+            "calories": 340,
+            "protein": 22,
+            "carbs": 6,
+            "fat": 26,
+            "fiber": 2,
+            "sugar": 3
+        },
+        "tags": [
+            "colagreco-inspired",
+            "mediterranean",
+            "garden",
+            "frittata",
+            "eggs"
+        ],
+        "biblicallyClean": true,
+        "chef": "Mauro Colagreco"
+    },
+    {
+        "id": "gfdf-colagreco-grilled-swordfish",
+        "slug": "gfdf-colagreco-grilled-swordfish",
+        "title": "Grilled Swordfish with Charred Lemon & Caper Relish",
+        "description": "Bold and bright, this Colagreco-inspired swordfish pairs the Riviera's love of capers and citrus with Argentine grilling technique for a smoky, elegant dish.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 12,
+        "servings": 4,
+        "difficulty": "easy",
+        "ingredients": [
+            {
+                "name": "swordfish steaks",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "4 steaks, about 1 inch thick",
+                "category": "seafood"
+            },
+            {
+                "name": "lemon",
+                "amount": 2,
+                "unit": "",
+                "notes": "1 halved for grilling, 1 juiced",
+                "category": "produce"
+            },
+            {
+                "name": "capers",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "rinsed and patted dry",
+                "category": "pantry"
+            },
+            {
+                "name": "cherry tomatoes",
+                "amount": 1,
+                "unit": "cup",
+                "notes": "halved",
+                "category": "produce"
+            },
+            {
+                "name": "fresh parsley",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 2,
+                "unit": "",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "dried oregano",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Brush swordfish with 1 tbsp olive oil, season with salt, pepper, and dried oregano.",
+            "Grill over high heat 4-5 minutes per side until grill marks form and fish is opaque through. Grill lemon halves cut-side down until charred (2 minutes).",
+            "Make relish: combine cherry tomatoes, capers, garlic, parsley, lemon juice, and remaining olive oil. Toss gently.",
+            "Plate swordfish, squeeze charred lemon over the top, and spoon caper-tomato relish alongside.",
+            "Serve immediately with extra olive oil for drizzling."
+        ],
+        "nutrition": {
+            "calories": 370,
+            "protein": 40,
+            "carbs": 6,
+            "fat": 20,
+            "fiber": 2,
+            "sugar": 3
+        },
+        "tags": [
+            "colagreco-inspired",
+            "mediterranean",
+            "grilled",
+            "swordfish",
+            "riviera"
+        ],
+        "biblicallyClean": true,
+        "chef": "Mauro Colagreco"
+    },
+    {
+        "id": "gfdf-colagreco-fruit-course-duck",
+        "slug": "gfdf-colagreco-fruit-course-duck",
+        "title": "Fruit Course Duck Breast with Fig & Red Wine Reduction",
+        "description": "Colagreco's Universo 'fruit' course brought home: seared duck breast with a lush fig and red wine reduction, roasted sweet potatoes, and fresh thyme.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 35,
+        "servings": 4,
+        "difficulty": "hard",
+        "ingredients": [
+            {
+                "name": "duck breast",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "2 large breasts, scored",
+                "category": "meat"
+            },
+            {
+                "name": "dried figs",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "quartered",
+                "category": "pantry"
+            },
+            {
+                "name": "dry red wine",
+                "amount": 0.75,
+                "unit": "cup",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "chicken broth",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "sweet potatoes",
+                "amount": 2,
+                "unit": "large",
+                "notes": "cubed",
+                "category": "produce"
+            },
+            {
+                "name": "shallots",
+                "amount": 2,
+                "unit": "",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "fresh thyme",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "leaves",
+                "category": "produce"
+            },
+            {
+                "name": "balsamic vinegar",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "divided",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 400F. Toss sweet potatoes with olive oil, 1/2 tsp salt, and thyme. Roast 25-30 minutes until caramelized.",
+            "Score duck skin in a crosshatch pattern. Season generously with remaining salt and pepper.",
+            "Place duck breasts skin-side down in a cold skillet. Turn heat to medium and render fat for 8-10 minutes until skin is deeply crispy. Flip and cook 3-4 minutes for medium-rare. Rest 5 minutes.",
+            "Pour off all but 1 tbsp duck fat from the pan. Saute shallots 2 minutes. Add figs, red wine, and broth. Simmer 8-10 minutes until reduced by half and figs are plump. Stir in balsamic vinegar.",
+            "Slice duck breast. Serve over roasted sweet potatoes with fig-wine sauce spooned generously over the top."
+        ],
+        "nutrition": {
+            "calories": 510,
+            "protein": 34,
+            "carbs": 38,
+            "fat": 22,
+            "fiber": 5,
+            "sugar": 18
+        },
+        "tags": [
+            "colagreco-inspired",
+            "universo",
+            "fruit-course",
+            "duck",
+            "fig"
+        ],
+        "biblicallyClean": true,
+        "chef": "Mauro Colagreco"
+    },
+    {
+        "id": "gfdf-colagreco-mediterranean-beef-stew",
+        "slug": "gfdf-colagreco-mediterranean-beef-stew",
+        "title": "Mediterranean Beef Stew with Olives & Orange Zest",
+        "description": "Colagreco's Riviera-meets-Argentina in a hearty stew: braised beef with olives, tomatoes, and a signature orange zest brightness from Menton's famed citrus.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 120,
+        "servings": 6,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "beef chuck",
+                "amount": 2.5,
+                "unit": "lbs",
+                "notes": "cut into 2-inch cubes",
+                "category": "meat"
+            },
+            {
+                "name": "crushed tomatoes",
+                "amount": 14,
+                "unit": "oz",
+                "notes": "1 can",
+                "category": "pantry"
+            },
+            {
+                "name": "beef broth",
+                "amount": 2,
+                "unit": "cups",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "dry red wine",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "green olives",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "pitted",
+                "category": "pantry"
+            },
+            {
+                "name": "orange",
+                "amount": 1,
+                "unit": "",
+                "notes": "zested, peel in strips for braising",
+                "category": "produce"
+            },
+            {
+                "name": "carrots",
+                "amount": 3,
+                "unit": "",
+                "notes": "cut into chunks",
+                "category": "produce"
+            },
+            {
+                "name": "onion",
+                "amount": 1,
+                "unit": "large",
+                "notes": "diced",
+                "category": "produce"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 5,
+                "unit": "",
+                "notes": "smashed",
+                "category": "produce"
+            },
+            {
+                "name": "fresh rosemary",
+                "amount": 2,
+                "unit": "sprigs",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "fresh thyme",
+                "amount": 3,
+                "unit": "sprigs",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "sea salt",
+                "amount": 2,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "smoked paprika",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 325F. Pat beef dry and season with salt, pepper, and smoked paprika.",
+            "Heat olive oil in a Dutch oven over high heat. Brown beef in batches, 3-4 minutes per side. Set aside.",
+            "Reduce heat to medium. Saute onion 4 minutes, then add garlic and carrots for 2 minutes.",
+            "Deglaze with red wine, scraping up fond. Add crushed tomatoes, broth, olives, orange peel strips, rosemary, and thyme.",
+            "Return beef to pot. Bring to a simmer, then cover and transfer to oven.",
+            "Braise 2 hours until beef is fork-tender. Remove herb sprigs and orange peel.",
+            "Serve in bowls garnished with fresh orange zest."
+        ],
+        "nutrition": {
+            "calories": 480,
+            "protein": 42,
+            "carbs": 16,
+            "fat": 26,
+            "fiber": 4,
+            "sugar": 7
+        },
+        "tags": [
+            "colagreco-inspired",
+            "mediterranean",
+            "argentine",
+            "beef-stew",
+            "citrus",
+            "braised"
+        ],
+        "biblicallyClean": true,
+        "chef": "Mauro Colagreco"
+    },
+    {
+        "id": "gfdf-colagreco-sea-vegetable-cod",
+        "slug": "gfdf-colagreco-sea-vegetable-cod",
+        "title": "Cod with Sea Vegetables & Ginger-Citrus Broth",
+        "description": "Colagreco's fascination with sea vegetables meets Riviera cod: flaky white fish in a light ginger-citrus broth with wakame and fresh herbs.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 20,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "cod fillets",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "4 fillets",
+                "category": "seafood"
+            },
+            {
+                "name": "dried wakame seaweed",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "rehydrated",
+                "category": "pantry"
+            },
+            {
+                "name": "fresh ginger",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "grated",
+                "category": "produce"
+            },
+            {
+                "name": "lemon",
+                "amount": 1,
+                "unit": "",
+                "notes": "juiced",
+                "category": "produce"
+            },
+            {
+                "name": "lime",
+                "amount": 1,
+                "unit": "",
+                "notes": "juiced",
+                "category": "produce"
+            },
+            {
+                "name": "fish broth",
+                "amount": 2,
+                "unit": "cups",
+                "notes": "or chicken broth",
+                "category": "pantry"
+            },
+            {
+                "name": "coconut aminos",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "bok choy",
+                "amount": 4,
+                "unit": "",
+                "notes": "baby, halved",
+                "category": "produce"
+            },
+            {
+                "name": "scallions",
+                "amount": 4,
+                "unit": "",
+                "notes": "sliced",
+                "category": "produce"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 2,
+                "unit": "",
+                "notes": "sliced",
+                "category": "produce"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "white pepper",
+                "amount": 0.25,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Heat olive oil in a wide, deep skillet over medium heat. Gently saute garlic and ginger 1 minute until fragrant.",
+            "Add fish broth, coconut aminos, lemon juice, and lime juice. Bring to a gentle simmer.",
+            "Season cod with salt and white pepper. Nestle fillets into the broth. Add bok choy around the fish.",
+            "Cover and poach 10-12 minutes until cod flakes easily and bok choy is tender.",
+            "Add rehydrated wakame in the last 2 minutes to warm through.",
+            "Ladle broth, vegetables, and fish into shallow bowls. Top with scallions and a drizzle of olive oil."
+        ],
+        "nutrition": {
+            "calories": 310,
+            "protein": 40,
+            "carbs": 10,
+            "fat": 12,
+            "fiber": 3,
+            "sugar": 3
+        },
+        "tags": [
+            "colagreco-inspired",
+            "sea-vegetables",
+            "poached",
+            "cod",
+            "ginger-citrus"
+        ],
+        "biblicallyClean": true,
+        "chef": "Mauro Colagreco"
+    },
+    {
+        "id": "gfdf-colagreco-chimichurri-cauliflower-steak",
+        "slug": "gfdf-colagreco-chimichurri-cauliflower-steak",
+        "title": "Chimichurri Cauliflower Steaks with Grilled Chicken",
+        "description": "Colagreco's vegetable-forward philosophy with Argentine boldness: thick cauliflower steaks charred and draped in chimichurri, paired with grilled chicken for protein.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "difficulty": "easy",
+        "ingredients": [
+            {
+                "name": "cauliflower",
+                "amount": 1,
+                "unit": "large head",
+                "notes": "cut into 4 thick steaks",
+                "category": "produce"
+            },
+            {
+                "name": "chicken breast",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "pounded to even thickness",
+                "category": "meat"
+            },
+            {
+                "name": "fresh parsley",
+                "amount": 1,
+                "unit": "cup",
+                "notes": "packed, finely chopped",
+                "category": "produce"
+            },
+            {
+                "name": "fresh oregano",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "finely chopped",
+                "category": "produce"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 4,
+                "unit": "",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "red wine vinegar",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "red pepper flakes",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 0.33,
+                "unit": "cup",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "divided",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "smoked paprika",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Make chimichurri: combine parsley, oregano, garlic, vinegar, red pepper flakes, and half the olive oil. Season with 1/2 tsp salt.",
+            "Brush cauliflower steaks with 1 tbsp olive oil, season with salt, pepper, and smoked paprika.",
+            "Season chicken with salt and pepper. Brush with remaining olive oil.",
+            "Grill or pan-sear cauliflower steaks over medium-high heat, 5-6 minutes per side until charred and tender.",
+            "Grill chicken 5-6 minutes per side until internal temp reaches 165F. Rest 5 minutes, then slice.",
+            "Plate cauliflower steaks topped with sliced chicken and generous chimichurri."
+        ],
+        "nutrition": {
+            "calories": 410,
+            "protein": 42,
+            "carbs": 12,
+            "fat": 22,
+            "fiber": 5,
+            "sugar": 4
+        },
+        "tags": [
+            "colagreco-inspired",
+            "argentine",
+            "chimichurri",
+            "cauliflower",
+            "grilled"
+        ],
+        "biblicallyClean": true,
+        "chef": "Mauro Colagreco"
+    },
+    {
+        "id": "gfdf-colagreco-menton-lemon-chicken",
+        "slug": "gfdf-colagreco-menton-lemon-chicken",
+        "title": "Menton Lemon Roasted Chicken Thighs with Artichokes",
+        "description": "A tribute to Menton's famous lemons and Colagreco's Mirazur terroir: crispy chicken thighs braised with artichoke hearts, olives, and abundant lemon in the Riviera style.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 40,
+        "servings": 4,
+        "difficulty": "easy",
+        "ingredients": [
+            {
+                "name": "bone-in chicken thighs",
+                "amount": 2,
+                "unit": "lbs",
+                "notes": "about 6 thighs",
+                "category": "meat"
+            },
+            {
+                "name": "artichoke hearts",
+                "amount": 14,
+                "unit": "oz",
+                "notes": "canned or frozen, drained and quartered",
+                "category": "produce"
+            },
+            {
+                "name": "lemon",
+                "amount": 3,
+                "unit": "",
+                "notes": "1 sliced into rounds, 2 juiced",
+                "category": "produce"
+            },
+            {
+                "name": "green olives",
+                "amount": 0.33,
+                "unit": "cup",
+                "notes": "pitted, halved",
+                "category": "pantry"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 5,
+                "unit": "",
+                "notes": "smashed",
+                "category": "produce"
+            },
+            {
+                "name": "fresh thyme",
+                "amount": 4,
+                "unit": "sprigs",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "fresh rosemary",
+                "amount": 2,
+                "unit": "sprigs",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "chicken broth",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "sea salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "dried oregano",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 425F. Pat chicken thighs dry and season generously with salt, pepper, and dried oregano.",
+            "Heat 2 tbsp olive oil in a large oven-safe skillet over medium-high heat. Sear chicken skin-side down for 6-7 minutes until deeply golden. Remove and set aside.",
+            "In the same skillet, add garlic, artichoke hearts, and olives. Cook 2 minutes. Add chicken broth and lemon juice, scraping up any fond.",
+            "Nestle chicken thighs skin-side up into the skillet among the artichokes. Tuck lemon slices, thyme, and rosemary around the chicken.",
+            "Transfer to oven and roast 25-30 minutes until chicken skin is crispy and thighs reach 175F.",
+            "Drizzle with remaining olive oil and serve straight from the skillet."
+        ],
+        "nutrition": {
+            "calories": 460,
+            "protein": 40,
+            "carbs": 14,
+            "fat": 28,
+            "fiber": 6,
+            "sugar": 3
+        },
+        "tags": [
+            "colagreco-inspired",
+            "mediterranean",
+            "riviera",
+            "menton-lemon",
+            "chicken",
+            "artichoke"
+        ],
+        "biblicallyClean": true,
+        "chef": "Mauro Colagreco"
+    }
+]

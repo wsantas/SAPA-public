@@ -1,0 +1,2854 @@
+[
+    {
+        "id": "gfdf-reitbauer-trout-beet-horseradish",
+        "slug": "gfdf-reitbauer-trout-beet-horseradish",
+        "title": "Pan-Seared Trout with Roasted Beet and Horseradish",
+        "description": "Inspired by Heinz Reitbauer's reverence for Austrian lake fish and root vegetables. Crispy-skinned trout paired with earthy roasted beets and fresh horseradish.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 45,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "whole trout fillets",
+                "amount": 4,
+                "unit": "",
+                "notes": "skin-on, about 6 oz each",
+                "category": "seafood"
+            },
+            {
+                "name": "red beets",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "medium, scrubbed",
+                "category": "produce"
+            },
+            {
+                "name": "fresh horseradish root",
+                "amount": 3,
+                "unit": "inches",
+                "notes": "peeled and finely grated",
+                "category": "produce"
+            },
+            {
+                "name": "apple cider vinegar",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 4,
+                "unit": "tbsp",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "fresh dill",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "shallot",
+                "amount": 1,
+                "unit": "",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 400F. Wrap beets individually in foil and roast until tender, about 40-45 minutes. Let cool slightly, then peel and cut into wedges.",
+            "Mix grated horseradish with apple cider vinegar, 1 tbsp olive oil, and a pinch of salt. Set aside.",
+            "Pat trout fillets dry and season with salt and pepper on both sides.",
+            "Heat remaining olive oil in a large skillet over medium-high heat. Place trout skin-side down and cook 4 minutes until skin is crispy. Flip and cook 2 more minutes.",
+            "Arrange beet wedges on plates, top with trout fillets skin-side up. Spoon horseradish dressing over the beets, scatter minced shallot and dill on top."
+        ],
+        "nutrition": {
+            "calories": 380,
+            "protein": 36,
+            "carbs": 18,
+            "fat": 18,
+            "fiber": 4,
+            "sugar": 12
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "freshwater-fish",
+            "root-vegetables"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-venison-celeriac-puree",
+        "slug": "gfdf-reitbauer-venison-celeriac-puree",
+        "title": "Seared Venison Loin with Celeriac Puree and Juniper",
+        "description": "A Reitbauer-inspired alpine dish featuring venison seared to a rosy center, served over silky dairy-free celeriac puree with juniper and thyme.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 35,
+        "servings": 4,
+        "difficulty": "hard",
+        "ingredients": [
+            {
+                "name": "venison loin",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "trimmed",
+                "category": "meat"
+            },
+            {
+                "name": "celeriac",
+                "amount": 1,
+                "unit": "large",
+                "notes": "peeled and cubed",
+                "category": "produce"
+            },
+            {
+                "name": "coconut cream",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "full-fat",
+                "category": "pantry"
+            },
+            {
+                "name": "juniper berries",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "crushed",
+                "category": "spices"
+            },
+            {
+                "name": "fresh thyme",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "leaves only",
+                "category": "produce"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 2,
+                "unit": "",
+                "notes": "smashed",
+                "category": "produce"
+            },
+            {
+                "name": "chicken broth",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "gluten-free",
+                "category": "pantry"
+            },
+            {
+                "name": "salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Boil cubed celeriac in salted water until very tender, about 18-20 minutes. Drain, then blend with coconut cream, 1 tbsp olive oil, and salt until silky smooth. Keep warm.",
+            "Season venison loin generously with salt, pepper, and crushed juniper berries.",
+            "Heat remaining olive oil in a cast iron skillet over high heat. Sear venison on all sides, about 2 minutes per side for medium-rare. Add garlic and thyme to the pan in the last minute, basting the venison with the fragrant oil.",
+            "Rest venison 8 minutes, then slice into medallions.",
+            "Spoon celeriac puree onto plates, arrange venison medallions on top. Deglaze pan with chicken broth, reduce by half, and drizzle over the venison."
+        ],
+        "nutrition": {
+            "calories": 420,
+            "protein": 42,
+            "carbs": 16,
+            "fat": 20,
+            "fiber": 3,
+            "sugar": 4
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "venison",
+            "game"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-salmon-kohlrabi-elderflower",
+        "slug": "gfdf-reitbauer-salmon-kohlrabi-elderflower",
+        "title": "Salmon with Shaved Kohlrabi and Elderflower Vinaigrette",
+        "description": "Reitbauer's passion for wild herbs and floral notes meets accessible home cooking. Pan-roasted salmon over crisp kohlrabi salad with an elderflower-brightened dressing.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 15,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "salmon fillets",
+                "amount": 4,
+                "unit": "",
+                "notes": "skin-on, about 6 oz each",
+                "category": "seafood"
+            },
+            {
+                "name": "kohlrabi",
+                "amount": 2,
+                "unit": "medium",
+                "notes": "peeled and thinly shaved",
+                "category": "produce"
+            },
+            {
+                "name": "elderflower cordial",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "no added sugar if possible",
+                "category": "pantry"
+            },
+            {
+                "name": "white wine vinegar",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 4,
+                "unit": "tbsp",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "fresh chives",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "snipped",
+                "category": "produce"
+            },
+            {
+                "name": "radishes",
+                "amount": 4,
+                "unit": "",
+                "notes": "thinly sliced",
+                "category": "produce"
+            },
+            {
+                "name": "lemon juice",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Whisk together elderflower cordial, white wine vinegar, lemon juice, and 2 tbsp olive oil. Season with a pinch of salt.",
+            "Toss shaved kohlrabi and sliced radishes with the elderflower vinaigrette. Let sit while cooking the salmon.",
+            "Pat salmon fillets dry and season with salt and pepper.",
+            "Heat remaining olive oil in a skillet over medium-high heat. Cook salmon skin-side down for 4 minutes, then flip and cook 3 more minutes until just opaque.",
+            "Divide kohlrabi salad among plates, top with salmon fillets, and finish with snipped chives."
+        ],
+        "nutrition": {
+            "calories": 410,
+            "protein": 38,
+            "carbs": 12,
+            "fat": 24,
+            "fiber": 3,
+            "sugar": 6
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "elderflower",
+            "kohlrabi"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-fermented-carrot-cod",
+        "slug": "gfdf-reitbauer-fermented-carrot-cod",
+        "title": "Roasted Cod with Lacto-Fermented Carrots and Carrot Top Oil",
+        "description": "Reitbauer's fermentation mastery meets accessible weeknight cooking. Firm cod fillets served with tangy fermented carrots and vibrant carrot-top herb oil.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 25,
+        "cookTime": 20,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "cod fillets",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "about 6 oz each",
+                "category": "seafood"
+            },
+            {
+                "name": "lacto-fermented carrots",
+                "amount": 1,
+                "unit": "cup",
+                "notes": "store-bought or homemade, sliced",
+                "category": "produce"
+            },
+            {
+                "name": "fresh carrots",
+                "amount": 4,
+                "unit": "",
+                "notes": "with tops if possible",
+                "category": "produce"
+            },
+            {
+                "name": "carrot top greens",
+                "amount": 1,
+                "unit": "cup",
+                "notes": "packed, or substitute parsley",
+                "category": "produce"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 5,
+                "unit": "tbsp",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 2,
+                "unit": "",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "cumin seeds",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "toasted",
+                "category": "spices"
+            },
+            {
+                "name": "lemon zest",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 425F. Peel fresh carrots, halve lengthwise, toss with 1 tbsp olive oil, cumin seeds, and salt. Roast on a sheet pan for 20 minutes until caramelized.",
+            "Make carrot top oil: blend carrot top greens with 2 tbsp olive oil and lemon zest until smooth. Season with salt.",
+            "Pat cod fillets dry and season with salt and pepper. Heat 2 tbsp olive oil in an oven-safe skillet over medium-high heat. Sear cod 3 minutes per side.",
+            "Arrange roasted carrots on plates alongside the cod. Scatter fermented carrot slices around the plate.",
+            "Drizzle carrot top oil over everything and serve immediately."
+        ],
+        "nutrition": {
+            "calories": 370,
+            "protein": 34,
+            "carbs": 14,
+            "fat": 20,
+            "fiber": 4,
+            "sugar": 7
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "fermented",
+            "root-vegetables"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-parsnip-soup-trout",
+        "slug": "gfdf-reitbauer-parsnip-soup-trout",
+        "title": "Roasted Parsnip Soup with Smoked Trout",
+        "description": "Inspired by Reitbauer's refined simplicity with Austrian root vegetables. Velvety parsnip soup enriched with coconut cream, topped with flaked smoked trout.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 35,
+        "servings": 4,
+        "difficulty": "easy",
+        "ingredients": [
+            {
+                "name": "parsnips",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "peeled and chopped",
+                "category": "produce"
+            },
+            {
+                "name": "smoked trout",
+                "amount": 8,
+                "unit": "oz",
+                "notes": "flaked",
+                "category": "seafood"
+            },
+            {
+                "name": "yellow onion",
+                "amount": 1,
+                "unit": "medium",
+                "notes": "diced",
+                "category": "produce"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 3,
+                "unit": "",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "coconut cream",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "chicken broth",
+                "amount": 4,
+                "unit": "cups",
+                "notes": "gluten-free",
+                "category": "pantry"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "fresh chives",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "for garnish",
+                "category": "produce"
+            },
+            {
+                "name": "nutmeg",
+                "amount": 0.25,
+                "unit": "tsp",
+                "notes": "freshly grated",
+                "category": "spices"
+            },
+            {
+                "name": "salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Heat olive oil in a large pot over medium heat. Cook onion until soft, about 5 minutes. Add garlic and cook 1 minute.",
+            "Add parsnips and chicken broth. Bring to a boil, then reduce to a simmer and cook 25 minutes until parsnips are very tender.",
+            "Blend soup until smooth using an immersion blender. Stir in coconut cream, nutmeg, salt, and pepper.",
+            "Ladle soup into bowls. Top each with flaked smoked trout and a sprinkle of fresh chives."
+        ],
+        "nutrition": {
+            "calories": 350,
+            "protein": 24,
+            "carbs": 30,
+            "fat": 16,
+            "fiber": 7,
+            "sugar": 10
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "soup",
+            "smoked-fish"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-beet-tartare-egg",
+        "slug": "gfdf-reitbauer-beet-tartare-egg",
+        "title": "Beet Tartare with Soft-Boiled Egg and Wild Herbs",
+        "description": "A vegetable-forward dish channeling Reitbauer's iconic beet preparations at Steirereck. Finely diced roasted beets mimicking tartare, crowned with a soft-boiled egg.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 50,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "red beets",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "medium",
+                "category": "produce"
+            },
+            {
+                "name": "eggs",
+                "amount": 4,
+                "unit": "",
+                "notes": "large, pasture-raised",
+                "category": "eggs"
+            },
+            {
+                "name": "shallot",
+                "amount": 1,
+                "unit": "small",
+                "notes": "finely minced",
+                "category": "produce"
+            },
+            {
+                "name": "capers",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "rinsed and chopped",
+                "category": "pantry"
+            },
+            {
+                "name": "dijon mustard",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "gluten-free",
+                "category": "pantry"
+            },
+            {
+                "name": "apple cider vinegar",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "fresh tarragon",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "fresh dill",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "chicken breast",
+                "amount": 12,
+                "unit": "oz",
+                "notes": "grilled and sliced",
+                "category": "meat"
+            },
+            {
+                "name": "salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 400F. Wrap beets in foil and roast until tender, about 45-50 minutes. Let cool, peel, and dice into small uniform cubes.",
+            "Bring a pot of water to a boil. Gently lower eggs in and cook exactly 6.5 minutes for a jammy yolk. Transfer to ice water.",
+            "Toss diced beets with shallot, capers, dijon mustard, apple cider vinegar, olive oil, salt, and pepper.",
+            "Grill or pan-sear chicken breast until cooked through, about 6 minutes per side. Slice thinly.",
+            "Mound beet tartare in the center of each plate using a ring mold. Peel eggs and place one on top of each mound, pressing gently to break the yolk. Arrange sliced chicken alongside. Garnish with tarragon and dill."
+        ],
+        "nutrition": {
+            "calories": 390,
+            "protein": 32,
+            "carbs": 20,
+            "fat": 20,
+            "fiber": 4,
+            "sugar": 14
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "beet",
+            "composed-salad"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-wild-herb-crusted-salmon",
+        "slug": "gfdf-reitbauer-wild-herb-crusted-salmon",
+        "title": "Wild Herb-Crusted Salmon with Potato-Leek Broth",
+        "description": "Reitbauer's wild herb foraging ethos in a gluten-free crust of pumpkin seeds and alpine herbs over salmon, swimming in a light potato-leek broth.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 25,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "salmon fillets",
+                "amount": 4,
+                "unit": "",
+                "notes": "skinless, about 6 oz each",
+                "category": "seafood"
+            },
+            {
+                "name": "raw pumpkin seeds",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "finely ground",
+                "category": "pantry"
+            },
+            {
+                "name": "fresh parsley",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "finely chopped",
+                "category": "produce"
+            },
+            {
+                "name": "fresh chervil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "or extra parsley",
+                "category": "produce"
+            },
+            {
+                "name": "leek",
+                "amount": 1,
+                "unit": "large",
+                "notes": "white and light green parts, sliced",
+                "category": "produce"
+            },
+            {
+                "name": "Yukon gold potatoes",
+                "amount": 2,
+                "unit": "medium",
+                "notes": "diced small",
+                "category": "produce"
+            },
+            {
+                "name": "chicken broth",
+                "amount": 3,
+                "unit": "cups",
+                "notes": "gluten-free",
+                "category": "pantry"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 4,
+                "unit": "tbsp",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "lemon zest",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Simmer leek and diced potatoes in chicken broth until potatoes are tender, about 15 minutes. Season with salt. Keep warm (leave slightly chunky, not pureed).",
+            "Mix ground pumpkin seeds with chopped parsley, chervil, lemon zest, 1 tbsp olive oil, and a pinch of salt to form a paste.",
+            "Pat salmon fillets dry, season with salt and pepper, then press the herb-seed mixture onto the top of each fillet.",
+            "Heat 2 tbsp olive oil in an oven-safe skillet over medium heat. Place salmon crust-side up and cook 3 minutes. Transfer to a 400F oven for 8 minutes.",
+            "Ladle potato-leek broth into shallow bowls. Place herb-crusted salmon in the center of each bowl. Drizzle with remaining olive oil."
+        ],
+        "nutrition": {
+            "calories": 450,
+            "protein": 40,
+            "carbs": 22,
+            "fat": 24,
+            "fiber": 3,
+            "sugar": 3
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "wild-herbs",
+            "pumpkin-seed"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-birch-sap-poached-chicken",
+        "slug": "gfdf-reitbauer-birch-sap-poached-chicken",
+        "title": "Birch Sap-Poached Chicken with Spring Vegetables",
+        "description": "Channeling Reitbauer's use of birch sap and seasonal ingredients. Chicken gently poached in birch sap broth with turnips, asparagus, and fresh herbs.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "chicken breast",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "boneless, skinless",
+                "category": "meat"
+            },
+            {
+                "name": "birch sap",
+                "amount": 2,
+                "unit": "cups",
+                "notes": "or substitute light chicken broth with 1 tsp maple syrup",
+                "category": "pantry"
+            },
+            {
+                "name": "chicken broth",
+                "amount": 2,
+                "unit": "cups",
+                "notes": "gluten-free",
+                "category": "pantry"
+            },
+            {
+                "name": "baby turnips",
+                "amount": 8,
+                "unit": "",
+                "notes": "halved, or 2 medium turnips quartered",
+                "category": "produce"
+            },
+            {
+                "name": "asparagus",
+                "amount": 1,
+                "unit": "bunch",
+                "notes": "trimmed and cut into 2-inch pieces",
+                "category": "produce"
+            },
+            {
+                "name": "fresh tarragon",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "lemon juice",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "white pepper",
+                "amount": 0.25,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Combine birch sap and chicken broth in a wide pot. Bring to a gentle simmer.",
+            "Season chicken breasts with salt and white pepper. Lower into the simmering liquid. Poach at a bare simmer for 15 minutes.",
+            "Add turnips to the poaching liquid alongside the chicken for the last 10 minutes. Add asparagus for the last 4 minutes.",
+            "Remove chicken and let rest 5 minutes, then slice. Divide vegetables among shallow bowls.",
+            "Ladle poaching broth over the vegetables, arrange sliced chicken on top. Finish with lemon juice, olive oil, and fresh tarragon."
+        ],
+        "nutrition": {
+            "calories": 340,
+            "protein": 42,
+            "carbs": 12,
+            "fat": 14,
+            "fiber": 3,
+            "sugar": 5
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "birch-sap",
+            "poached"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-pollen-crusted-venison-chops",
+        "slug": "gfdf-reitbauer-pollen-crusted-venison-chops",
+        "title": "Bee Pollen-Crusted Venison Chops with Parsnip Mash",
+        "description": "Reitbauer famously works with bee pollen and beeswax at Steirereck. These venison chops get a fragrant pollen crust over dairy-free parsnip mash.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "difficulty": "hard",
+        "ingredients": [
+            {
+                "name": "venison chops",
+                "amount": 8,
+                "unit": "",
+                "notes": "about 2 lbs total",
+                "category": "meat"
+            },
+            {
+                "name": "bee pollen",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "lightly crushed",
+                "category": "pantry"
+            },
+            {
+                "name": "parsnips",
+                "amount": 1,
+                "unit": "lb",
+                "notes": "peeled and cubed",
+                "category": "produce"
+            },
+            {
+                "name": "coconut cream",
+                "amount": 0.33,
+                "unit": "cup",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "duck fat",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "or olive oil",
+                "category": "oils"
+            },
+            {
+                "name": "fresh rosemary",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "finely chopped",
+                "category": "produce"
+            },
+            {
+                "name": "honey",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "raw",
+                "category": "pantry"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 2,
+                "unit": "",
+                "notes": "smashed",
+                "category": "produce"
+            },
+            {
+                "name": "salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Boil parsnips in salted water until very tender, about 15 minutes. Drain and mash with coconut cream and a pinch of salt until smooth. Keep warm.",
+            "Mix bee pollen with rosemary, honey, and a pinch of salt to form a coarse paste.",
+            "Season venison chops with salt and pepper. Heat duck fat in a cast iron skillet over high heat. Sear chops 3 minutes per side for medium-rare, adding garlic in the last minute.",
+            "Press the pollen-rosemary mixture onto the top of each chop immediately after searing.",
+            "Rest chops 5 minutes. Serve over parsnip mash, spooning any pan juices over the top."
+        ],
+        "nutrition": {
+            "calories": 460,
+            "protein": 44,
+            "carbs": 22,
+            "fat": 22,
+            "fiber": 5,
+            "sugar": 8
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "bee-pollen",
+            "venison"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-trout-sauerkraut-potatoes",
+        "slug": "gfdf-reitbauer-trout-sauerkraut-potatoes",
+        "title": "Crispy Trout with Sauerkraut and Roasted Potatoes",
+        "description": "Reitbauer's love of fermentation and Austrian lake fish combined. Pan-fried trout with tangy house-style sauerkraut and crispy roasted potatoes.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 10,
+        "cookTime": 35,
+        "servings": 4,
+        "difficulty": "easy",
+        "ingredients": [
+            {
+                "name": "whole trout fillets",
+                "amount": 4,
+                "unit": "",
+                "notes": "skin-on, about 6 oz each",
+                "category": "seafood"
+            },
+            {
+                "name": "sauerkraut",
+                "amount": 2,
+                "unit": "cups",
+                "notes": "raw fermented, drained",
+                "category": "produce"
+            },
+            {
+                "name": "Yukon gold potatoes",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "cut into 1-inch cubes",
+                "category": "produce"
+            },
+            {
+                "name": "yellow onion",
+                "amount": 1,
+                "unit": "small",
+                "notes": "thinly sliced",
+                "category": "produce"
+            },
+            {
+                "name": "caraway seeds",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 4,
+                "unit": "tbsp",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "fresh parsley",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 425F. Toss potato cubes with 2 tbsp olive oil, salt, and pepper. Spread on a sheet pan and roast 30 minutes, flipping halfway, until golden and crispy.",
+            "While potatoes roast, heat 1 tbsp olive oil in a skillet over medium heat. Saute sliced onion until soft, about 5 minutes. Add sauerkraut and caraway seeds, cook 5 minutes more. Keep warm.",
+            "Pat trout fillets dry, season with salt and pepper. Heat remaining olive oil in a large skillet over medium-high heat. Cook skin-side down 4 minutes until crispy, flip and cook 2 minutes more.",
+            "Plate roasted potatoes alongside sauerkraut. Top with crispy trout and garnish with parsley."
+        ],
+        "nutrition": {
+            "calories": 420,
+            "protein": 36,
+            "carbs": 30,
+            "fat": 18,
+            "fiber": 5,
+            "sugar": 4
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "fermented",
+            "sauerkraut"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-celeriac-schnitzel-chicken",
+        "slug": "gfdf-reitbauer-celeriac-schnitzel-chicken",
+        "title": "Celeriac Schnitzel with Chicken and Arugula",
+        "description": "Reitbauer reimagines Austrian classics \u2014 here, thick celeriac steaks breaded in almond flour replace traditional schnitzel, served with seared chicken.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 25,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "celeriac",
+                "amount": 1,
+                "unit": "large",
+                "notes": "peeled, cut into 1/2-inch steaks",
+                "category": "produce"
+            },
+            {
+                "name": "chicken thighs",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "boneless, skinless",
+                "category": "meat"
+            },
+            {
+                "name": "almond flour",
+                "amount": 1,
+                "unit": "cup",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "eggs",
+                "amount": 2,
+                "unit": "",
+                "notes": "beaten",
+                "category": "eggs"
+            },
+            {
+                "name": "arugula",
+                "amount": 4,
+                "unit": "cups",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "lemon juice",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 5,
+                "unit": "tbsp",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "capers",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "drained",
+                "category": "pantry"
+            },
+            {
+                "name": "salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Boil celeriac steaks in salted water for 8 minutes until just tender. Drain and pat dry.",
+            "Set up breading station: beaten eggs in one dish, almond flour seasoned with salt and pepper in another. Dip celeriac steaks in egg, then coat in almond flour.",
+            "Heat 3 tbsp olive oil in a large skillet over medium heat. Fry celeriac steaks 3-4 minutes per side until golden and crispy. Remove to a plate.",
+            "Season chicken thighs with salt and pepper. In the same skillet, add 1 tbsp olive oil and sear chicken 5-6 minutes per side until cooked through. Slice.",
+            "Toss arugula with lemon juice and remaining olive oil. Plate celeriac schnitzel with sliced chicken, top with arugula and scattered capers."
+        ],
+        "nutrition": {
+            "calories": 480,
+            "protein": 38,
+            "carbs": 16,
+            "fat": 30,
+            "fiber": 4,
+            "sugar": 3
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "schnitzel",
+            "celeriac"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-elderflower-glazed-duck",
+        "slug": "gfdf-reitbauer-elderflower-glazed-duck",
+        "title": "Elderflower-Glazed Duck Breast with Roasted Turnips",
+        "description": "Reitbauer's Steirereck celebrates Austrian botanicals. Duck breast glazed with elderflower and honey, served over caramelized turnips and watercress.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 30,
+        "servings": 4,
+        "difficulty": "hard",
+        "ingredients": [
+            {
+                "name": "duck breasts",
+                "amount": 2,
+                "unit": "large",
+                "notes": "about 12 oz each, skin scored",
+                "category": "meat"
+            },
+            {
+                "name": "elderflower cordial",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "honey",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "raw",
+                "category": "pantry"
+            },
+            {
+                "name": "turnips",
+                "amount": 1,
+                "unit": "lb",
+                "notes": "peeled and cut into wedges",
+                "category": "produce"
+            },
+            {
+                "name": "watercress",
+                "amount": 2,
+                "unit": "cups",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "apple cider vinegar",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "fresh thyme",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "leaves only",
+                "category": "produce"
+            },
+            {
+                "name": "salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 400F. Toss turnip wedges with olive oil, thyme, salt, and pepper. Roast 25 minutes until golden and tender.",
+            "Score duck breast skin in a crosshatch pattern. Season with salt and pepper. Place skin-side down in a cold skillet, then turn heat to medium. Render fat for 8-10 minutes until skin is very crispy.",
+            "Flip duck and cook 4 minutes more for medium-rare. Remove and rest 8 minutes.",
+            "Mix elderflower cordial with honey and apple cider vinegar in a small saucepan. Simmer 2 minutes until slightly thickened.",
+            "Slice duck breasts and arrange over roasted turnips. Drizzle elderflower glaze over the duck. Top with fresh watercress."
+        ],
+        "nutrition": {
+            "calories": 440,
+            "protein": 36,
+            "carbs": 18,
+            "fat": 24,
+            "fiber": 3,
+            "sugar": 12
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "elderflower",
+            "duck"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-smoked-trout-potato-salad",
+        "slug": "gfdf-reitbauer-smoked-trout-potato-salad",
+        "title": "Warm Potato Salad with Smoked Trout and Pumpkin Seed Oil",
+        "description": "A Styrian-Austrian classic reimagined in the Reitbauer style. Warm potato salad dressed with pumpkin seed oil and topped with generous smoked trout.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 25,
+        "servings": 4,
+        "difficulty": "easy",
+        "ingredients": [
+            {
+                "name": "Yukon gold potatoes",
+                "amount": 2,
+                "unit": "lbs",
+                "notes": "scrubbed",
+                "category": "produce"
+            },
+            {
+                "name": "smoked trout",
+                "amount": 12,
+                "unit": "oz",
+                "notes": "flaked into large pieces",
+                "category": "seafood"
+            },
+            {
+                "name": "pumpkin seed oil",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "Styrian-style, or toasted sesame oil as substitute",
+                "category": "oils"
+            },
+            {
+                "name": "apple cider vinegar",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "red onion",
+                "amount": 0.5,
+                "unit": "small",
+                "notes": "thinly sliced",
+                "category": "produce"
+            },
+            {
+                "name": "cornichons",
+                "amount": 4,
+                "unit": "",
+                "notes": "sliced",
+                "category": "pantry"
+            },
+            {
+                "name": "chicken broth",
+                "amount": 0.25,
+                "unit": "cup",
+                "notes": "warm, gluten-free",
+                "category": "pantry"
+            },
+            {
+                "name": "fresh dill",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Boil potatoes whole in salted water until just tender, about 20-25 minutes depending on size. Drain, let cool just enough to handle, then slice into 1/4-inch rounds.",
+            "While potatoes are still warm, toss gently with warm chicken broth, apple cider vinegar, red onion, cornichons, salt, and pepper. The warm potatoes will absorb the dressing.",
+            "Drizzle pumpkin seed oil over the dressed potatoes and toss gently.",
+            "Divide warm potato salad among plates. Top with generous flakes of smoked trout. Garnish with fresh dill."
+        ],
+        "nutrition": {
+            "calories": 400,
+            "protein": 28,
+            "carbs": 38,
+            "fat": 16,
+            "fiber": 4,
+            "sugar": 3
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "styrian",
+            "pumpkin-seed-oil"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-kohlrabi-steak-chimichurri",
+        "slug": "gfdf-reitbauer-kohlrabi-steak-chimichurri",
+        "title": "Roasted Kohlrabi Steaks with Beef and Alpine Herb Chimichurri",
+        "description": "Reitbauer elevates humble vegetables to main-course status. Thick kohlrabi steaks roasted until caramelized, paired with seared beef and an alpine herb sauce.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 35,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "kohlrabi",
+                "amount": 3,
+                "unit": "large",
+                "notes": "peeled, cut into 3/4-inch steaks",
+                "category": "produce"
+            },
+            {
+                "name": "sirloin steak",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "",
+                "category": "meat"
+            },
+            {
+                "name": "fresh parsley",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "packed",
+                "category": "produce"
+            },
+            {
+                "name": "fresh lovage",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "or celery leaves",
+                "category": "produce"
+            },
+            {
+                "name": "fresh chives",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "red wine vinegar",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 5,
+                "unit": "tbsp",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 2,
+                "unit": "",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 425F. Brush kohlrabi steaks with 2 tbsp olive oil, season with salt and pepper. Roast on a sheet pan 30-35 minutes, flipping once, until golden and tender.",
+            "Make alpine chimichurri: pulse parsley, lovage, chives, garlic, red wine vinegar, and 2 tbsp olive oil in a food processor until coarsely chopped. Season with salt.",
+            "Season sirloin generously with salt and pepper. Heat 1 tbsp olive oil in a cast iron skillet over high heat. Sear steak 4 minutes per side for medium-rare. Rest 8 minutes, then slice against the grain.",
+            "Arrange kohlrabi steaks on plates, top with sliced steak, and spoon chimichurri generously over everything."
+        ],
+        "nutrition": {
+            "calories": 460,
+            "protein": 40,
+            "carbs": 14,
+            "fat": 28,
+            "fiber": 4,
+            "sugar": 5
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "kohlrabi",
+            "steak"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-charred-cabbage-salmon",
+        "slug": "gfdf-reitbauer-charred-cabbage-salmon",
+        "title": "Charred Cabbage Wedges with Salmon and Caper Dressing",
+        "description": "Inspired by Reitbauer's approach to transforming humble brassicas into something extraordinary. Charred cabbage steaks with pan-roasted salmon and bright capers.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 10,
+        "cookTime": 30,
+        "servings": 4,
+        "difficulty": "easy",
+        "ingredients": [
+            {
+                "name": "green cabbage",
+                "amount": 1,
+                "unit": "medium",
+                "notes": "cut into 1-inch wedges, core intact",
+                "category": "produce"
+            },
+            {
+                "name": "salmon fillets",
+                "amount": 4,
+                "unit": "",
+                "notes": "skin-on, about 6 oz each",
+                "category": "seafood"
+            },
+            {
+                "name": "capers",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "drained",
+                "category": "pantry"
+            },
+            {
+                "name": "lemon juice",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 4,
+                "unit": "tbsp",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 3,
+                "unit": "",
+                "notes": "thinly sliced",
+                "category": "produce"
+            },
+            {
+                "name": "red pepper flakes",
+                "amount": 0.25,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "fresh parsley",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 450F. Brush cabbage wedges with 2 tbsp olive oil, season with salt and pepper. Place on a sheet pan and roast 25-30 minutes, flipping once, until deeply charred and tender.",
+            "Pat salmon dry, season with salt and pepper. Heat 1 tbsp olive oil in a skillet over medium-high heat. Cook skin-side down 4 minutes, flip, cook 3 minutes more.",
+            "In a small pan, warm remaining olive oil with sliced garlic and red pepper flakes until garlic is golden. Remove from heat, stir in capers, lemon juice, and parsley.",
+            "Arrange charred cabbage on plates, top with salmon, and spoon the warm caper-garlic dressing over everything."
+        ],
+        "nutrition": {
+            "calories": 400,
+            "protein": 38,
+            "carbs": 10,
+            "fat": 24,
+            "fiber": 4,
+            "sugar": 5
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "charred-vegetables",
+            "cabbage"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-root-vegetable-rosti-eggs",
+        "slug": "gfdf-reitbauer-root-vegetable-rosti-eggs",
+        "title": "Root Vegetable Rosti with Fried Eggs and Herb Salad",
+        "description": "Reitbauer's terroir-driven cooking reimagined as a hearty rosti. Grated celeriac and potato form a crispy cake, topped with eggs and a wild herb salad.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 20,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "celeriac",
+                "amount": 0.5,
+                "unit": "lb",
+                "notes": "peeled and coarsely grated",
+                "category": "produce"
+            },
+            {
+                "name": "russet potatoes",
+                "amount": 1,
+                "unit": "lb",
+                "notes": "peeled and coarsely grated",
+                "category": "produce"
+            },
+            {
+                "name": "eggs",
+                "amount": 8,
+                "unit": "",
+                "notes": "4 for binding, 4 for topping",
+                "category": "eggs"
+            },
+            {
+                "name": "chicken thighs",
+                "amount": 1,
+                "unit": "lb",
+                "notes": "boneless, diced small",
+                "category": "meat"
+            },
+            {
+                "name": "mixed fresh herbs",
+                "amount": 1,
+                "unit": "cup",
+                "notes": "parsley, chives, dill",
+                "category": "produce"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 4,
+                "unit": "tbsp",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "lemon juice",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "nutmeg",
+                "amount": 0.25,
+                "unit": "tsp",
+                "notes": "grated",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Squeeze excess moisture from grated celeriac and potato using a clean towel. Combine in a bowl with 4 beaten eggs, diced chicken, salt, pepper, and nutmeg.",
+            "Heat 2 tbsp olive oil in a large non-stick skillet over medium heat. Press the rosti mixture into the pan in an even layer. Cook 8-10 minutes until the bottom is deeply golden.",
+            "Carefully flip the rosti (use a plate to invert) and cook another 8 minutes until golden and the chicken is cooked through.",
+            "Meanwhile, fry 4 eggs in remaining olive oil until whites are set but yolks are runny.",
+            "Toss herbs with lemon juice and a drizzle of olive oil. Cut rosti into wedges, top each with a fried egg and a handful of herb salad."
+        ],
+        "nutrition": {
+            "calories": 440,
+            "protein": 36,
+            "carbs": 24,
+            "fat": 24,
+            "fiber": 3,
+            "sugar": 3
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "rosti",
+            "root-vegetables"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-cod-fennel-saffron",
+        "slug": "gfdf-reitbauer-cod-fennel-saffron",
+        "title": "Braised Cod with Fennel, Saffron, and Olive Oil",
+        "description": "Reitbauer's gentle approach to fish preparation. Cod braised in a saffron-scented fennel broth with cherry tomatoes \u2014 Alpine meets Mediterranean simplicity.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 25,
+        "servings": 4,
+        "difficulty": "easy",
+        "ingredients": [
+            {
+                "name": "cod fillets",
+                "amount": 1.5,
+                "unit": "lbs",
+                "notes": "cut into 4 portions",
+                "category": "seafood"
+            },
+            {
+                "name": "fennel bulb",
+                "amount": 2,
+                "unit": "medium",
+                "notes": "thinly sliced, fronds reserved",
+                "category": "produce"
+            },
+            {
+                "name": "cherry tomatoes",
+                "amount": 1,
+                "unit": "cup",
+                "notes": "halved",
+                "category": "produce"
+            },
+            {
+                "name": "saffron threads",
+                "amount": 0.25,
+                "unit": "tsp",
+                "notes": "steeped in 2 tbsp warm water",
+                "category": "spices"
+            },
+            {
+                "name": "dry white wine",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "or additional broth",
+                "category": "pantry"
+            },
+            {
+                "name": "chicken broth",
+                "amount": 1,
+                "unit": "cup",
+                "notes": "gluten-free",
+                "category": "pantry"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 3,
+                "unit": "",
+                "notes": "sliced",
+                "category": "produce"
+            },
+            {
+                "name": "salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Heat olive oil in a wide, deep skillet over medium heat. Add sliced fennel and cook 8 minutes until softened and lightly golden.",
+            "Add garlic and cook 1 minute. Pour in white wine and cook 2 minutes to reduce. Add chicken broth, saffron with its soaking water, and cherry tomatoes.",
+            "Season cod fillets with salt and pepper. Nestle them into the fennel broth. Cover and simmer gently 12-15 minutes until cod is opaque and flaky.",
+            "Serve cod in shallow bowls with the fennel and saffron broth ladled around. Garnish with reserved fennel fronds."
+        ],
+        "nutrition": {
+            "calories": 340,
+            "protein": 34,
+            "carbs": 14,
+            "fat": 14,
+            "fiber": 4,
+            "sugar": 6
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "braised-fish",
+            "saffron"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-beef-cheek-red-cabbage",
+        "slug": "gfdf-reitbauer-beef-cheek-red-cabbage",
+        "title": "Braised Beef Cheeks with Spiced Red Cabbage",
+        "description": "Inspired by Reitbauer's slow-cooking traditions and Austrian comfort. Meltingly tender beef cheeks braised in red wine with warmly spiced red cabbage.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 180,
+        "servings": 4,
+        "difficulty": "hard",
+        "ingredients": [
+            {
+                "name": "beef cheeks",
+                "amount": 2,
+                "unit": "lbs",
+                "notes": "trimmed of excess fat",
+                "category": "meat"
+            },
+            {
+                "name": "red cabbage",
+                "amount": 0.5,
+                "unit": "head",
+                "notes": "thinly sliced",
+                "category": "produce"
+            },
+            {
+                "name": "red wine",
+                "amount": 1.5,
+                "unit": "cups",
+                "notes": "dry",
+                "category": "pantry"
+            },
+            {
+                "name": "beef broth",
+                "amount": 2,
+                "unit": "cups",
+                "notes": "gluten-free",
+                "category": "pantry"
+            },
+            {
+                "name": "apple",
+                "amount": 1,
+                "unit": "",
+                "notes": "peeled and diced",
+                "category": "produce"
+            },
+            {
+                "name": "apple cider vinegar",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "yellow onion",
+                "amount": 1,
+                "unit": "large",
+                "notes": "diced",
+                "category": "produce"
+            },
+            {
+                "name": "cinnamon stick",
+                "amount": 1,
+                "unit": "",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "cloves",
+                "amount": 3,
+                "unit": "",
+                "notes": "whole",
+                "category": "spices"
+            },
+            {
+                "name": "duck fat",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "or olive oil",
+                "category": "oils"
+            },
+            {
+                "name": "salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 325F. Season beef cheeks generously with salt and pepper.",
+            "Heat duck fat in a Dutch oven over high heat. Sear beef cheeks until deeply browned on all sides, about 3 minutes per side. Remove and set aside.",
+            "Reduce heat to medium. Add diced onion and cook until softened, 5 minutes. Pour in red wine and scrape up browned bits. Simmer 3 minutes.",
+            "Return beef cheeks to the pot, add beef broth, cinnamon stick, and cloves. Cover and braise in the oven for 2.5-3 hours until fork-tender.",
+            "While beef braises, cook sliced red cabbage in a separate pot with diced apple, apple cider vinegar, a pinch of salt, and 1/4 cup water. Simmer covered for 45 minutes until tender and sweet-sour.",
+            "Serve beef cheeks over spiced red cabbage, spooning braising liquid over the top."
+        ],
+        "nutrition": {
+            "calories": 480,
+            "protein": 48,
+            "carbs": 18,
+            "fat": 22,
+            "fiber": 4,
+            "sugar": 10
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "braised",
+            "beef-cheeks"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-trout-cucumber-dill-broth",
+        "slug": "gfdf-reitbauer-trout-cucumber-dill-broth",
+        "title": "Poached Trout in Chilled Cucumber-Dill Broth",
+        "description": "A refined summer dish inspired by Reitbauer's delicate lake fish preparations. Poached trout served cold in a light, herbaceous cucumber broth.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 15,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "trout fillets",
+                "amount": 4,
+                "unit": "",
+                "notes": "skinless, about 6 oz each",
+                "category": "seafood"
+            },
+            {
+                "name": "English cucumber",
+                "amount": 2,
+                "unit": "large",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "fresh dill",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "packed",
+                "category": "produce"
+            },
+            {
+                "name": "chicken broth",
+                "amount": 2,
+                "unit": "cups",
+                "notes": "gluten-free, chilled",
+                "category": "pantry"
+            },
+            {
+                "name": "white wine vinegar",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "shallot",
+                "amount": 1,
+                "unit": "small",
+                "notes": "minced",
+                "category": "produce"
+            },
+            {
+                "name": "lemon juice",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "white pepper",
+                "amount": 0.25,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Bring a wide pot of salted water to a bare simmer. Season trout with salt and white pepper. Gently poach for 6-8 minutes until just cooked through. Transfer to a plate and refrigerate until cool.",
+            "Peel and seed 1.5 cucumbers. Blend with chilled chicken broth, most of the dill (reserve some for garnish), olive oil, white wine vinegar, and lemon juice until smooth. Season with salt. Chill.",
+            "Thinly slice remaining half cucumber into rounds.",
+            "Pour chilled cucumber broth into shallow bowls. Place poached trout in the center. Garnish with cucumber rounds, minced shallot, and reserved dill."
+        ],
+        "nutrition": {
+            "calories": 340,
+            "protein": 38,
+            "carbs": 8,
+            "fat": 18,
+            "fiber": 2,
+            "sugar": 4
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "chilled",
+            "summer"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-lamb-rack-herb-crust",
+        "slug": "gfdf-reitbauer-lamb-rack-herb-crust",
+        "title": "Herb-Crusted Rack of Lamb with Roasted Root Vegetables",
+        "description": "Reitbauer's alpine terroir philosophy applied to lamb. Rack of lamb with a wild herb and hazelnut crust over a medley of roasted Austrian root vegetables.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 35,
+        "servings": 4,
+        "difficulty": "hard",
+        "ingredients": [
+            {
+                "name": "rack of lamb",
+                "amount": 2,
+                "unit": "",
+                "notes": "frenched, about 1.5 lbs each",
+                "category": "meat"
+            },
+            {
+                "name": "hazelnuts",
+                "amount": 0.5,
+                "unit": "cup",
+                "notes": "finely ground",
+                "category": "pantry"
+            },
+            {
+                "name": "fresh rosemary",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "finely chopped",
+                "category": "produce"
+            },
+            {
+                "name": "fresh thyme",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "finely chopped",
+                "category": "produce"
+            },
+            {
+                "name": "parsnips",
+                "amount": 2,
+                "unit": "medium",
+                "notes": "peeled and cut into chunks",
+                "category": "produce"
+            },
+            {
+                "name": "carrots",
+                "amount": 3,
+                "unit": "medium",
+                "notes": "peeled and cut into chunks",
+                "category": "produce"
+            },
+            {
+                "name": "celeriac",
+                "amount": 0.5,
+                "unit": "small",
+                "notes": "peeled and cubed",
+                "category": "produce"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 4,
+                "unit": "tbsp",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "dijon mustard",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "gluten-free",
+                "category": "pantry"
+            },
+            {
+                "name": "salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 425F. Toss parsnips, carrots, and celeriac with 2 tbsp olive oil, salt, and pepper. Spread on a sheet pan and roast 30 minutes, stirring once.",
+            "Mix ground hazelnuts with rosemary, thyme, and a pinch of salt.",
+            "Season lamb racks with salt and pepper. Heat 2 tbsp olive oil in a skillet over high heat. Sear lamb on all sides, about 2 minutes per side.",
+            "Brush seared lamb with dijon mustard, then press the hazelnut-herb mixture onto the meaty side.",
+            "Place lamb on a rack over the roasting vegetables. Roast at 425F for 15-18 minutes for medium-rare (130F internal). Rest 10 minutes before slicing into chops.",
+            "Serve lamb chops over the roasted root vegetables."
+        ],
+        "nutrition": {
+            "calories": 520,
+            "protein": 40,
+            "carbs": 20,
+            "fat": 32,
+            "fiber": 6,
+            "sugar": 6
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "rack-of-lamb",
+            "hazelnut-crust"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-chicken-pumpkin-sage",
+        "slug": "gfdf-reitbauer-chicken-pumpkin-sage",
+        "title": "Roasted Chicken Thighs with Pumpkin and Crispy Sage",
+        "description": "An autumn dish reflecting Reitbauer's seasonal Austrian philosophy. Juicy chicken thighs roasted over caramelized pumpkin with crispy fried sage leaves.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 40,
+        "servings": 4,
+        "difficulty": "easy",
+        "ingredients": [
+            {
+                "name": "chicken thighs",
+                "amount": 8,
+                "unit": "",
+                "notes": "bone-in, skin-on",
+                "category": "meat"
+            },
+            {
+                "name": "sugar pumpkin",
+                "amount": 2,
+                "unit": "lbs",
+                "notes": "or butternut squash, peeled and cubed",
+                "category": "produce"
+            },
+            {
+                "name": "fresh sage leaves",
+                "amount": 20,
+                "unit": "",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 4,
+                "unit": "tbsp",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 4,
+                "unit": "",
+                "notes": "smashed",
+                "category": "produce"
+            },
+            {
+                "name": "pumpkin seeds",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "for garnish",
+                "category": "pantry"
+            },
+            {
+                "name": "apple cider vinegar",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "salt",
+                "amount": 1.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 425F. Toss pumpkin cubes with 2 tbsp olive oil, salt, and pepper. Spread on a large sheet pan.",
+            "Season chicken thighs with salt and pepper. Nestle skin-side up among the pumpkin cubes, along with smashed garlic cloves.",
+            "Roast 35-40 minutes until chicken skin is crispy and golden and pumpkin is caramelized.",
+            "While chicken rests, heat 1 tbsp olive oil in a small skillet and fry sage leaves for 30 seconds until crispy. Drain on paper towels. Toast pumpkin seeds in the same pan.",
+            "Drizzle apple cider vinegar over the pumpkin. Serve chicken thighs over roasted pumpkin, topped with crispy sage and toasted pumpkin seeds."
+        ],
+        "nutrition": {
+            "calories": 460,
+            "protein": 38,
+            "carbs": 22,
+            "fat": 26,
+            "fiber": 4,
+            "sugar": 6
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "pumpkin",
+            "autumn"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-horseradish-beef-brisket",
+        "slug": "gfdf-reitbauer-horseradish-beef-brisket",
+        "title": "Slow-Roasted Brisket with Fresh Horseradish and Beet Relish",
+        "description": "Austrian tafelspitz tradition through a Reitbauer lens. Slow-roasted brisket served with grated fresh horseradish and a vibrant beet-apple relish.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 240,
+        "servings": 6,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "beef brisket",
+                "amount": 3,
+                "unit": "lbs",
+                "notes": "flat cut",
+                "category": "meat"
+            },
+            {
+                "name": "fresh horseradish root",
+                "amount": 4,
+                "unit": "inches",
+                "notes": "peeled and finely grated",
+                "category": "produce"
+            },
+            {
+                "name": "red beet",
+                "amount": 1,
+                "unit": "medium",
+                "notes": "roasted, peeled, and diced",
+                "category": "produce"
+            },
+            {
+                "name": "green apple",
+                "amount": 1,
+                "unit": "",
+                "notes": "peeled and diced",
+                "category": "produce"
+            },
+            {
+                "name": "yellow onion",
+                "amount": 2,
+                "unit": "large",
+                "notes": "quartered",
+                "category": "produce"
+            },
+            {
+                "name": "carrots",
+                "amount": 3,
+                "unit": "",
+                "notes": "chunked",
+                "category": "produce"
+            },
+            {
+                "name": "beef broth",
+                "amount": 3,
+                "unit": "cups",
+                "notes": "gluten-free",
+                "category": "pantry"
+            },
+            {
+                "name": "apple cider vinegar",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "bay leaves",
+                "amount": 2,
+                "unit": "",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "salt",
+                "amount": 2,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 300F. Season brisket generously with salt and pepper.",
+            "Heat olive oil in a Dutch oven over high heat. Sear brisket on both sides until deeply browned, about 4 minutes per side.",
+            "Add quartered onions, carrots, bay leaves, and beef broth. Cover tightly and braise in the oven for 3.5-4 hours until very tender.",
+            "Make beet relish: toss diced roasted beet with diced apple, 1 tbsp apple cider vinegar, and a pinch of salt.",
+            "Mix grated horseradish with remaining apple cider vinegar and a pinch of salt.",
+            "Slice brisket against the grain. Serve with spoonfuls of beet-apple relish and fresh horseradish alongside. Ladle a little braising broth over the meat."
+        ],
+        "nutrition": {
+            "calories": 440,
+            "protein": 46,
+            "carbs": 14,
+            "fat": 22,
+            "fiber": 3,
+            "sugar": 8
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "tafelspitz-style",
+            "horseradish"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-hay-smoked-chicken",
+        "slug": "gfdf-reitbauer-hay-smoked-chicken",
+        "title": "Hay-Scented Roast Chicken with Celeriac Remoulade",
+        "description": "Reitbauer is famous for cooking in hay at Steirereck. This simplified version infuses chicken with hay-like aromatics, served with a tangy dairy-free celeriac remoulade.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 20,
+        "cookTime": 50,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "whole chicken",
+                "amount": 1,
+                "unit": "",
+                "notes": "about 4 lbs, spatchcocked",
+                "category": "meat"
+            },
+            {
+                "name": "celeriac",
+                "amount": 1,
+                "unit": "medium",
+                "notes": "peeled and julienned",
+                "category": "produce"
+            },
+            {
+                "name": "dried chamomile",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "loose, or use dried lemongrass",
+                "category": "spices"
+            },
+            {
+                "name": "olive oil",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "dijon mustard",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "gluten-free",
+                "category": "pantry"
+            },
+            {
+                "name": "lemon juice",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "capers",
+                "amount": 1,
+                "unit": "tbsp",
+                "notes": "chopped",
+                "category": "pantry"
+            },
+            {
+                "name": "fresh parsley",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "garlic cloves",
+                "amount": 4,
+                "unit": "",
+                "notes": "smashed",
+                "category": "produce"
+            },
+            {
+                "name": "salt",
+                "amount": 2,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 425F. Scatter dried chamomile on the bottom of a roasting pan.",
+            "Rub spatchcocked chicken with 2 tbsp olive oil, salt, pepper, and smashed garlic. Place skin-side up on a rack over the chamomile in the roasting pan.",
+            "Roast 45-50 minutes until skin is golden and thigh registers 165F. The chamomile will smolder slightly and perfume the chicken.",
+            "While chicken roasts, make celeriac remoulade: toss julienned celeriac with dijon mustard, lemon juice, 1 tbsp olive oil, capers, parsley, and a pinch of salt. Let sit 15 minutes to soften.",
+            "Carve chicken and serve alongside celeriac remoulade."
+        ],
+        "nutrition": {
+            "calories": 480,
+            "protein": 44,
+            "carbs": 10,
+            "fat": 30,
+            "fiber": 2,
+            "sugar": 2
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "hay-smoked",
+            "whole-chicken"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-walnut-crusted-cod-leeks",
+        "slug": "gfdf-reitbauer-walnut-crusted-cod-leeks",
+        "title": "Walnut-Crusted Cod with Braised Leeks",
+        "description": "Inspired by Reitbauer's nut-forward preparations and gentle fish cookery. Cod fillets under a crunchy walnut crust over silky braised leeks.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 25,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "cod fillets",
+                "amount": 4,
+                "unit": "",
+                "notes": "about 6 oz each",
+                "category": "seafood"
+            },
+            {
+                "name": "walnuts",
+                "amount": 0.75,
+                "unit": "cup",
+                "notes": "finely chopped",
+                "category": "pantry"
+            },
+            {
+                "name": "leeks",
+                "amount": 3,
+                "unit": "large",
+                "notes": "white and light green parts, sliced into rounds",
+                "category": "produce"
+            },
+            {
+                "name": "chicken broth",
+                "amount": 0.75,
+                "unit": "cup",
+                "notes": "gluten-free",
+                "category": "pantry"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 4,
+                "unit": "tbsp",
+                "notes": "divided",
+                "category": "oils"
+            },
+            {
+                "name": "lemon zest",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "produce"
+            },
+            {
+                "name": "fresh parsley",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "fresh thyme",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "leaves",
+                "category": "produce"
+            },
+            {
+                "name": "salt",
+                "amount": 1,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Heat 2 tbsp olive oil in a wide skillet over medium heat. Add leeks and cook 5 minutes until softened. Add chicken broth, cover, and braise 12 minutes until very tender. Season with salt.",
+            "Mix chopped walnuts with lemon zest, parsley, thyme, and 1 tbsp olive oil.",
+            "Pat cod dry and season with salt and pepper. Heat remaining olive oil in an oven-safe skillet over medium-high heat. Sear cod 3 minutes on one side.",
+            "Flip cod and press walnut mixture onto the top of each fillet. Transfer to a 400F oven for 8-10 minutes until cod is cooked through and walnuts are golden.",
+            "Spoon braised leeks onto plates and top with walnut-crusted cod."
+        ],
+        "nutrition": {
+            "calories": 420,
+            "protein": 36,
+            "carbs": 12,
+            "fat": 28,
+            "fiber": 3,
+            "sugar": 4
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "walnut-crust",
+            "braised-leeks"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    },
+    {
+        "id": "gfdf-reitbauer-duck-leg-lentils-mustard",
+        "slug": "gfdf-reitbauer-duck-leg-lentils-mustard",
+        "title": "Crispy Duck Leg Confit with Warm Lentil Salad",
+        "description": "Reitbauer's Austrian cooking meets French technique. Slow-cooked duck legs with crispy skin served over earthy lentils dressed with whole-grain mustard.",
+        "frameworks": [
+            "dairy-free",
+            "gluten-free",
+            "whole-foods"
+        ],
+        "category": "dinner",
+        "prepTime": 15,
+        "cookTime": 120,
+        "servings": 4,
+        "difficulty": "medium",
+        "ingredients": [
+            {
+                "name": "duck legs",
+                "amount": 4,
+                "unit": "",
+                "notes": "about 2 lbs total",
+                "category": "meat"
+            },
+            {
+                "name": "green or French lentils",
+                "amount": 1.5,
+                "unit": "cups",
+                "notes": "dried",
+                "category": "pantry"
+            },
+            {
+                "name": "whole-grain mustard",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "gluten-free",
+                "category": "pantry"
+            },
+            {
+                "name": "shallots",
+                "amount": 2,
+                "unit": "",
+                "notes": "diced",
+                "category": "produce"
+            },
+            {
+                "name": "carrots",
+                "amount": 2,
+                "unit": "",
+                "notes": "finely diced",
+                "category": "produce"
+            },
+            {
+                "name": "red wine vinegar",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "pantry"
+            },
+            {
+                "name": "extra virgin olive oil",
+                "amount": 2,
+                "unit": "tbsp",
+                "notes": "",
+                "category": "oils"
+            },
+            {
+                "name": "bay leaf",
+                "amount": 1,
+                "unit": "",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "fresh parsley",
+                "amount": 3,
+                "unit": "tbsp",
+                "notes": "chopped",
+                "category": "produce"
+            },
+            {
+                "name": "salt",
+                "amount": 2,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            },
+            {
+                "name": "black pepper",
+                "amount": 0.5,
+                "unit": "tsp",
+                "notes": "",
+                "category": "spices"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 300F. Season duck legs generously with salt and pepper. Place skin-side down in a cold oven-safe skillet. Turn heat to medium and render fat for 10 minutes until skin is golden.",
+            "Flip duck legs skin-side up. Cover the pan tightly with foil and transfer to the oven. Cook 2 hours until meat is falling-off-the-bone tender.",
+            "Meanwhile, cook lentils with bay leaf in salted water until tender but not mushy, about 25 minutes. Drain.",
+            "Saute diced shallots and carrots in olive oil until softened, 5 minutes. Toss with warm lentils, whole-grain mustard, red wine vinegar, and parsley. Season with salt and pepper.",
+            "Remove foil from duck and broil 2-3 minutes to re-crisp the skin. Serve duck legs over warm lentil salad."
+        ],
+        "nutrition": {
+            "calories": 520,
+            "protein": 42,
+            "carbs": 34,
+            "fat": 24,
+            "fiber": 8,
+            "sugar": 4
+        },
+        "tags": [
+            "reitbauer-inspired",
+            "austrian",
+            "alpine",
+            "duck-confit",
+            "lentils"
+        ],
+        "biblicallyClean": true,
+        "chef": "Heinz Reitbauer"
+    }
+]
