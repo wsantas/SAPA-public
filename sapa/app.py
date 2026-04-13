@@ -11,8 +11,11 @@ from contextlib import asynccontextmanager
 from datetime import datetime
 from pathlib import Path
 
+import os
+
 import uvicorn
 from fastapi import FastAPI, WebSocket, Request
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, JSONResponse, Response
 
 from .config import get_config
@@ -422,6 +425,23 @@ async def lifespan(app: FastAPI):
 # ============== App ==============
 
 app = FastAPI(title="SAPA - Set Apart Personal Assistant", lifespan=lifespan)
+
+_default_cors_origins = [
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "http://localhost:3000",
+    "http://127.0.0.1:5173",
+]
+_cors_env = os.getenv("SAPA_CORS_ORIGINS")
+_cors_origins = [o.strip() for o in _cors_env.split(",") if o.strip()] if _cors_env else _default_cors_origins
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=_cors_origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.middleware("http")
