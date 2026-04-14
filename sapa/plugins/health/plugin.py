@@ -61,7 +61,15 @@ class HealthPlugin(SAPAPlugin):
                     profile_map[topic.lower()] = cat_name
             topic_categories[pid] = profile_map
         topic_cat_js = f"\n        const healthTopicCategories = {json.dumps(topic_categories)};\n"
-        return self._read_static("health.js") + gap_js + topic_cat_js
+        # health-recipes.js is loaded first so recipe state (allRecipes,
+        # recipeCookLog, recipeFavorites) is in scope before the meal planner
+        # and dashboard code in health.js references it.
+        return (
+            self._read_static("health-recipes.js")
+            + self._read_static("health.js")
+            + gap_js
+            + topic_cat_js
+        )
 
     def get_migrations_dir(self) -> Path | None:
         return Path(__file__).parent / "migrations"
