@@ -16,6 +16,7 @@ from urllib.parse import unquote
 
 from fastapi import APIRouter, HTTPException, Request
 
+from .api_client import get_client
 from .content import extract_topics_from_content, extract_title_from_content, extract_key_takeaways
 from .equipment import PROFILE_EQUIPMENT
 from .gap_targets import PROFILE_GAP_TARGETS
@@ -440,6 +441,132 @@ async def get_analytics():
         "due_reviews": due_reviews[:15],
         "review_timeline": review_timeline,
         "new_vs_review": new_vs_review,
+    }
+
+
+# ============== AI Insights ==============
+
+_INSIGHTS_SYSTEM_PROMPT = """You are a concise, encouraging learning coach analyzing a user's spaced-repetition study dashboard.
+
+Your job: read their current state and return exactly 2 to 3 personalized insights as a JSON array. Each insight has a short title (max 8 words) and a 1 to 2 sentence body with a concrete, actionable suggestion.
+
+Rules:
+- Respond with ONLY a JSON array. No markdown code fences, no prose outside the JSON.
+- Each insight must be specific to the data you are given, not generic study advice.
+- Be warm but direct. The user is a senior engineer who wants signal, not fluff.
+- If something surprising stands out (a broken streak, a topic cluster with low confidence, an unusually high review count on one topic), call it out by name.
+
+Output format example:
+[
+  {"title": "Lean into your mastery streak", "body": "You have 18 topics at mastered confidence — consider queueing harder adjacent topics to keep momentum."},
+  {"title": "Zero due reviews today", "body": "Use the gap to add new material rather than cramming review cycles."}
+]
+"""
+
+
+def _build_insights_prompt(snapshot: dict) -> str:
+    return (
+        "Here is the learner's current dashboard state:\n\n"
+        f"- Total topics tracked: {snapshot['total_topics']}\n"
+        f"- Current streak: {snapshot['current_streak']} days "
+        f"(longest ever: {snapshot['longest_streak']})\n"
+        f"- Due for review right now: {snapshot['due_reviews_count']}\n"
+        f"- Confidence distribution: "
+        f"{snapshot['confidence']['mastered']} mastered, "
+        f"{snapshot['confidence']['strong']} strong, "
+        f"{snapshot['confidence']['learning']} learning, "
+        f"{snapshot['confidence']['weak']} weak\n"
+        f"- Most-reviewed topics: {', '.join(snapshot['top_topics']) or 'none yet'}\n"
+        "\nGenerate 2 to 3 insights."
+    )
+
+
+@router.post("/api/ai/insights")
+async def post_ai_insights():
+    """Generate 2-3 personalized learning insights via Claude."""
+    from datetime import datetime, timezone
+
+    if not tracker:
+        raise HTTPException(status_code=503, detail="Tracker not initialized")
+
+    try:
+        client = get_client()
+    except ValueError as e:
+        raise HTTPException(status_code=503, detail=str(e))
+
+    streak = tracker.get_streak_info()
+    topics = tracker.get_all_topics()
+    report = tracker.get_weekly_report()
+    due = tracker.get_due_reviews()
+
+    confidence = {"mastered": 0, "strong": 0, "learning": 0, "weak": 0}
+    for t in topics:
+        score = t.get('confidence_score', 0)
+        if score >= 0.8:
+            confidence["mastered"] += 1
+        elif score >= 0.6:
+            confidence["strong"] += 1
+        elif score >= 0.3:
+            confidence["learning"] += 1
+        else:
+            confidence["weak"] += 1
+
+    top_topics = [
+        t['name']
+        for t in sorted(topics, key=lambda x: x.get('review_count', 0), reverse=True)[:15]
+    ]
+
+    snapshot = {
+        "total_topics": report.get('total_topics', 0),
+        "current_streak": streak.get('current', 0),
+        "longest_streak": streak.get('longest', 0),
+        "due_reviews_count": len(due),
+        "confidence": confidence,
+        "top_topics": top_topics,
+    }
+
+    try:
+        response_text = client.chat(
+            messages=[{"role": "user", "content": _build_insights_prompt(snapshot)}],
+            system=_INSIGHTS_SYSTEM_PROMPT,
+            max_tokens=1024,
+            temperature=0.7,
+        )
+    except Exception as e:
+        logger.exception("AI insights call failed")
+        raise HTTPException(status_code=502, detail=f"AI call failed: {e}")
+
+    # Claude occasionally wraps JSON in markdown fences despite instructions.
+    cleaned = response_text.strip()
+    if cleaned.startswith("```"):
+        lines = cleaned.split("\n")
+        if len(lines) >= 2:
+            cleaned = "\n".join(lines[1:])
+        if cleaned.endswith("```"):
+            cleaned = cleaned[:-3]
+        cleaned = cleaned.strip()
+
+    try:
+        insights = json.loads(cleaned)
+    except json.JSONDecodeError as e:
+        logger.error(f"AI returned unparseable JSON: {response_text[:500]}")
+        raise HTTPException(
+            status_code=502,
+            detail=f"AI returned invalid JSON: {e}",
+        )
+
+    if not isinstance(insights, list) or not all(
+        isinstance(i, dict) and "title" in i and "body" in i for i in insights
+    ):
+        raise HTTPException(
+            status_code=502,
+            detail="AI response missing required fields",
+        )
+
+    return {
+        "insights": insights,
+        "model": client.model,
+        "generated_at": datetime.now(timezone.utc).isoformat(),
     }
 
 
