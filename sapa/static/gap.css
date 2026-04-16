@@ -110,6 +110,12 @@
             color: var(--green);
         }
 
+        .gap-topic.partial {
+            background: rgba(234, 179, 8, 0.15);
+            border: 1px solid var(--yellow, #eab308);
+            color: var(--yellow, #eab308);
+        }
+
         .gap-topic.missing {
             background: rgba(236, 72, 153, 0.1);
             border: 1px solid var(--pink);
@@ -123,6 +129,11 @@
 
         .gap-topic.missing.clickable:hover {
             background: rgba(236, 72, 153, 0.3);
+            transform: scale(1.05);
+        }
+
+        .gap-topic.partial.clickable:hover {
+            background: rgba(234, 179, 8, 0.3);
             transform: scale(1.05);
         }
 

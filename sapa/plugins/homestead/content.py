@@ -2,6 +2,8 @@
 
 import re
 
+from ..health.content import compute_depth_signals  # shared DFWM depth signal logic
+
 
 def extract_title_from_content(content: str) -> str | None:
     """Extract title from first H1 heading in markdown."""

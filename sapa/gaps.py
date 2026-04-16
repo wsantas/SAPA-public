@@ -2,19 +2,56 @@
 
 Both health and homestead plugins use identical gap analysis logic.
 This module provides everything they need — plugins just supply data.
+
+Uses DFWM (Decayed Frequency-Weighted Mastery) to compute per-topic
+mastery scores based on the Ebbinghaus forgetting curve and
+depth-weighted confidence growth.
 """
 
 import json
+import math
+from datetime import datetime
 from pathlib import Path
 
 _STATIC_DIR = Path(__file__).parent / "static"
 
+MASTERY_THRESHOLD = 30
 
-def compute_gap_analysis(learned_topics: set[str], gap_targets: dict) -> dict:
-    """Compute gap analysis from learned topics and target definitions.
+
+def compute_mastery(topic_row: dict, now: datetime | None = None) -> int:
+    """Compute current mastery % for a topic using DFWM.
+
+    mastery = confidence * retrievability * 100
+    where retrievability = e^(-days_since_review / stability)
+    and stability = 3.0 * (1 + review_count)^1.5
+    """
+    if now is None:
+        now = datetime.now()
+    confidence = topic_row.get("confidence_score", 0)
+    review_count = topic_row.get("review_count", 0)
+    last_reviewed = topic_row.get("last_reviewed")
+
+    if not last_reviewed or confidence <= 0:
+        return 0
+
+    if isinstance(last_reviewed, str):
+        try:
+            last_reviewed = datetime.fromisoformat(last_reviewed)
+        except (ValueError, TypeError):
+            return 0
+
+    days_since = max((now - last_reviewed).total_seconds() / 86400, 0)
+    stability = 3.0 * (1 + review_count) ** 1.5
+    retrievability = math.exp(-days_since / stability)
+    return round(confidence * retrievability * 100)
+
+
+def compute_gap_analysis(topic_rows: list[dict], gap_targets: dict) -> dict:
+    """Compute gap analysis using mastery-weighted scoring.
 
     Args:
-        learned_topics: Set of lowercase topic name strings.
+        topic_rows: List of topic dicts with name, confidence_score,
+                    review_count, last_reviewed.
         gap_targets: Dict of category_name -> {"topics": [...], "priority": str}.
 
     Returns:
@@ -32,9 +69,19 @@ def compute_gap_analysis(learned_topics: set[str], gap_targets: dict) -> dict:
             "top_gaps": [],
         }
 
+    now = datetime.now()
+
+    # Build lookup: topic_name_lower -> mastery %
+    mastery_lookup: dict[str, int] = {}
+    for row in topic_rows:
+        name = row["name"].lower()
+        m = compute_mastery(row, now)
+        if name not in mastery_lookup or m > mastery_lookup[name]:
+            mastery_lookup[name] = m
+
     categories = []
+    total_mastery_sum = 0
     total_target = 0
-    total_covered = 0
 
     for category_name, category_data in gap_targets.items():
         target_topics = category_data["topics"]
@@ -42,44 +89,50 @@ def compute_gap_analysis(learned_topics: set[str], gap_targets: dict) -> dict:
 
         covered = []
         gaps = []
+        category_mastery_sum = 0
 
         for topic in target_topics:
             topic_lower = topic.lower()
-            is_covered = any(
-                topic_lower in learned or learned in topic_lower
-                for learned in learned_topics
-            )
-            if is_covered:
-                covered.append(topic)
-            else:
-                gaps.append(topic)
+            mastery = 0
+            for learned_name, learned_mastery in mastery_lookup.items():
+                if topic_lower in learned_name or learned_name in topic_lower:
+                    mastery = max(mastery, learned_mastery)
 
-        coverage_pct = (len(covered) / len(target_topics) * 100) if target_topics else 0
+            if mastery >= MASTERY_THRESHOLD:
+                covered.append({"name": topic, "mastery": mastery})
+            else:
+                gaps.append({"name": topic, "mastery": mastery})
+            category_mastery_sum += mastery
+
+        avg_mastery = round(category_mastery_sum / len(target_topics)) if target_topics else 0
 
         categories.append({
             "name": category_name,
             "priority": priority,
-            "coverage": round(coverage_pct),
+            "coverage": avg_mastery,
             "covered": covered,
             "gaps": gaps,
             "total": len(target_topics),
         })
 
+        total_mastery_sum += category_mastery_sum
         total_target += len(target_topics)
-        total_covered += len(covered)
 
     priority_order = {"critical": 0, "high": 1, "medium": 2, "low": 3}
     categories.sort(key=lambda x: (priority_order.get(x["priority"], 99), x["coverage"]))
 
-    overall_coverage = (total_covered / total_target * 100) if total_target else 0
+    overall_coverage = round(total_mastery_sum / total_target) if total_target else 0
 
     top_gaps = []
     for cat in categories:
         if cat["priority"] in ["critical", "high"]:
             for gap in cat["gaps"][:3]:
-                top_gaps.append({"topic": gap, "category": cat["name"], "priority": cat["priority"]})
+                top_gaps.append({
+                    "topic": gap["name"],
+                    "category": cat["name"],
+                    "priority": cat["priority"],
+                })
 
-    # Ranked suggestions: priority weight * (100 - coverage%) * gap count
     priority_weight = {"critical": 4, "high": 3, "medium": 2, "low": 1}
     suggestions = []
     for cat in categories:
@@ -89,20 +142,24 @@ def compute_gap_analysis(learned_topics: set[str], gap_targets: dict) -> dict:
         score = weight * (100 - cat["coverage"]) * len(cat["gaps"])
         for gap in cat["gaps"][:2]:
             suggestions.append({
-                "topic": gap,
+                "topic": gap["name"],
                 "category": cat["name"],
                 "priority": cat["priority"],
                 "score": round(score, 1),
             })
     suggestions.sort(key=lambda s: s["score"], reverse=True)
 
+    topics_above_threshold = sum(
+        1 for cat in categories for t in cat["covered"]
+    )
+
     return {
         "categories": categories,
         "summary": {
-            "overall_coverage": round(overall_coverage),
+            "overall_coverage": overall_coverage,
             "total_topics": total_target,
-            "topics_covered": total_covered,
-            "topics_remaining": total_target - total_covered,
+            "topics_covered": topics_above_threshold,
+            "topics_remaining": total_target - topics_above_threshold,
         },
         "top_gaps": top_gaps[:10],
         "suggestions": suggestions[:5],
@@ -117,20 +174,7 @@ def generate_gap_js(
     prompts: dict[str, str],
     default_prompt: str,
 ) -> str:
-    """Generate namespaced gap analysis JS for a plugin.
-
-    Args:
-        plugin_id: PascalCase plugin name, e.g. "Health" or "Homestead".
-        summary_el: DOM element id for summary container.
-        top_gaps_el: DOM element id for top gaps container.
-        categories_el: DOM element id for categories container.
-        prompts: Dict of lowercase topic -> prompt string.
-        default_prompt: Template string with $TOPIC$ and $CATEGORY$ placeholders.
-
-    Returns:
-        JavaScript string with all gap rendering functions.
-    """
-    # Build a lowercase variable prefix from plugin_id
+    """Generate namespaced gap analysis JS for a plugin."""
     plugin_var = plugin_id[0].lower() + plugin_id[1:]
 
     js = (_STATIC_DIR / "gap-template.js").read_text()

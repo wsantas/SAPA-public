@@ -72,26 +72,27 @@ class HealthTracker:
         adjusted_days = int(base_days * adjustment)
         return datetime.now() + timedelta(days=max(1, adjusted_days))
 
-    def record_learning(self, topic: str, confidence: float = 0.5) -> None:
-        """Record that a topic was learned or reviewed."""
+    def record_learning(self, topic: str, mention_weight: float = 0.5) -> None:
+        """Record that a topic was learned or reviewed.
+
+        Uses DFWM (Decayed Frequency-Weighted Mastery): confidence grows
+        via diminishing returns scaled by depth-of-mention weight.
+        """
         topic = topic.lower().strip()
         now = datetime.now()
-        next_review = self._calculate_next_review(0, confidence)
         profile_id = self._current_profile_id
 
-        # Try to update existing, otherwise insert
         cursor = self.conn.execute(
-            "SELECT id, review_count FROM topics WHERE name = ? AND profile_id = ?",
+            "SELECT id, review_count, confidence_score FROM topics WHERE name = ? AND profile_id = ?",
             (topic, profile_id)
         )
         row = cursor.fetchone()
 
         if row:
             review_count = row["review_count"] + 1
-            # Confidence grows with reviews: starts at caller value, approaches 1.0
-            # Formula: base + (1 - base) * (1 - 1/(1 + reviews/3))
-            new_confidence = confidence + (1.0 - confidence) * (1.0 - 1.0 / (1.0 + review_count / 3.0))
-            new_confidence = min(new_confidence, 1.0)
+            current_confidence = row["confidence_score"]
+            delta = (1.0 - current_confidence) * 0.25 * mention_weight
+            new_confidence = min(current_confidence + delta, 1.0)
             next_review = self._calculate_next_review(review_count, new_confidence)
             self.conn.execute("""
                 UPDATE topics
@@ -99,10 +100,12 @@ class HealthTracker:
                 WHERE name = ? AND profile_id = ?
             """, (now, review_count, new_confidence, next_review, topic, profile_id))
         else:
+            new_confidence = 0.15 * mention_weight
+            next_review = self._calculate_next_review(0, new_confidence)
             self.conn.execute("""
                 INSERT OR IGNORE INTO topics (name, first_learned, last_reviewed, review_count, confidence_score, next_review, profile_id)
                 VALUES (?, ?, ?, 0, ?, ?, ?)
-            """, (topic, now, now, confidence, next_review, profile_id))
+            """, (topic, now, now, new_confidence, next_review, profile_id))
 
         self._update_streak()
         self._record_daily_session(topics_learned=1)
@@ -112,7 +115,7 @@ class HealthTracker:
         """Record multiple topics in a single transaction.
 
         Args:
-            topics: list of (topic_name, confidence, profile_id) tuples
+            topics: list of (topic_name, mention_weight, profile_id) tuples
 
         Returns:
             Number of topics recorded.
@@ -120,20 +123,20 @@ class HealthTracker:
         now = datetime.now()
         count = 0
         profiles_seen = set()
-        for topic_name, confidence, profile_id in topics:
+        for topic_name, mention_weight, profile_id in topics:
             topic_name = topic_name.lower().strip()
-            next_review = self._calculate_next_review(0, confidence)
 
             cursor = self.conn.execute(
-                "SELECT id, review_count FROM topics WHERE name = ? AND profile_id = ?",
+                "SELECT id, review_count, confidence_score FROM topics WHERE name = ? AND profile_id = ?",
                 (topic_name, profile_id)
             )
             row = cursor.fetchone()
 
             if row:
                 review_count = row["review_count"] + 1
-                new_confidence = confidence + (1.0 - confidence) * (1.0 - 1.0 / (1.0 + review_count / 3.0))
-                new_confidence = min(new_confidence, 1.0)
+                current_confidence = row["confidence_score"]
+                delta = (1.0 - current_confidence) * 0.25 * mention_weight
+                new_confidence = min(current_confidence + delta, 1.0)
                 next_review = self._calculate_next_review(review_count, new_confidence)
                 self.conn.execute("""
                     UPDATE topics
@@ -141,10 +144,12 @@ class HealthTracker:
                     WHERE name = ? AND profile_id = ?
                 """, (now, review_count, new_confidence, next_review, topic_name, profile_id))
             else:
+                new_confidence = 0.15 * mention_weight
+                next_review = self._calculate_next_review(0, new_confidence)
                 self.conn.execute("""
                     INSERT OR IGNORE INTO topics (name, first_learned, last_reviewed, review_count, confidence_score, next_review, profile_id)
                     VALUES (?, ?, ?, 0, ?, ?, ?)
-                """, (topic_name, now, now, confidence, next_review, profile_id))
+                """, (topic_name, now, now, new_confidence, next_review, profile_id))
             count += 1
             profiles_seen.add(profile_id)
 
@@ -313,7 +318,7 @@ class HealthTracker:
         row = cursor.fetchone()
 
         if not row:
-            self.record_learning(topic, confidence=score)
+            self.record_learning(topic, mention_weight=score)
             cursor = self.conn.execute(
                 "SELECT id FROM topics WHERE name = ? AND profile_id = ?",
                 (topic, profile_id)
@@ -601,7 +606,7 @@ class HealthTracker:
         """, (topic.lower().strip(), content, source, profile_id))
 
         # Also record as a learned topic
-        self.record_learning(topic, confidence=0.6)
+        self.record_learning(topic, mention_weight=0.5)
 
         self.conn.commit()
         return cursor.lastrowid

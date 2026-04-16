@@ -3,6 +3,30 @@
 import re
 
 
+def compute_depth_signals(content: str, matched_topics: list[str]) -> dict[str, float]:
+    """Compute per-topic depth signals for an article.
+
+    Measures how substantively an article covers each topic based on
+    mention frequency relative to article length and topic breadth.
+
+    Returns dict of topic_name -> mention_weight (0.2 to 1.0).
+    """
+    content_lower = content.lower()
+    word_count = max(len(content.split()), 1)
+    total_topics = max(len(matched_topics), 1)
+
+    signals = {}
+    for topic in matched_topics:
+        topic_lower = topic.lower()
+        mentions = content_lower.count(topic_lower)
+        density = mentions / total_topics
+        depth = min(mentions / max(word_count / 500, 1), 1.0)
+        weight = max(0.2, min(0.3 * density + 0.7 * depth, 1.0))
+        signals[topic] = round(weight, 3)
+
+    return signals
+
+
 def extract_title_from_content(content: str) -> str | None:
     """Extract title from first H1 heading in markdown."""
     match = re.search(r'^#\s+(.+)$', content, re.MULTILINE)

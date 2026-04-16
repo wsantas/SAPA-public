@@ -113,7 +113,7 @@ async def process_new_file(watched: WatchedFile, profile_id: Optional[int] = Non
 
         # Record topics
         for topic in topics:
-            tracker.record_learning(topic, confidence=0.6)
+            tracker.record_learning(topic, mention_weight=0.5)
 
         tracker.save_history(
             session_type=watched.file_type or 'session',
@@ -597,8 +597,8 @@ async def get_gap_analysis():
         return {"categories": [], "summary": {}}
     profile_id = tracker.get_current_profile_id()
     gap_targets = PROFILE_GAP_TARGETS.get(profile_id, {})
-    learned_topics = {t['name'].lower() for t in tracker.get_all_topics()}
-    return compute_gap_analysis(learned_topics, gap_targets)
+    topic_rows = tracker.get_all_topics()
+    return compute_gap_analysis(topic_rows, gap_targets)
 
 
 @router.get("/api/history")

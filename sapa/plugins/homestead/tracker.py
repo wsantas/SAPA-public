@@ -94,55 +94,63 @@ class HomesteadTracker:
 
     # --- Topics (for gap analysis) ---
 
-    def record_learning(self, topic: str, confidence: float = 0.5) -> None:
-        """Record that a topic was learned or reviewed."""
+    def record_learning(self, topic: str, mention_weight: float = 0.5) -> None:
+        """Record that a topic was learned or reviewed (DFWM algorithm)."""
         topic = topic.lower().strip()
         now = datetime.now()
 
         cursor = self.conn.execute(
-            "SELECT id, review_count FROM homestead_topics WHERE name = ?",
+            "SELECT id, review_count, confidence_score FROM homestead_topics WHERE name = ?",
             (topic,)
         )
         row = cursor.fetchone()
 
         if row:
             review_count = row["review_count"] + 1
+            current_confidence = row["confidence_score"]
+            delta = (1.0 - current_confidence) * 0.25 * mention_weight
+            new_confidence = min(current_confidence + delta, 1.0)
             self.conn.execute("""
                 UPDATE homestead_topics
                 SET last_reviewed = ?, review_count = ?, confidence_score = ?
                 WHERE name = ?
-            """, (now, review_count, confidence, topic))
+            """, (now, review_count, new_confidence, topic))
         else:
+            new_confidence = 0.15 * mention_weight
             self.conn.execute("""
                 INSERT OR IGNORE INTO homestead_topics (name, first_learned, last_reviewed, review_count, confidence_score)
                 VALUES (?, ?, ?, 0, ?)
-            """, (topic, now, now, confidence))
+            """, (topic, now, now, new_confidence))
 
         self.conn.commit()
 
     def record_learning_batch(self, topics: list[tuple[str, float]]) -> int:
-        """Record multiple topics in a single transaction."""
+        """Record multiple topics in a single transaction (DFWM algorithm)."""
         now = datetime.now()
         count = 0
-        for topic_name, confidence in topics:
+        for topic_name, mention_weight in topics:
             topic_name = topic_name.lower().strip()
             cursor = self.conn.execute(
-                "SELECT id, review_count FROM homestead_topics WHERE name = ?",
+                "SELECT id, review_count, confidence_score FROM homestead_topics WHERE name = ?",
                 (topic_name,)
             )
             row = cursor.fetchone()
             if row:
                 review_count = row["review_count"] + 1
+                current_confidence = row["confidence_score"]
+                delta = (1.0 - current_confidence) * 0.25 * mention_weight
+                new_confidence = min(current_confidence + delta, 1.0)
                 self.conn.execute("""
                     UPDATE homestead_topics
                     SET last_reviewed = ?, review_count = ?, confidence_score = ?
                     WHERE name = ?
-                """, (now, review_count, confidence, topic_name))
+                """, (now, review_count, new_confidence, topic_name))
             else:
+                new_confidence = 0.15 * mention_weight
                 self.conn.execute("""
                     INSERT OR IGNORE INTO homestead_topics (name, first_learned, last_reviewed, review_count, confidence_score)
                     VALUES (?, ?, ?, 0, ?)
-                """, (topic_name, now, now, confidence))
+                """, (topic_name, now, now, new_confidence))
             count += 1
         self.conn.commit()
         return count

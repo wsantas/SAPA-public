@@ -320,8 +320,10 @@ async def lifespan(app: FastAPI):
             ctx = ht.profile_context(profile_id) if profile_id else nullcontext()
             with ctx:
                 topics = extract_topics(watched_file.content)
+                from .plugins.health.content import compute_depth_signals
+                depth_signals = compute_depth_signals(watched_file.content, topics)
                 for topic in topics:
-                    ht.record_learning(topic, confidence=0.6)
+                    ht.record_learning(topic, mention_weight=depth_signals.get(topic, 0.5))
                 if not title or title == 'General':
                     title = ', '.join(topics[:3]) or 'General'
                 ht.save_history(
@@ -393,8 +395,10 @@ async def lifespan(app: FastAPI):
             if watched_file.content[:100] in existing_hs:
                 continue
             topics = hs_extract_topics(watched_file.content)
+            from .plugins.homestead.content import compute_depth_signals as hs_depth_signals
+            depth_signals = hs_depth_signals(watched_file.content, topics)
             for topic in topics:
-                hs_tracker.record_learning(topic, confidence=0.6)
+                hs_tracker.record_learning(topic, mention_weight=depth_signals.get(topic, 0.5))
             title = hs_extract_title(watched_file.content) or watched_file.topic or ', '.join(topics[:3]) or 'General'
             hs_tracker.save_history(
                 session_type=watched_file.file_type or 'session',

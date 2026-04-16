@@ -28,7 +28,7 @@ async def process_new_file(watched: WatchedFile):
 
     topics = extract_topics_from_content(watched.content)
     for topic in topics:
-        tracker.record_learning(topic, confidence=0.6)
+        tracker.record_learning(topic, mention_weight=0.5)
 
     title = extract_title_from_content(watched.content) or watched.topic or ', '.join(topics[:3]) or 'General'
     tracker.save_history(
@@ -171,5 +171,5 @@ async def get_gap_analysis():
     """Analyze homestead learning gaps against target knowledge areas."""
     if not tracker:
         return {"categories": [], "summary": {}}
-    learned_topics = {t['name'].lower() for t in tracker.get_all_topics()}
-    return compute_gap_analysis(learned_topics, HOMESTEAD_GAP_TARGETS)
+    topic_rows = tracker.get_all_topics()
+    return compute_gap_analysis(topic_rows, HOMESTEAD_GAP_TARGETS)
