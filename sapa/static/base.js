@@ -339,6 +339,7 @@
         let ws = null;
         let wsReconnectTimer = null;
         let _wsRefreshTimer = null;
+        let _wsWasConnected = false;
 
         function _debouncedRefresh() {
             if (_wsRefreshTimer) clearTimeout(_wsRefreshTimer);
@@ -357,6 +358,12 @@
                     clearTimeout(wsReconnectTimer);
                     wsReconnectTimer = null;
                 }
+                if (_wsWasConnected) {
+                    console.log('WebSocket reconnected after disconnect — reloading page');
+                    window.location.reload();
+                    return;
+                }
+                _wsWasConnected = true;
             };
 
             ws.onmessage = (event) => {

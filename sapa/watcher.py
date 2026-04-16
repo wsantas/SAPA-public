@@ -162,6 +162,21 @@ class MarkdownHandler(FileSystemEventHandler):
         finally:
             self._processing.discard(event.src_path)
 
+    def on_moved(self, event: FileSystemEvent) -> None:
+        dest = getattr(event, 'dest_path', None)
+        if not dest or event.is_directory or not self._is_markdown(dest):
+            return
+        path = Path(dest)
+        if path.name.startswith(".") or 'archive' in path.parts:
+            return
+        try:
+            watched = WatchedFile.from_path(path)
+            logger.info(f"File moved/renamed (treating as new): {path.name}")
+            if self._created_callback:
+                self._created_callback(watched)
+        except Exception as e:
+            logger.error(f"Error reading moved file {path}: {e}")
+
     def on_deleted(self, event: FileSystemEvent) -> None:
         if event.is_directory or not self._is_markdown(event.src_path):
             return
