@@ -1688,14 +1688,15 @@
 
             container.innerHTML = topics.map(t => {
                 const pct = Math.round((t.confidence_score || 0) * 100);
+                const tier = pct >= 80 ? 'var(--green)' : pct >= 60 ? '#06b6d4' : pct >= 30 ? 'var(--yellow, #eab308)' : 'var(--pink, #ec4899)';
                 return `
-                    <div class="card" style="padding: 1rem;">
+                    <div class="card" style="padding: 1rem; cursor: pointer;" onclick="showTopicReview('${escapeHtml(t.name).replace(/'/g, "\\'")}')">
                         <div style="display: flex; justify-content: space-between; align-items: center;">
                             <span style="font-weight: 600;">${escapeHtml(t.name)}</span>
-                            <span style="color: var(--accent);">${pct}% mastery</span>
+                            <span style="color: ${tier}; font-weight: 600;">${pct}%</span>
                         </div>
                         <div class="progress-bar" style="margin-top: 0.5rem;">
-                            <div class="progress-fill" style="width: ${pct}%;"></div>
+                            <div class="progress-fill" style="width: ${pct}%; background: ${tier};"></div>
                         </div>
                         <div style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.5rem;">
                             Reviewed ${t.review_count || 0} times
