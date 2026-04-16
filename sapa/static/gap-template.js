@@ -91,6 +91,20 @@
                 </div>
             `;
 
+            function _masteryClass(m) {
+                if (m >= 80) return 'mastered';
+                if (m >= 60) return 'strong';
+                if (m >= 30) return 'learning';
+                return 'weak';
+            }
+
+            function _topicPill(t, catName) {
+                const n = typeof t === 'object' ? t.name : t;
+                const m = typeof t === 'object' ? (t.mastery || 0) : 0;
+                const cls = _masteryClass(m);
+                return `<span class="gap-topic ${cls} clickable" tabindex="0" role="button" title="Mastery: ${m}%" onclick="show$PLUGIN_ID$GapPrompt('${escapeHtml(n)}', '${escapeHtml(catName)}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();show$PLUGIN_ID$GapPrompt('${escapeHtml(n)}', '${escapeHtml(catName)}');}">${escapeHtml(n)} <small style="opacity:0.6">${m}%</small></span>`;
+            }
+
             const catsHtml = categories.map(cat => `
                 <div class="gap-category">
                     <div class="gap-category-header">
@@ -104,8 +118,8 @@
                         <div class="gap-progress-fill ${cat.priority}" style="width: ${cat.coverage}%;"></div>
                     </div>
                     <div class="gap-topics">
-                        ${cat.covered.map(t => { const n = typeof t === 'object' ? t.name : t; const m = typeof t === 'object' ? t.mastery : 100; const cls = m >= 70 ? 'covered' : 'partial'; return `<span class="gap-topic ${cls} clickable" tabindex="0" role="button" title="Mastery: ${m}%" onclick="show$PLUGIN_ID$GapPrompt('${escapeHtml(n)}', '${escapeHtml(cat.name)}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();show$PLUGIN_ID$GapPrompt('${escapeHtml(n)}', '${escapeHtml(cat.name)}');}">${escapeHtml(n)} <small style="opacity:0.6">${m}%</small></span>`; }).join('')}
-                        ${cat.gaps.map(t => { const n = typeof t === 'object' ? t.name : t; const m = typeof t === 'object' ? (t.mastery || 0) : 0; return `<span class="gap-topic missing clickable" tabindex="0" role="button" title="Mastery: ${m}%" onclick="show$PLUGIN_ID$GapPrompt('${escapeHtml(n)}', '${escapeHtml(cat.name)}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();show$PLUGIN_ID$GapPrompt('${escapeHtml(n)}', '${escapeHtml(cat.name)}');}">${escapeHtml(n)}${m > 0 ? ` <small style="opacity:0.6">${m}%</small>` : ''}</span>`; }).join('')}
+                        ${cat.covered.map(t => _topicPill(t, cat.name)).join('')}
+                        ${cat.gaps.map(t => _topicPill(t, cat.name)).join('')}
                     </div>
                 </div>
             `).join('');

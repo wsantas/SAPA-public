@@ -104,42 +104,42 @@
             border-radius: 1rem;
         }
 
-        .gap-topic.covered {
-            background: rgba(16, 185, 129, 0.2);
+        .gap-topic.mastered {
+            background: rgba(16, 185, 129, 0.25);
             border: 1px solid var(--green);
             color: var(--green);
         }
 
-        .gap-topic.partial {
+        .gap-topic.strong {
+            background: rgba(6, 182, 212, 0.2);
+            border: 1px solid #06b6d4;
+            color: #06b6d4;
+        }
+
+        .gap-topic.learning {
             background: rgba(234, 179, 8, 0.15);
             border: 1px solid var(--yellow, #eab308);
             color: var(--yellow, #eab308);
         }
 
-        .gap-topic.missing {
+        .gap-topic.weak {
             background: rgba(236, 72, 153, 0.1);
             border: 1px solid var(--pink);
             color: var(--pink);
         }
+
+        .gap-topic.covered { background: rgba(16, 185, 129, 0.2); border: 1px solid var(--green); color: var(--green); }
+        .gap-topic.partial { background: rgba(234, 179, 8, 0.15); border: 1px solid var(--yellow, #eab308); color: var(--yellow, #eab308); }
+        .gap-topic.missing { background: rgba(236, 72, 153, 0.1); border: 1px solid var(--pink); color: var(--pink); }
 
         .gap-topic.clickable {
             cursor: pointer;
             transition: all 0.2s;
         }
 
-        .gap-topic.missing.clickable:hover {
-            background: rgba(236, 72, 153, 0.3);
+        .gap-topic.clickable:hover {
             transform: scale(1.05);
-        }
-
-        .gap-topic.partial.clickable:hover {
-            background: rgba(234, 179, 8, 0.3);
-            transform: scale(1.05);
-        }
-
-        .gap-topic.covered.clickable:hover {
-            background: rgba(16, 185, 129, 0.4);
-            transform: scale(1.05);
+            filter: brightness(1.2);
         }
 
         .gap-top-item {
