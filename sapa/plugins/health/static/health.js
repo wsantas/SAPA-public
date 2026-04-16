@@ -1933,40 +1933,7 @@
             event.target.value = '';  // Reset file input
         }
 
-        // Settings menu toggle
-        function toggleSettings() {
-            const menu = document.getElementById('settingsMenu');
-            const btn = document.getElementById('settingsBtn');
-            const isOpen = menu.classList.toggle('show');
-            btn.setAttribute('aria-expanded', isOpen);
-        }
-
-        // Rescan files to re-extract topics
-        async function rescanFiles() {
-            showToast('Scanning files...', 'success');
-            try {
-                const response = await fetch('/api/rescan', { method: 'POST' });
-                const result = await response.json();
-                if (result.success) {
-                    showToast(`Scanned ${result.files_scanned} files, ${result.topics_recorded} topics`, 'success');
-                    loadDashboard();
-                } else {
-                    showToast(result.error || 'Rescan failed', 'error');
-                }
-            } catch (e) {
-                console.error('Rescan failed:', e);
-                showToast('Rescan failed: ' + e.message, 'error');
-            }
-        }
-
-        // Close settings when clicking outside
-        document.addEventListener('click', (e) => {
-            const wrapper = document.querySelector('.settings-wrapper');
-            if (wrapper && !wrapper.contains(e.target)) {
-                document.getElementById('settingsMenu').classList.remove('show');
-                document.getElementById('settingsBtn').setAttribute('aria-expanded', 'false');
-            }
-        });
+        // toggleSettings and rescanFiles are defined in base.js — do not override here
 
         // Keyboard handlers for accessibility
         document.addEventListener('keydown', (e) => {
@@ -1980,7 +1947,7 @@
                     closeMealSidebar();
                 } else if (modal.classList.contains('show')) {
                     closeModal();
-                } else if (settingsMenu.classList.contains('show')) {
+                } else if (settingsMenu && settingsMenu.style.display === 'block') {
                     toggleSettings();
                     document.getElementById('settingsBtn').focus();
                 }
