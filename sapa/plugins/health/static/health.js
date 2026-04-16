@@ -2985,7 +2985,8 @@
                 const weight = priorityWeight[cat.priority] || 1;
                 const score = weight * (100 - cat.coverage) * cat.gaps.length;
                 for (const gap of cat.gaps.slice(0, 2)) {
-                    scored.push({ topic: gap, category: cat.name, priority: cat.priority, score });
+                    const topicName = typeof gap === 'object' ? gap.name : gap;
+                    scored.push({ topic: topicName, category: cat.name, priority: cat.priority, score });
                 }
             }
 
