@@ -37,11 +37,13 @@ logger = logging.getLogger(__name__)
 from .plugins.health.plugin import HealthPlugin
 from .plugins.homestead.plugin import HomesteadPlugin
 from .plugins.calendar.plugin import CalendarPlugin
+from .plugins.hermes.plugin import HermesPlugin
 
 PLUGINS: list[SAPAPlugin] = [
     HealthPlugin(),
     HomesteadPlugin(),
     CalendarPlugin(),
+    HermesPlugin(),
 ]
 
 

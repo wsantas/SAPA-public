@@ -1,0 +1,23 @@
+
+        <div id="hermes" class="panel">
+            <div class="hermes-header">
+                <h2>Hermes <span class="hermes-status" id="hermesStatus" title="Backend status">●</span></h2>
+                <div class="hermes-meta" id="hermesMeta"></div>
+                <div class="hermes-actions">
+                    <button class="hermes-btn-secondary" onclick="clearHermesChat()">Clear</button>
+                </div>
+            </div>
+
+            <div id="hermesMessages" class="hermes-messages"></div>
+
+            <form id="hermesForm" class="hermes-form" onsubmit="return sendHermesMessage(event)">
+                <textarea
+                    id="hermesInput"
+                    class="hermes-input"
+                    placeholder="Ask anything…"
+                    rows="2"
+                    autocomplete="off"
+                ></textarea>
+                <button type="submit" id="hermesSendBtn" class="hermes-btn-primary">Send</button>
+            </form>
+        </div>

@@ -53,7 +53,7 @@
             const allowed = PROFILE_TABS[pid] || PROFILE_TABS['default'] || [];
             document.querySelectorAll('.tab, .nav-tab-direct').forEach(btn => {
                 const panel = btn.getAttribute('data-panel');
-                if (!panel || panel === 'dashboard') return;
+                if (!panel || panel === 'dashboard' || panel === 'hermes') return;
                 const show = allowed.length === 0 || allowed.includes(panel);
                 btn.style.display = show ? '' : 'none';
             });

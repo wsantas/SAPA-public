@@ -2133,7 +2133,7 @@
         function updateTabVisibility() {
             const allowedTabs = PROFILE_TABS[currentProfileId] || PROFILE_TABS[1];
             // Shell-level tabs are always visible regardless of profile
-            const shellTabs = ['dashboard'];
+            const shellTabs = ['dashboard', 'hermes'];
 
             // Hide/show tabs based on profile
             document.querySelectorAll('.tab[data-panel]').forEach(tab => {

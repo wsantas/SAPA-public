@@ -38,6 +38,14 @@ Write up what you learned about soil amendments, or paste in a deep dive on mobi
 - ICS feed integration (Google Calendar, any `.ics` URL).
 - Today's schedule widget on the dashboard. Full week view in the calendar panel.
 
+### Local AI Assistant (Optional)
+- **Hermes plugin** — chat with a local LLM running on your own hardware. Powered by [Ollama](https://ollama.com) and any open-weight model (Hermes 3, Llama 3.x, Mistral, Qwen, etc.).
+- **Pluggable backend abstraction** — same plugin code targets local Ollama (Pi/desktop) or a cloud inference API (Groq, Together.ai, etc.) via a single env var. No branching in feature code.
+- **Fully optional** — install Ollama if you want it; SAPA degrades gracefully if the inference backend is offline (panel shows red status dot, chat returns an error, the rest of the app keeps working).
+- **Streaming responses** via Server-Sent Events for snappy UX even on slow CPU-only inference.
+- **Chat history** logged to the same SQLite database alongside everything else — searchable, exportable, yours.
+- Designed for upcoming integrations: semantic topic extraction from inbox files, natural-language queries over your knowledge base, automatic morning summaries.
+
 ### Family Profiles
 Two demo profiles out of the box — one focused on strength training, another on mobility. Each person gets their own:
 - Learning history and knowledge gaps
@@ -77,6 +85,7 @@ SAPA is a **FastAPI** app that assembles a single HTML page at startup from plug
 | `health` | Per-person | Training, nutrition, recipes, protocols, gap analysis, body maps |
 | `homestead` | Family | Gardening, livestock, preservation, land management knowledge |
 | `calendar` | Family | ICS feed display, schedule widgets |
+| `hermes` | Family | Optional local AI chat via Ollama; pluggable backend supports cloud inference too |
 
 **Adding a new plugin** = create a folder with `plugin.py`, `routes.py`, `tracker.py`, and a `static/` directory. Register it in `app.py`. Done. The framework handles migrations, routing, and page assembly.
 
@@ -88,7 +97,7 @@ SAPA is a **FastAPI** app that assembles a single HTML page at startup from plug
 - **Notifications:** stdlib `smtplib` (no external email service required)
 
 ### No External Dependencies Worth Worrying About
-No Redis. No Postgres. No Docker (unless you want it). No cloud functions. No API keys required (unless you connect a calendar feed). The entire app runs on a $35 Pi with a SQLite file and a folder full of markdown.
+No Redis. No Postgres. No Docker (unless you want it). No cloud functions. No API keys required (unless you connect a calendar feed or opt into the Hermes plugin's local AI chat — and even then, you can run inference 100% locally with [Ollama](https://ollama.com) on the same Pi). The entire app runs on a $35 Pi with a SQLite file and a folder full of markdown.
 
 ---
 
